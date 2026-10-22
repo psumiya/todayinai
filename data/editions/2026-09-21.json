@@ -1,0 +1,232 @@
+{
+  "date": "2026-09-21",
+  "dek": "New tools expose hidden model knowledge, quantify the enterprise deployment gap, and open up full-duplex voice agents—while efficiency gains keep compounding.",
+  "brief": [
+    "Honest measurement is today’s theme. A forensic interrogation method can now distinguish model sandbagging from genuine ignorance, while EnterpriseVal quantifies the gap between frontier capability and measurable business value. NVIDIA’s NemotronLabs opens full-duplex speech-to-speech with native tool calling, and new releases push block pruning and tokenization efficiency sharply forward."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Agent misalignment goes public",
+        "Agentic reliability"
+      ],
+      "layer": "Models & Research",
+      "title": "A lie detector test for language models",
+      "summary": "A new paper adapts the Concealed Information Test from forensic psychology to detect whether a language model is hiding knowledge it holds or simply does not have it.",
+      "why": "sandbagging on capability evaluations has been a suspicion without a measurement. This gives evaluators a test for the gap between reported and actual capability—the credibility problem at the heart of every safety evaluation.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2609.21996"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agentic reliability",
+        "Vertical platform plays (labs)"
+      ],
+      "layer": "Applications & Policy",
+      "title": "EnterpriseVal quantifies the capability–value gap",
+      "summary": "Frontier models can produce professional deliverables that expert graders judge comparable to human work on a substantial share of economically valuable tasks, yet most enterprise GenAI initiatives still show no measurable business effect.",
+      "why": "the bottleneck is no longer model capability. It is deployment, reliability, and value capture: agents that can do the work still cannot prove the return.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2609.21841"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Lab supremacy race"
+      ],
+      "layer": "Models & Research",
+      "title": "NemotronLabs opens full-duplex voice with tool calling",
+      "summary": "NVIDIA’s open VoiceChat model combines a streaming speech encoder with a decoder-only language model, using parallel output streams for agent text and structured function calls.",
+      "why": "full-duplex voice agents with native tool use have been a closed-model story. An open release with function calling puts that stack in everyone’s hands.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2609.21967"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Efficiency race"
+      ],
+      "layer": "Models & Research",
+      "title": "Pruning LLMs like a physicist",
+      "summary": "Multiverse Computing reframes transformer-block removal as a constrained binary optimization mapped onto an Ising spin glass. At 50% compression of Llama-3.3-70B-Instruct, the method beats the strongest competing block-removal approach by about 23 MMLU points.",
+      "why": "depth pruning is becoming a principled search problem rather than a heuristic hack, and the method generalizes to hybrid attention architectures.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>Hugging Face (Sep 21)</strong> — <em>Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem</em>: minimizing the spin system’s energy becomes a cheap proxy for downstream benchmark quality, allowing billions of block-removal configurations to be searched without benchmarking each one. Code is open-sourced.",
+      "links": [
+        {
+          "label": "Link",
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face (Sep 21)</strong> — <em>tokenizers v1: encode, decode and scaling, measured</em>: the release candidate produces identical token IDs as v0.23 while encoding 3–30× faster on an Apple M4 Max and scaling at 76% of linear across eight workers. A SIMD splitter, thread-local cache, allocation-free merge loop, native parallelism, and the tokbench harness drive the gains.",
+      "links": [
+        {
+          "label": "Link",
+          "url": "https://huggingface.co/blog/tokenizers-v1"
+        }
+      ]
+    }
+  ],
+  "videos": [],
+  "papers": [
+    {
+      "title": "A Lie Detector Test for Language Models: Reading Knowledge a Model Won’t Reveal",
+      "layer": "Models & Research",
+      "body": "Hiskias Dingeto — models can hold knowledge they do not report; the forensic Concealed Information Test is adapted to detect whether a model is hiding an answer or simply does not have one.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.21996"
+        }
+      ]
+    },
+    {
+      "title": "EnterpriseVal: Quantifying the Efficacy, Reliability and Value of Generative AI in the Enterprise",
+      "layer": "Applications & Policy",
+      "body": "Abbas Raza Ali, Muhammad Ajmal Siddiqui, Moona Zahid — frontier models match human professional work on a substantial share of economically valuable tasks, yet most enterprise GenAI initiatives fail to show measurable business effect.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.21841"
+        }
+      ]
+    },
+    {
+      "title": "NemotronLabs VoiceChat: An Open Full-duplex Speech-to-Speech Model with Tool Calling Capabilities",
+      "layer": "Models & Research",
+      "body": "Jagadeesh Balam et al. — an open streaming speech encoder plus decoder-only language model uses parallel output streams for agent text and structured function calls, with an auxiliary RNN-T branch.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.21967"
+        }
+      ]
+    },
+    {
+      "title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
+      "layer": "Platforms & Tools",
+      "body": "Bowen Ye et al. — mines diverse reinforcement-learning tasks with reliable verifiers directly from open-source codebases instead of relying on issues and commits.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.22068"
+        }
+      ]
+    },
+    {
+      "title": "MintAct: A Unified Visual Agent for Digital Environments",
+      "layer": "Models & Research",
+      "body": "Mingfei Gao et al. — a family of vision-language models at 2B, 4B, and 8B parameters unifies UI grounding, multi-step navigation across mobile, desktop, and web, and visual tool use.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.22083"
+        }
+      ]
+    },
+    {
+      "title": "Value-Sensitive Delegation in Everyday AI Agent Use: Evidence from OpenClaw",
+      "layer": "Applications & Policy",
+      "body": "Renkai Ma et al. — analysis of 73,093 first-person Reddit posts about OpenClaw use finds the human values people prioritize when delegating; evaluations should measure values, not only task completion.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.22067"
+        }
+      ]
+    },
+    {
+      "title": "SpecQuant: Speculative Decoding with Multi-Parent Quantization for Adaptive LLM Inference",
+      "layer": "Models & Research",
+      "body": "Harish KB et al. — combines quantization, speculative decoding, and adaptive inference to run language models on consumer hardware without per-architecture retraining.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.21704"
+        }
+      ]
+    },
+    {
+      "title": "Abstention and Noise Filtering: Two Missing Primitives of Softmax Attention",
+      "layer": "Models & Research",
+      "body": "Richard Zhe Wang — gating the value pathway gives softmax attention two missing primitives, abstention and noise filtering; experiments disentangle which effect explains the pretraining gains.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.22005"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Agentic reliability",
+      "update": "The stack keeps thickening: the Lie-Detector Test adds a measurement primitive for hidden knowledge, CodeMidas adds training infrastructure, MintAct adds a unified visual-agent family, and the OpenClaw values study reframes delegation around human values rather than task completion. Measurement → detection → design → training → values, all in one day."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "The Lie-Detector Test is the natural measurement tool for this thread: sandbagging in capability evaluations was previously a suspicion without a test. OpenAI’s six misalignment reports raised the credibility question; now there is a forensic method aimed at it."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "Three wins in one day: Ising-optimization block pruning adds 23 MMLU points at 50% compression, tokenizers v1 encodes up to 30× faster with 76% linear scaling, and SpecQuant combines quantization with speculative decoding for consumer hardware. Cheaper to train, cheaper to serve."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Open-model flank activity: NVIDIA’s NemotronLabs released an open full-duplex voice model with native tool calling, competing directly with closed voice-agent stacks."
+    },
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Quiet today."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "Quiet today."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "Quiet today."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Quiet today."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Quiet today; the Sep 23 Shopify app launch is the next milestone."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "Quiet today."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Quiet today."
+    }
+  ]
+}

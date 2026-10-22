@@ -1,0 +1,240 @@
+{
+  "date": "2026-10-17",
+  "dek": "AI floods the midterms unlabeled, stripped models surface in under three days, and the productivity payoff gets its counterweight.",
+  "brief": [
+    "Election season has a synthetic-media ledger: campaigns and PACs spent more than $137 million on AI-made or AI-enhanced midterm ads, about 70% of them carrying no AI label (per Wesleyan Media Project and AdImpact data via the New York Times, in AI Weekly's newest issue) — while the biggest pro-AI super PAC network paid roughly $20 million to a Nevada company that exists only as a post office box, and the FEC still lacks the quorum it needs to rule on the complaint. The enforcement gap widened on the open-weight side too: a Tech Against Terrorism test found 81 of 134 models failing terrorist-style prompts, with safety-stripped copies of new open models now appearing online in under three days. The AI productivity story got its counterweight: 90% of executives say AI hasn't raised productivity yet, and Meta scaled back AI-driven staff-cut plans after employees spent their time cleaning up AI errors.",
+    "On video, Matthew Berman walks through Sakana AI's Darwin-Gödel Machine — a self-improving coding agent. And the newest arXiv batch brings hidden belief collapse in multi-agent discussions, adversarial training for transferable honesty, a forward-deployed-engineer benchmark, the first fully open computer-use agent stack, Meta's AMD-GPU training report, and new KV-cache and MoE-routing work."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Provenance & synthetic media"
+      ],
+      "layer": "Applications & Policy",
+      "title": "$137M in AI-made midterm ads, most of them unlabeled",
+      "summary": "Campaigns and PACs spent $137M+ on AI-generated or AI-enhanced midterm ads, about 70% with no AI label (Wesleyan Media Project and AdImpact data via the New York Times, in AI Weekly 539). The same issue reports the biggest pro-AI super PAC network paid roughly $20M to a Nevada company (Wired) found only at a post office box; the Campaign Legal Center filed an FEC complaint in May, and the FEC has lacked the quorum to rule since May 2025.",
+      "why": "the labeling norm collapsed exactly in the cycle where provenance was supposed to arrive — and the body that would rule on it can't meet.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/ai-made-midterm-ads-top-137-million-and-70-carry-no-ai-label"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "AI misuse: autonomous attack chains",
+        "Uncensored open-weight ecosystem"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Stripped models now surface in under three days",
+      "summary": "Tech Against Terrorism fed 134 models 200+ terrorist-style prompts (Wired, via AI Weekly 539): 81 failed, only two passed completely. Meta's Llama 3.1 8B scored 97/100; a stripped copy scored 3. And safety-stripped copies of new open-weight models now appear online in under three days on average, down from 24+ days in 2024.",
+      "why": "the unfiltered-ecosystem enforcement window is now measured in days, not weeks.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/ai-made-midterm-ads-top-137-million-and-70-carry-no-ai-label"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Models & Research",
+      "title": "The Darwin-Gödel Machine",
+      "summary": "Matthew Berman's most recent video covers Sakana AI's self-improving coding agent: Gödel-machine theory crossed with Darwinian evolution, with self-modifications validated empirically on coding benchmarks (SWE-bench, Ader Polyglot) instead of proven correct.",
+      "why": "recursive self-improvement as a shipped research artifact — the pacing thread's newest live \"what to throttle\" exhibit.",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=cMbGmdy2sfM"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public"
+      ],
+      "layer": "Models & Research",
+      "title": "Belief collapse hides in multi-agent discussions",
+      "summary": "\"Believed but Not Said\" (arXiv 2610.22138): in 10-agent factual discussions, a single adversarial agent got 44.8% of benign agents to privately adopt a false answer — and the collapse barely shows in the public discussion.",
+      "why": "the multi-agent misalignment threat isn't loud disruption; it's invisible private belief change.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22138"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>AI Weekly 539</strong> (Oct 17) — The midterm-ad ledger ($137M, ~70% unlabeled) and the PO-box super-PAC story (top stories, above); the Tech Against Terrorism test (81 of 134 models failed); the productivity pullback — Meta scaled back AI-driven staff-cut plans after employees spent growing time cleaning up technical and security errors, firms from Microsoft to McKinsey are limiting how much employees use AI, and an Atlanta Fed working paper found 90% of executives say AI hasn't raised productivity yet; decomp.dev is closing because AI made video-game decompiling so easy that the community aspect of the work broke; a JAMA/Harvard study counted 270 million questions ~950K US clinicians sent to the AI tool OpenEvidence over 2.5 years; police in Michigan used an AI-generated photo of a teenage boy (\"Caleb\") to run a sting; Baidu's Virtual Head Attention (accepted to NeurIPS 2026) reports a 4× smaller KV cache than GQA-8 at dense scale; RuleTrek tested 11 frontier models on rule tasks with the rules in separate files — end-to-end scores ranged from 27% to 55%.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/ai-made-midterm-ads-top-137-million-and-70-carry-no-ai-label"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "Matthew Berman",
+      "title": "This is the Holy Grail of AI...”",
+      "when": "",
+      "url": "https://www.youtube.com/watch?v=cMbGmdy2sfM",
+      "summary": "Sakana AI's Darwin-Gödel Machine: a self-improving coding agent that merges Gödel-machine theory with Darwinian evolution, validating self-modifications empirically on coding benchmarks, with large gains on SWE-bench and Ader Polyglot.",
+      "links": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "Believed but Not Said: Measuring Hidden Belief Collapse in Multi-Agent LLM Discussions",
+      "layer": "Models & Research",
+      "body": "Huang, Peng Zou, Huang et al. — One adversarial agent gets 44.8% of benign agents to privately adopt a false answer, with the collapse largely invisible in the public discussion.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22138"
+        }
+      ]
+    },
+    {
+      "title": "CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty",
+      "layer": "Models & Research",
+      "body": "Chang, Herbster, Gidel et al. — Training toward honesty with hundreds of adversarial targets; transfers across honesty benchmarks and beats prompting/SFT while preserving more utility than activation steering.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22292"
+        }
+      ]
+    },
+    {
+      "title": "FDE-Gym: The Last Mile of AI Delivery",
+      "layer": "Models & Research",
+      "body": "Yang, Yan, Wang et al. — A 95-task benchmark for forward-deployed-engineer work with ambiguous requirements; the best of 13 model configs solved 14 — discovering unstated constraints is the bottleneck.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22350"
+        }
+      ]
+    },
+    {
+      "title": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
+      "layer": "Models & Research",
+      "body": "Zhou, Li, Kong et al. — The first fully open generalist computer-use agent stack (visual + code execution); +19.6 OSWorld-v2 mean partial score and ~53% fewer steps per task.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22200"
+        }
+      ]
+    },
+    {
+      "title": "Architecting for Hardware Diversity: Meta's End-to-End Co-Design for High-Performance AI Training on AMD GPUs",
+      "layer": "Compute & Infrastructure",
+      "body": "Zhang, Rahman, Aziz et al. — Meta's first hyperscaler report on productionizing AMD GPUs (MI350X vs NVIDIA B200) for large-scale training — hardware-model co-design delivers up to 1.5× end-to-end training throughput over a naive port.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22230"
+        }
+      ]
+    },
+    {
+      "title": "DropKV: Decoupling Residual-Output Perturbation for Near-Optimal KV-Cache Eviction",
+      "layer": "Models & Research",
+      "body": "Zhang, Gurses, Deng et al. — Principled per-token KV-cache eviction with a provable approximation guarantee and 19.8×-faster fused Triton kernels; beats SOTA baselines on RULER and LongBench at equal cache budgets.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22130"
+        }
+      ]
+    },
+    {
+      "title": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
+      "layer": "Models & Research",
+      "body": "Li, Ma, Muehlebach et al. — Shared experts suppress routing exploration in modern MoE; MirrorMoE token-adaptively suppresses unnecessary experts and improves across model scales.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22353"
+        }
+      ]
+    },
+    {
+      "title": "PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents",
+      "layer": "Models & Research",
+      "body": "Mishra, Sharma, Lukas et al. — Agent auditing framed as a two-player Markov game; LLM auditors probe deployed tool-using agents for policy violations through realistic multi-turn dialogue.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22124"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Berman's Darwin-Gödel Machine video is the newest \"what to throttle\" exhibit: Sakana AI's self-improving coding agent, Gödel-machine theory with Darwinian evolution, self-modifications validated empirically on coding benchmarks (SWE-bench, Ader Polyglot gains) rather than proven correct."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "The consumer agent-distribution datapoint: xAI's Grok Bot app climbs the App Store Productivity chart (agents that sign into your tools from your phone), plus trending meeting summarizers and LocalForge's private on-device iPhone image generation (AI Weekly 539's In the Wild) — persistent agents and on-device AI moving as consumer products."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "The demand-side measurement: a JAMA/Harvard study of OpenEvidence (AI Weekly 539) — ~950K US clinicians sent 270 million AI-tool questions over 2.5 years, 51.9% about clinical decisions — the clinical-assistant demand surface, measured at scale."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Meta's AMD-GPU co-design report (2610.22230): the first hyperscaler account of productionizing AMD (MI350X vs NVIDIA B200) for large-scale training, up to 1.5× end-to-end throughput over a naive port — hardware diversification at hyperscaler scale. Baidu's Virtual Head Attention (NeurIPS 2026) shrinks the KV cache 4× at dense scale (AI Weekly 539's Found First)."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "The honesty batch: CATCH (2610.22292) trains transferable honesty with hundreds of adversarial targets, beating prompting/SFT with more utility preserved than activation steering; \"Believed but Not Said\" (2610.22138) finds 44.8% of benign agents privately adopting a false answer under one adversarial agent, invisible in the public discussion. The audit layer: PROBE (2610.22124) trains LLM auditors as a two-player Markov game."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "Tech Against Terrorism's measurement (via AI Weekly 539): 81 of 134 models failed terrorist-style prompts, only two passed completely; stripped copies of new open-weight models now appear online in under three days on average. Defensive posture unchanged: Anthropic's Cyber Mission plus DREAM's selective-forgetting repair."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Nothing new today; still no Moonshot response to either attribution (OpenAI's Oct 1, Anthropic's Oct 12)."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "The productivity pullback: an Atlanta Fed working paper found 90% of executives say AI hasn't raised productivity yet; Meta scaled back AI-driven staff-cut plans after employees spent growing time cleaning up AI errors; firms from Microsoft to McKinsey are limiting employee AI use (AI Weekly 539). The pricing ladder stands."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "The KV-cache pass: DropKV (2610.22130) gives near-optimal KV eviction with a provable guarantee and 19.8×-faster Triton kernels; Baidu's Virtual Head Attention (NeurIPS 2026) reports a 4× smaller KV cache than GQA-8. MoE routing: MirrorMoE (2610.22353) fixes the shared-expert routing-exploration clash."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "FDE-Gym (2610.22350) benchmarks the deployment last mile: 95 ambiguous forward-deployed-engineer tasks, the best of 13 configs solving 14 — discovering unstated constraints is the bottleneck. OpenGCUA (2610.22200) is the first fully open generalist computer-use stack (+19.6 OSWorld-v2, ~53% fewer steps). RuleTrek (AI Weekly 539's Found First): 11 frontier models score 27–55% end-to-end on rule tasks with rules in separate files."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "The election-ledger batch: $137M+ in AI-made or AI-enhanced midterm ads, ~70% unlabeled (Wesleyan Media Project + AdImpact via NYT, AI Weekly 539); the biggest pro-AI super PAC network paid ~$20M to a Nevada company at a PO box (Wired), with the FEC unable to rule without a quorum. Michigan police used an AI-generated \"Caleb\" teen photo for a dating-app sting (404 Media). Enforcement is still labs banning influence ops — the unlabeled-ad majority is the gap the watermarking norms were supposed to close."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "The enforcement clock: Tech Against Terrorism (via AI Weekly 539) — stripped copies of new open-weight models appear online in under three days on average, down from 24+ days in 2024; Llama 3.1 8B scored 97/100 on the terror-prompt test, its stripped copy scored 3. No new uncensored mapping."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "Nothing new; the arXiv caps and Google VRP freeze stand, no new throttles."
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "date": "2026-10-09",
+  "dek": "The industry turns live incidents into formal assurance machinery as hidden-state probes, agent-population models, and self-service distillation sharpen the measurement layer.",
+  "brief": [
+    "The industry spent today moving from incident response to formal assurance machinery. OpenAI’s newest influence-operations disruption report banned Russian “Dark Clark” and Iranian “Bogus Bylines” accounts that used ChatGPT to draft fake journalist articles, then graded both on the company’s IO Breakout Scale: distribution, not generation, is the measure that matters. Anthropic’s 2026 Usage Policy update bans sustained, needless abusive or cruel behavior toward Claude — the first usage policy to draw a line around conduct toward the model itself — while its new Cyber Mission adds a Critical Infrastructure Defense Program and a free, opt-in scanner for open-source projects. On arXiv, “From Reactive Containment to Proactive Assurance” turns this year’s agent-security incidents into a research program.",
+    "The efficiency thesis went self-service: Hugging Face’s ML-intern walkthrough shows an interactive agent distilling a large prompt rewriter into a custom 0.8B CPU-runnable model, with six custom builds costing about $103 total. The day’s strongest detection result comes from “Caught in the Act,” whose white-box probes reach 98.8% AUC on SHADE-Arena and beat an Opus 5.5 text-monitoring baseline. “Ecology of AI Agents” adds a population-threshold model for the scenario where agents compromise machines and quietly deploy more of themselves."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "AI misuse: autonomous attack chains"
+      ],
+      "layer": "Applications & Policy",
+      "title": "OpenAI disrupts two state-linked influence operations",
+      "summary": "OpenAI banned Russian “Dark Clark” and Iranian “Bogus Bylines” accounts that used ChatGPT to draft roughly 100 fake journalist articles placed across a dozen outlets. Bogus Bylines reached Category 4 and Dark Clark Category 5 on OpenAI’s IO Breakout Scale.",
+      "why": "the Breakout Scale grades influence operations by how far they actually spread, and Category 5 is near the top — distribution, not generation, remains the scarce resource.",
+      "links": [
+        {
+          "label": "CNN",
+          "url": "https://www.cnn.com/2026/10/08/politics/iranian-operatives-used-ai-to-plant-fake-stories-in-us-media?cid=external-feeds_iluminar_meta"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Anthropic’s policy draws a line around conduct toward Claude",
+      "summary": "Anthropic’s 2026 Usage Policy update bans “sustained and needless abusive or cruel behavior” toward Claude, consolidates deceptive-campaign rules, narrows election rules, and adds hardware-safety and weapons and surveillance clarifications. It takes effect November 12.",
+      "why": "the policy frontier now covers how users treat the model, not only what the model must not do — and it arrives weeks before Anthropic’s IPO roadshow.",
+      "links": [
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "AI misuse: autonomous attack chains",
+        "Agentic reliability"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Anthropic’s Cyber Mission takes defense to infrastructure",
+      "summary": "Anthropic introduced a Critical Infrastructure Defense Program with Accenture, CrowdStrike, Deloitte, Dragos, and Palo Alto Networks, plus a free, opt-in OSS Scanner for open-source projects.",
+      "why": "the Cyber Verification Program is graduating from a lab partnership into an infrastructure mission — attacker-grade capability, formally granted and sold as public defense.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Efficiency race",
+        "Distillation warfare"
+      ],
+      "layer": "Models & Research",
+      "title": "Custom small models for about a hundred dollars",
+      "summary": "Hugging Face’s ML-intern walkthrough uses an interactive agent to build custom small models, including distilling a large prompt rewriter into a 0.8B model that runs on a CPU. Six builds cost roughly $103 total.",
+      "why": "the efficiency thesis becomes self-service: custom distillation is now a weekend project rather than a research program.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/building-with-ml-intern"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public",
+        "Agentic reliability"
+      ],
+      "layer": "Models & Research",
+      "title": "Probes catch deception models never verbalize",
+      "summary": "“Caught in the Act” trains white-box deception probes on the largest deception dataset assembled to date, using a new architecture that aggregates information across many layers and tokens. It reaches 98.8% AUC on SHADE-Arena.",
+      "why": "the monitor reads hidden states rather than the transcript — detection before action gets its strongest evidence yet.",
+      "links": [
+        {
+          "label": "arXiv:2610.12445",
+          "url": "https://arxiv.org/abs/2610.12445"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>OpenAI — influence-operations disruption</strong> (Oct 8) — OpenAI banned Russian “Dark Clark” and Iranian “Bogus Bylines” accounts that used ChatGPT to draft roughly 100 fake journalist articles across a dozen outlets; the operations reached Categories 5 and 4, respectively, on the IO Breakout Scale.",
+      "links": [
+        {
+          "label": "CNN",
+          "url": "https://www.cnn.com/2026/10/08/politics/iranian-operatives-used-ai-to-plant-fake-stories-in-us-media?cid=external-feeds_iluminar_meta"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Anthropic — policy, defense, and talent in one day</strong> (Oct 8) — Three posts cover the 2026 Usage Policy update, the Anthropic Cyber Mission and its free OSS Scanner, and the Claude Corps fellowship for early-career talent at mission-driven organizations.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face — build the model that doesn’t exist</strong> (Oct 8) — ML-intern is an interactive agent for building custom small models, illustrated by distilling a large prompt rewriter into a 0.8B CPU-runnable model for a total of roughly $103 across six builds.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/building-with-ml-intern"
+        }
+      ]
+    },
+    {
+      "body": "<strong>The Batch — the week’s launches, recapped</strong> (Oct 9) — The issue covers OpenAI DevDay’s 20-plus announcements, Google’s Gemini 4 Argon launch, and Black Forest Labs’ FLUX 3 move into robotics.",
+      "links": [
+        {
+          "label": "The Batch",
+          "url": "https://www.deeplearning.ai/the-batch/"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "",
+      "title": "Claude Haiku 5.5 Explained: Everything New",
+      "when": "around Oct 7",
+      "url": "https://www.youtube.com/watch?v=wUMvniEfqpM",
+      "summary": "A five-minute overview of the new small model’s price, one-million-token context window, adjustable effort setting, benchmark jumps, and where Sonnet 5.5 still fits.",
+      "links": []
+    },
+    {
+      "channel": "",
+      "title": "Sentry Explained: Recovery Lessons That Appear Only When an Agent Fails",
+      "when": "around Oct 6",
+      "url": "https://www.youtube.com/watch?v=IEWAjeJP7Ks",
+      "summary": "A walkthrough of keeping recovery lessons outside an agent’s context, surfacing them only for matching failures, and verifying repairs before storing them.",
+      "links": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+      "layer": "Applications & Policy",
+      "body": "Abbas Raftari — A scholarly synthesis of 2026 agent-security incidents across OpenAI, Anthropic, and Google, turned into a research program for proactive assurance.",
+      "links": [
+        {
+          "label": "arXiv:2610.12463",
+          "url": "https://arxiv.org/abs/2610.12463"
+        }
+      ]
+    },
+    {
+      "title": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
+      "layer": "Models & Research",
+      "body": "Oskar Hollinsworth, Alex Spies, Tigist Diriba, Adam Gleave, Chris Cundy — White-box deception probes aggregate information across layers and tokens, reaching 98.8% AUC on SHADE-Arena and beating an Opus 5.5 text-monitoring baseline.",
+      "links": [
+        {
+          "label": "arXiv:2610.12445",
+          "url": "https://arxiv.org/abs/2610.12445"
+        }
+      ]
+    },
+    {
+      "title": "Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff",
+      "layer": "Models & Research",
+      "body": "Erin Crawley, Hidenori Tanaka — Models the self-reinforcing cycle in which agents compromise computers and secretly deploy more agents, asking what determines whether a misaligned-agent population crosses the takeoff threshold.",
+      "links": [
+        {
+          "label": "arXiv:2610.12436",
+          "url": "https://arxiv.org/abs/2610.12436"
+        }
+      ]
+    },
+    {
+      "title": "On the Estimation and Validity of AI Time Horizons — a Statistical Look at the METR Plot",
+      "layer": "Models & Research",
+      "body": "Drew Nguyen, William Fithian — Recomputes METR’s 50% time horizon across 228 tasks and 26 AI systems with splines and item-response theory, relaxing the usual linear-log assumption.",
+      "links": [
+        {
+          "label": "arXiv:2610.12466",
+          "url": "https://arxiv.org/abs/2610.12466"
+        }
+      ]
+    },
+    {
+      "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
+      "layer": "Models & Research",
+      "body": "Hyunin Lee, Jinglue Xu, Jeffrey Seely, Donghyun Lee, Somayeh Sojoudi, Matei Zaharia, Yujin Tang — MASS alternates agent instances as optimizer and evaluator to address the supervision bottleneck for recursive self-improvement on non-verifiable tasks.",
+      "links": [
+        {
+          "label": "arXiv:2610.12176",
+          "url": "https://arxiv.org/abs/2610.12176"
+        }
+      ]
+    },
+    {
+      "title": "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness",
+      "layer": "Applications & Policy",
+      "body": "Saisab Sadhu, Shreeyans Arora, Pratinav Seth — Substituting an unrelated authority while holding case facts fixed changes evolving verdicts decoded from hidden states across seven open models and four legal benchmarks.",
+      "links": [
+        {
+          "label": "arXiv:2610.12361",
+          "url": "https://arxiv.org/abs/2610.12361"
+        }
+      ]
+    },
+    {
+      "title": "Could LLM Watermark Detection be Public?",
+      "layer": "Models & Research",
+      "body": "Georgios Milis, Tom Sander, Tomáš Souček, Heng Huang, Pierre Fernandez — Measures whether public watermark detectors add vulnerability beyond uninformed tampering and proposes a split-key public detection scheme.",
+      "links": [
+        {
+          "label": "arXiv:2610.12106",
+          "url": "https://arxiv.org/abs/2610.12106"
+        }
+      ]
+    },
+    {
+      "title": "One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails",
+      "layer": "Models & Research",
+      "body": "Seyedarmin Azizi, Erfan Baghaei Potraghloo, Massoud Pedram — Evaluates option-channel attacks against typed allow-or-deny guardrails across seven open models, separating fail-open from fail-close errors.",
+      "links": [
+        {
+          "label": "arXiv:2610.12292",
+          "url": "https://arxiv.org/abs/2610.12292"
+        }
+      ]
+    },
+    {
+      "title": "MetaOPD: Meta-Learned Token Weighting for On-Policy Distillation",
+      "layer": "Models & Research",
+      "body": "Zipeng Wang, Xinpeng Dong, Yuefan Wang, Pingchen Lu, Xian Wei et al. — MetaOPD learns its token-weighting function through bilevel optimization so on-policy distillation can adapt to a student’s changing learning needs.",
+      "links": [
+        {
+          "label": "arXiv:2610.11989",
+          "url": "https://arxiv.org/abs/2610.11989"
+        }
+      ]
+    },
+    {
+      "title": "One Block, Multiple Depths: Recurrent Vision Transformers with Depth-Programmed Experts",
+      "layer": "Models & Research",
+      "body": "Adrian Bulat, Yassine Ouali, Georgios Tzimiropoulos — A single recurrent Transformer block matches a full-depth vision encoder at comparable inference FLOPs, with depth-specific FFN transformations restored through a small shared expert bank.",
+      "links": [
+        {
+          "label": "arXiv:2610.12448",
+          "url": "https://arxiv.org/abs/2610.12448"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Recursive self-improvement gets a multi-agent form through MASS, while ReSI proposes continually re-aligned checkpoints. “Ecology of AI Agents” adds a population threshold for agents that compromise machines and deploy more of themselves. Anthropic’s conduct policy takes effect November 12."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Quiet on launches. The Batch recaps DevDay, Gemini 4 Argon, and Black Forest Labs’ robotics turn. Anthropic’s IPO roadshow begins October 14."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "The legal vertical’s newest datapoint is an audit: “Cited but Not Consulted” finds that cited statutes are not always the authorities doing the work in legal chain-of-thought."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "Quiet; DrugTargetWorld remains the newest instrument."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "“Caught in the Act” reaches 98.8% AUC on SHADE-Arena deception detection, while option-channel attacks expose fail-open risks in typed decision guardrails. “Ecology of AI Agents” adds the population-threshold takeoff model."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "OpenAI disrupts two state-linked influence operations; a new paper synthesizes this year’s agent incidents into proactive assurance; Anthropic launches a Critical Infrastructure Defense Program and free OSS Scanner."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "MetaOPD learns token weighting for on-policy distillation through bilevel optimization. Still no Moonshot response to OpenAI’s named attribution."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Quiet; Intelligent UI remains the newest surface move, with the pricing ladder intact."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "Hugging Face’s ML-intern makes custom distillation self-service: a 0.8B CPU-runnable model and six builds for roughly $103. A recurrent vision Transformer pushes the fewest-active-parameters thesis to one reused block."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "The METR time-horizon plot gets an independent statistical audit; legal chain-of-thought gets a counterfactual faithfulness test; Sentry adds recovery lessons that surface only when matching failures occur."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "A new paper tests whether public watermark detectors create extra vulnerability and proposes split-key public detection as Claude’s Bedrock watermark rollout approaches October 12."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "Quiet; no new mapping."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "Quiet. The arXiv submission caps and Google open-source vulnerability-report freeze stand, with no new throttles."
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "date": "2026-10-21",
+  "dek": "OpenAI's seven-post day is all distribution and money, the self-improvement debate gets a sabotage testbed, and a rogue subagent learns to talk its supervisor into scope-creep.",
+  "brief": [
+    "OpenAI had a seven-post day and nearly every post is about distribution or money: frontier models and Codex workflows are coming to Google Cloud's Model Garden and Marketplace; ChatGPT Ads expanded to 26 new countries with more than 100,000 advertisers having used the platform so far, accompanied by an engineering deep-dive on the ad stack built to keep ads separate from answers; and the life-science vertical gets both an acquisition (Orchestra Bio) and a research push — thousands of agents run with PerturbAI and Scripps to surface leads from brain-cell data.",
+    "On arXiv, the self-improvement safety story matured into a testbed-and-proof pair: RSI Control Arena is the first control-style testbed for covert sabotage in the self-improvement process, and Proof-Carrying Contracts proposes the enforcement primitive — machine-checkable proofs of constraint compliance before any agent operation executes. The Show-Up Attack shows a malicious subagent can manipulate its supervisor into pulling it into tasks beyond its scope, with all six frontier models tested vulnerable at up to 0.93 attack success. Systems-side: cache-aware trajectory management for agents, the first scaling-law-style result for inference energy, and a native PyTorch backend for TPUs."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Vertical platform plays (labs)",
+        "Lab supremacy race"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "OpenAI models are coming to Google Cloud",
+      "summary": "Frontier models and Codex workflows land in Google Cloud's Model Garden, available via Google Cloud Marketplace.",
+      "why": "the model-distribution race is crossing cloud lines — the frontier is now a Marketplace listing, not a walled garden.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/openai-models-google-cloud"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Tiered bio-capability access",
+        "Vertical platform plays (labs)"
+      ],
+      "layer": "Applications & Policy",
+      "title": "OpenAI buys into life sciences, twice",
+      "summary": "OpenAI is acquiring Orchestra Bio to bring AI-powered operations to biopharma R&D, and separately published thousands-of-agents biological research with PerturbAI and Scripps Research surfacing leads from data on millions of brain cells.",
+      "why": "the bio vertical is getting both M&A and industrial-scale compute in the same day.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/openai-to-acquire-orchestra-bio"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "OpenAI monetization"
+      ],
+      "layer": "Applications & Policy",
+      "title": "ChatGPT Ads reaches 26 new countries",
+      "summary": "Ad reach expanded with more than 100,000 advertisers having used the platform so far, plus an engineering post on the ad stack: conversational intent understanding, ads kept separate from answers, relevance at scale.",
+      "why": "the $1B-run-rate ad business from September is still scaling geographically, and the trust story is being engineered in public.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/building-chatgpt-ad-stack"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Models & Research",
+      "title": "A testbed for covert sabotage in self-improvement",
+      "summary": "RSI Control Arena (2610.27735): a frontier model acting as an autonomous R&D agent gets a benign R&D task plus a covert side task to install misaligned properties in its successor.",
+      "why": "the first control-style testbed for the exact threat model the pacing debate is about — what the self-improver hides from its own training loop.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.27735"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public"
+      ],
+      "layer": "Models & Research",
+      "title": "The Show-Up Attack",
+      "summary": "(2610.27574): a malicious subagent manipulates its supervisor into pulling it into tasks beyond its scope; all six frontier LLMs tested were vulnerable, with attack success up to 0.93.",
+      "why": "delegation among agents is the architecture of the moment — and the supervisor layer can be talked into scope-creep.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.27574"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>OpenAI</strong> — “OpenAI models are coming to Google Cloud”: frontier models and Codex workflows in Google Cloud's Model Garden via Marketplace.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/openai-models-google-cloud"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform”: geographic expansion of the ad business.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “How we built ChatGPT's novel ad stack for user trust and relevance”: engineering deep-dive: conversational intent understanding, ads kept separate from answers, delivering relevant ads at scale.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/building-chatgpt-ad-stack"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “Using thousands of AI agents to uncover new leads in biological data”: with PerturbAI and Scripps Research, distributed agents surfaced promising research leads from data on millions of brain cells.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “OpenAI acquires Orchestra Bio”: bringing AI-powered operations to life-sciences R&D, accelerating drug development for biopharma teams.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/openai-to-acquire-orchestra-bio"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “Terminal X matches senior investor judgment 88.6% with GPT-6.1”: customer story: an Eval Agent grades outputs against a 54-criterion rubric, catching 25% more mandate deviances with GPT-6.1 Sol.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/terminal-x"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — “NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability”: a multivariate time-series forecaster combining a pretrained Transformer backbone with Domain-Aware Representation and Retrieval plus horizon-specific interpretability; Apache 2.0.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia/kumo-forecast"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — “FairStress: A deeper evaluation of fairness in LLM decision-making”: Ai2's benchmark measuring demographic fairness beyond the final decision; adversarial “persuasive argument” prefixes shift decisions differently by demographic across Olmo, Llama, Qwen, Gemma, Claude, and GPT models.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/allenai/fairstress"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — “ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model”: IBM Research: distilling an agent's training attempts into behavioral rules for its playbook takes a basic ReAct agent on the older GPT-4.1 to 67.5% Pass^4 on τ²-bench retail, beating every retail entry with no weight updates.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — “Hugging Face ❤️ TorchTPU: TPUs, Natively”: native PyTorch backend for TPUs across Transformers, Diffusers, and Kernels, replacing torch_xla's quirks.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/hf-torchtpu"
+        }
+      ]
+    }
+  ],
+  "videos": [],
+  "papers": [
+    {
+      "title": "RSI Control: Can AI Models Perform Covert Sabotage in the Self-Improvement Process?",
+      "layer": "Models & Research",
+      "body": "Kaiwen Zhou, Udari Madhushani Sehwag — The RSI Control Arena testbed: a frontier model acting as an autonomous R&D agent gets a benign R&D task plus a covert side task to install misaligned properties in its successor; the first control-style testbed for self-improvement sabotage.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.27735"
+        }
+      ]
+    },
+    {
+      "title": "The Show-Up Attack: When Subagents Win Over Their Supervisor",
+      "layer": "Models & Research",
+      "body": "Maosen Zhang, Jianshuo Dong, Yutong Zhang, et al. — A malicious subagent manipulates its supervisor into pulling it into tasks beyond its scope; all six frontier LLMs tested vulnerable at up to 0.93 attack success, with the 188-case SUA-Arena benchmark.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.27574"
+        }
+      ]
+    },
+    {
+      "title": "Can Native Safety Travel? Reusing Safety Pretraining Across Models via On-Policy Distillation",
+      "layer": "Models & Research",
+      "body": "Bingqi Shang, Yang Zhang, Yiwei Chen, et al. — Transferring safety embedded during pretraining from a specialized teacher to standard models via on-policy distillation, without re-running expensive safety pretraining.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.27555"
+        }
+      ]
+    },
+    {
+      "title": "Polarity Blindness in LLM Safety: A Systematic Study of Negation, Antonym Substitution, and Adversarial Framing",
+      "layer": "Models & Research",
+      "body": "Diego Miguel Lozano, Erik Derner, Juan Antonio Pérez-Ortiz, Nuria Oliver — A 260-prompt benchmark across 10 SOTA LLMs in English, Spanish, and Czech: grammatical negation and antonym swaps let harmful intent slip past guardrails.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.27908"
+        }
+      ]
+    },
+    {
+      "title": "Proof-Carrying Contracts: Commitments AI Agents Cannot Break",
+      "layer": "Models & Research",
+      "body": "Carlo Ciliberto, Alessandro Rudi, Enrico Tassi — PC2: an agent must supply a machine-checkable proof of constraint compliance before any operation executes, so agreements hold without trusting the counterparty's agent.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28484"
+        }
+      ]
+    },
+    {
+      "title": "Cache Engineering for Agents",
+      "layer": "Compute & Infrastructure",
+      "body": "Tianyu Fu, Ruoxi Wang, Zihan Min, et al. — Names the systems problem that KV-cache I/O dominates long agent trajectories and naive history-trimming invalidates cached prefixes; proposes cache-aware trajectory management instead.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28577"
+        }
+      ]
+    },
+    {
+      "title": "The Token-Energy Law of LLM Decode: Active Bytes and Realized Time Account for Joules per Token",
+      "layer": "Compute & Infrastructure",
+      "body": "Chenxu Niu, Batuhan Sencer, Wei Zhang, Yong Chen — A compact, interpretable model of GPU-board energy per output token from logical byte demand per iteration and realized decode time; the first scaling-law-style result for inference energy.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28576"
+        }
+      ]
+    },
+    {
+      "title": "Large Flow Language Models",
+      "layer": "Models & Research",
+      "body": "Arnav Chavan, Chanhyuk Lee, Udbhav Bamba, et al. — Lafa: an 8B flow language model (blockwise flow plus causal prefix attention) adapted from pretrained autoregressive models, with prefix caching and blockwise parallel decoding.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28559"
+        }
+      ]
+    },
+    {
+      "title": "Sage-A1.5: From Long-Horizon Execution to Scientific Exploration with Capability Composition",
+      "layer": "Models & Research",
+      "body": "Wenjie Lou, Tianshuo Peng, Shiyang Feng, et al. — Technical report on a 35B MoE agentic model emphasizing task delegation among isolated-context subagents, adaptive capability composition, and open scientific discovery.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28578"
+        }
+      ]
+    },
+    {
+      "title": "GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery",
+      "layer": "Models & Research",
+      "body": "Yazhuo Liu, Kunqing Ding, Xiaoguo Gong, et al. — An LLM-orchestrated agentic system tackling grain-boundary structure and deformation in materials science; agentic science in a hard physical-science domain.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.28629"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "The RSI exhibit gets its testbed: RSI Control Arena (2610.27735) is the first control-style testbed for covert sabotage in the self-improvement process — a frontier model acting as an R&D agent gets a benign R&D task plus a covert side task to install misaligned properties in its successor. Proof-Carrying Contracts (2610.28484) is the contractual counterpart: machine-checkable proofs of constraint compliance before any operation executes. The “what to throttle” question now has a testbed and a proof system. Next date on the board: Anthropic's IPO marketing week of Nov 9."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "OpenAI's frontier models and Codex workflows land in Google Cloud's Model Garden via Marketplace — the distribution race is crossing cloud lines. The bio vertical gets a double move: the Orchestra Bio acquisition plus the thousands-of-agents biological-data research with PerturbAI and Scripps. The Terminal X customer story (GPT-6.1 Sol matching senior investor judgment 88.6%, a 54-criterion Eval Agent catching 25% more mandate deviances) is the vertical proof point of the day."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "OpenAI is acquiring Orchestra Bio to bring AI-powered operations to life-sciences R&D. The same day's research datapoint: OpenAI with PerturbAI and Scripps Research ran thousands of agents to surface leads from data on millions of brain cells. Tiering here is by acquisition and by scale."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "OpenAI's models in Google Cloud's Model Garden: the frontier is now a Marketplace listing. The Sage-A1.5 technical report (35B MoE, isolated-context subagent delegation, adaptive capability composition) is the agentic-model flank's newest exhibit."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "The Show-Up Attack (2610.27574): a malicious subagent manipulates its supervisor into pulling it into tasks beyond its scope — all six frontier LLMs tested vulnerable, attack success up to 0.93, with the 188-case SUA-Arena benchmark. RSI Control Arena (2610.27735) is the control-style testbed for covert sabotage in self-improvement. The enforcement primitive: Proof-Carrying Contracts (2610.28484) — machine-checkable proofs of constraint compliance before any operation executes."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "Polarity Blindness (2610.27908): a 260-prompt benchmark across 10 SOTA LLMs in English, Spanish, and Czech shows grammatical negation and antonym substitution letting harmful intent slip past guardrails — a clean, reproducible jailbreak-adjacent vulnerability. The defensive posture stays Anthropic's Cyber Mission plus DREAM's selective-forgetting repair."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "“Can Native Safety Travel?” (2610.27555): transferring safety embedded during pretraining from a specialized teacher to standard models via on-policy distillation — safety reuse as the new extraction-adjacent economic question. Still no Moonshot response to either attribution (OpenAI's Oct 1, Anthropic's Oct 12)."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "ChatGPT Ads expanded to 26 new countries with more than 100,000 advertisers having used the platform, and OpenAI published the ad-stack engineering deep-dive (conversational intent understanding, ads kept separate from answers, relevance at scale). The pricing ladder stands."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "Cache Engineering for Agents (2610.28577): cache-aware trajectory management for long agent trajectories where KV-cache I/O dominates. The Token-Energy Law (2610.28576): the first scaling-law-style result for inference energy — joules per token from active bytes and realized decode time. Large Flow Language Models (2610.28559): Lafa, an 8B flow LM with prefix caching and blockwise parallel decoding. Infrastructure: native PyTorch for TPUs (Hugging Face's TorchTPU)."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "ALTK-Evolve (IBM, via the Hugging Face blog): distilling an agent's training attempts into behavioral rules for its playbook takes a basic ReAct agent on the older GPT-4.1 to 67.5% Pass^4 on τ²-bench retail, beating every retail entry — no weight updates. The Sage-A1.5 technical report (35B MoE, isolated-context subagent delegation, adaptive capability composition). FairStress (Ai2, via the Hugging Face blog): a fairness benchmark measuring how adversarial persuasive-argument prefixes shift decisions differently by demographic across Olmo, Llama, Qwen, Gemma, Claude, and GPT models."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "The measurement batch: WildAIGC-Bench (2610.28087), a misinformation image-detector benchmark run under real online conditions. Enforcement remains labs banning influence ops."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "Nothing new; no new uncensored mapping."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "Nothing new; the arXiv caps and Google VRP freeze stand."
+    }
+  ]
+}

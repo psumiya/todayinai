@@ -1,0 +1,87 @@
+# Edit this file to add or remove sources. Every feed URL is pinned here; nothing is guessed at runtime.
+# `verified: false` means the URL has not been fetched successfully yet. Run
+#   python -m newsletter.check_sources
+# on a machine with internet access (the GitHub Action does this) and flip it to true once it passes.
+#
+# kinds:
+#   rss      RSS/Atom feed. Items filtered by publish time.
+#   page     Listing page without a feed. New = article link never seen before (first fetch only seeds the ledger).
+#   youtube  Channel uploads feed by channel_id. `handle` is used once by check_sources to look the id up.
+
+window_hours: 36
+
+blogs:
+  - name: OpenAI
+    kind: rss
+    url: https://openai.com/news/rss.xml
+    verified: false
+  - name: Anthropic
+    kind: page
+    url: https://www.anthropic.com/news
+    link_pattern: '^(https://www\.anthropic\.com)?/(news|research)/[a-z0-9-]+/?$'
+    verified: false
+  - name: Google DeepMind
+    kind: rss
+    url: https://deepmind.google/blog/rss.xml
+    verified: false
+  - name: BAIR
+    kind: rss
+    url: https://bair.berkeley.edu/blog/feed.xml
+    verified: false
+  - name: Hugging Face
+    kind: rss
+    url: https://huggingface.co/blog/feed.xml
+    verified: false
+  - name: The Gradient
+    kind: rss
+    url: https://thegradient.pub/rss/
+    verified: false
+  - name: Import AI
+    kind: rss
+    url: https://importai.substack.com/feed
+    verified: false
+  - name: The Batch
+    kind: page
+    url: https://www.deeplearning.ai/the-batch/
+    link_pattern: '^(https://www\.deeplearning\.ai)?/the-batch/(issue-|tag/)[a-z0-9-]+/?$'
+    verified: false
+  - name: AI Weekly
+    kind: page
+    url: https://aiweekly.co/issues
+    link_pattern: '^(https://aiweekly\.co)?/(issues|alerts)/[a-z0-9-]+/?$'
+    verified: false
+  - name: bycloud
+    kind: rss
+    url: null   # blog URL was never pinned in the Muse setup; add it to enable
+    verified: false
+
+youtube:
+  - name: Yannic Kilcher
+    channel_id: UCZHmQk67mSJgfCCTn7xBfew
+    verified: true
+  - name: Two Minute Papers
+    handle: '@TwoMinutePapers'
+    channel_id: UCbfYPyITQ-7l4upoX8nvctg
+    verified: false
+  - name: AI Explained
+    handle: '@aiexplained-official'
+    channel_id: UCNJ1Ymd5yFuUPtn21xtRbbw
+    verified: true
+  - name: Matthew Berman
+    handle: '@matthew_berman'
+    channel_id: UCawZsQWqfGSbCI5yjkdVkTA
+    verified: true
+  - name: bycloud
+    handle: '@bycloudAI'
+    channel_id: null
+    verified: false
+  - name: AI Jason
+    handle: '@AIJasonZ'
+    channel_id: null
+    verified: false
+
+arxiv:
+  categories: [cs.AI, cs.LG, cs.CL, cs.CV]
+  max_results: 300
+  # Hugging Face Daily Papers upvotes are attached as a human-interest signal for picking.
+  hf_daily_papers: true

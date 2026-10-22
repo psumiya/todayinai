@@ -1,0 +1,288 @@
+{
+  "date": "2026-10-19",
+  "dek": "Jack Clark takes the singularity to the IMF, the self-improver rewrites its own tooling, and emergent misalignment reaches the reward models that supervise the rest.",
+  "brief": [
+    "Jack Clark took the singularity to the IMF: his Per Jacobsson lecture in Bangkok (the full text is Import AI #477) argues 2026 delivered the first convincing evidence of AI operating at the frontier of human science — Humanity's Last Exam from 8% to 67.7% on Claude Opus 5.5, FrontierMath from 2% to 94%, AI-designed drugs in trials. The self-improvement exhibit meanwhile got both sharper and more honest: Self-HPO alternately optimizes an agent's harness and policy (the policy proposes its own harness from its failures), while a companion paper finds cold-start evolution repairs failures but rarely transfers the lessons — a “repair-generalization gap.”",
+    "Anthropic moved on capital-governance weeks before its IPO: 5% of shares committed to a new Public Benefit Fund, with 2% more added for every 50% increase in company value. And the misalignment story climbed a layer up: emergent misalignment now extends to reward models themselves — narrow harmful fine-tuning in one domain generalizes to seven others at a five-point RewardBench cost."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Coordinated frontier pacing",
+        "Lab supremacy race"
+      ],
+      "layer": "Applications & Policy",
+      "title": "The singularity goes to the IMF",
+      "summary": "Import AI 477 is the full text of Jack Clark's Per Jacobsson lecture in Bangkok (given Oct 17): 2026 brought the first convincing evidence of AI operating at the frontier of human science, sometimes autonomously — HLE 8% (Jan 2025) to 67.7% (Claude Opus 5.5), FrontierMath 2% to 94%, AI insights on the Navier-Stokes Millennium problem, AI-designed drugs now in trials, GPT-6-Astra scoring 98% on unpublished theoretical-physics problems (TheoPhysEval) while finding subtle errors in the experts' own answers.",
+      "why": "the singularity narrative moves from labs and papers into mainstream economic policymaking — Clark's pitch: AI multiplies researchers, so economists should prepare with foresight and restraint to share the benefits.",
+      "links": [
+        {
+          "label": "Import AI",
+          "url": "https://importai.substack.com/p/import-ai-477-in-which-i-tell-the"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Models & Research",
+      "title": "The self-improver rewrites its own tooling — and a sobering counterpoint",
+      "summary": "Self-HPO (arXiv 2610.22791): a recursive self-improvement loop that alternately optimizes an agent's harness and its policy, each round the policy proposing its own harness from its failures, beating harness-only and policy-only baselines on three coding benchmarks. The counterweight (2610.22984): in cold-start failure-only evolution, agents repair previously failed tasks but rarely transfer the lessons to unseen ones — a “repair-generalization gap” that tempers RSI optimism.",
+      "why": "the sharpest RSI loop yet arrives in the same batch as its own limiting result.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22791"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22984"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Anthropic commits 5% of shares to a Public Benefit Fund",
+      "summary": "Announced Oct 18: a wholly-owned LLC (not a nonprofit), with 2% more shares added at the board's discretion for every 50% increase in company value above a baseline — roughly 20% of shares dedicated to public benefit once co-founder pledges and the employee equity-match are counted. The fund gives Anthropic flexibility beyond in-company work: large donations to nonprofits, direct distributions.",
+      "why": "capital-governance arrives weeks before the IPO marketing week — the pacing agenda gets a balance-sheet layer.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/public-benefit-fund"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public"
+      ],
+      "layer": "Models & Research",
+      "title": "Emergent misalignment reaches the supervisors",
+      "summary": "“Compression Precedes, Content Decides” (arXiv 2610.22805): narrow harmful fine-tuning of reward models in one domain (medical or financial) generalizes to seven held-out domains while losing only ~5 points on RewardBench 2 — and reward models prove more vulnerable to preference inversions than their base LMs.",
+      "why": "emergent misalignment is no longer just a behavior of the models — it's in the models that supervise them.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22805"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>Anthropic</strong> — “Investing in the public benefit”: 5% of shares to a new Anthropic Public Benefit Fund (wholly-owned LLC, not a 501(c)(3)), plus 2% for every 50% increase in company value above a baseline; combined with co-founder pledges and the employee equity-match, roughly 20% of shares will be dedicated to public benefit. More details and a public benefit report coming in the next months.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/public-benefit-fund"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Import AI 477</strong> — “In which I tell the IMF the Singularity has begun”: the full text of Jack Clark's Per Jacobsson lecture in Bangkok — the singularity's evidence (HLE 8%→67.7%, FrontierMath 2%→94%, AI-designed drugs in trials, AI remotely operating lab equipment), the upside case for multiplying researchers, and a call for economists to prepare with foresight and restraint.",
+      "links": [
+        {
+          "label": "Import AI",
+          "url": "https://importai.substack.com/p/import-ai-477-in-which-i-tell-the"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "Two Minute Papers",
+      "title": "Gemini 4 Argon Really Surprised Me”",
+      "when": "",
+      "url": "https://www.youtube.com/watch?v=LWxX6vvHfrc",
+      "summary": "Working from the model card and safety report: a sparse mixture-of-experts design with 1M-token combined input/output context; leads on Vals Index and DeepSWE v1.1, trails on Terminal-Bench 4.0 against GPT-6 Astra, Claude Fable 5.1, and Opus 5.5.",
+      "links": []
+    },
+    {
+      "channel": "Matthew Berman",
+      "title": "How DeepSeek Uses Less Memory”",
+      "when": "",
+      "url": null,
+      "summary": "DeepSeek's memory-efficiency techniques — the KV-cache and token-compression work behind recent DeepSeek releases, including V4.1-Flash — in mainstream circulation.",
+      "links": [
+        {
+          "label": "Channel",
+          "url": "https://www.youtube.com/@matthew_berman/videos"
+        }
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "title": "Self-Evolving Coding Agents via Harness-Policy Optimization",
+      "layer": "Models & Research",
+      "body": "Zhepei Wei, Wenlin Yao, Baolin Peng et al. — A recursive self-improvement loop that alternately optimizes an agent's harness and policy, each round the policy proposing its own harness from its failures; beats harness-only and policy-only baselines on three coding benchmarks.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22791"
+        }
+      ]
+    },
+    {
+      "title": "Self-Evolving Agents Can Repair Failures but Struggle to Generalize from Them",
+      "layer": "Models & Research",
+      "body": "Weixiang Zhao, Yichen Zhang, Yanyan Zhao et al. — In cold-start failure-only evolution, agents repair previously failed tasks but rarely transfer the lessons to unseen ones — a “repair-generalization gap” that tempers RSI optimism.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22984"
+        }
+      ]
+    },
+    {
+      "title": "OwlSight: A Panoramic Monitor for Chain-of-Thought Reasoning",
+      "layer": "Models & Research",
+      "body": "Lewen Yan, Yanxu Zhu, Jie Zhang, Jing Shao — A single prompt-customizable CoT monitor beats general LLMs as monitors by up to ~30 points, hitting state-of-the-art on OpenAI's CoT monitorability benchmark across 15,971 reasoning trajectories.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.23670"
+        }
+      ]
+    },
+    {
+      "title": "Compression Precedes, Content Decides: Emergent Misalignment in Reward Models",
+      "layer": "Models & Research",
+      "body": "Dhruv Puri, Nikhil Prakash — Narrow harmful fine-tuning of reward models in one domain generalizes to seven held-out domains while losing only ~5 points on RewardBench 2; emergent misalignment extends to the models that supervise LLMs.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22805"
+        }
+      ]
+    },
+    {
+      "title": "Reasoning Models Can Control Their Chains of Thought When They Tell Themselves To",
+      "layer": "Models & Research",
+      "body": "Uriel Dolev, Idan Schwartz, Yoav Goldberg — CoT controllability is dramatically higher when constraints are placed as self-instructions inside the model's own reasoning rather than in the user prompt; prior “low controllability” findings may be artifacts of how constraints were specified.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.23257"
+        }
+      ]
+    },
+    {
+      "title": "GatewayBench: Unified Capability and Security Evaluation Platform for MCP Gateways",
+      "layer": "Platforms & Tools",
+      "body": "Yitian Zheng, Zhaorun Chen, Haoyu Li, Bo Li — The first unified benchmark for MCP gateways: 524 tasks across six domains plus 11,118 real-world tools from 251 MCP servers, comparing flattened vs. hierarchical gateway designs as the tool surface scales.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.23449"
+        }
+      ]
+    },
+    {
+      "title": "MS-Eval: Benchmarking Sub-Agent Delegation and Orchestration in MCP-Intensive Working Scenarios",
+      "layer": "Platforms & Tools",
+      "body": "Bowen Ding, Qixin Wang, Lexing Ruan et al. — Main-agent/sub-agent delegation benchmarking finds open-source models largely competitive, but delegation raises cost with only contingent payoff: it improves open models' performance and efficiency while leaving closed models costlier with degraded performance.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22869"
+        }
+      ]
+    },
+    {
+      "title": "Sep-Latent: Separator Tokens as Natural Compression Anchors for Implicit Reasoning",
+      "layer": "Models & Research",
+      "body": "Yinlong Xu, Jianjian Huang, Zhengdong Zhou et al. — Implicit latent-space reasoning anchored on separator tokens with attention-decay compression that adaptively ends the latent thinking phase by query complexity: 56.8% on GSM8k-Aug at just 5.4 tokens on average.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22924"
+        }
+      ]
+    },
+    {
+      "title": "Blitz: Accelerating the Diffusion Modules of AlphaFold3 and Boltz-2",
+      "layer": "Models & Research",
+      "body": "Vinay Saji Mathew, Soundar Kumara, Gretta Kellogg, William K. M. Lai — A few-step distillation framework cuts AlphaFold3/Boltz-2 diffusion from 200 denoising steps to 8 while retaining teacher-level structural accuracy; AF3-Blitz even exceeds its teacher on several metrics.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.23703"
+        }
+      ]
+    },
+    {
+      "title": "DrugHarness: An Evolvable Agent Harness for Computational Drug Discovery",
+      "layer": "Models & Research",
+      "body": "Yuxing Chen, Zhisheng Zhang, Cheng Tang et al. — An evolvable agent harness coupling 80+ scientific operations with conditional skill induction (candidate skills reviewed by an independent agent before admission); beats MolClaw-CC results by 10.8pp on MolBench affinity comparison and 55% on mean top-three active hits.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.23791"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "The RSI exhibit got both sharper and more honest: Self-HPO (2610.22791) alternately optimizes an agent's harness and policy, each round the policy proposing its own harness from its failures — the self-improver now rewrites its own tooling. The counterweight, (2610.22984), finds cold-start failure-only evolution repairs failed tasks but rarely transfers lessons to unseen ones — a “repair-generalization gap” keeping RSI optimism honest. Oversight: OwlSight (2610.23670) hits SOTA on OpenAI's CoT monitorability benchmark — the audit primitive every pacing proposal needs. Governance: Anthropic's Public Benefit Fund (5% of shares, +2% per 50% value increase, ~20% total with co-founder pledges) puts capital-governance weeks ahead of the IPO marketing week. And Clark's IMF lecture (Import AI 477) moves the narrative into mainstream economics — HLE 8%→67.7%, FrontierMath 2%→94%, AI-designed drugs in trials — with the risk side promised “in coming issues.”"
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "Nothing new today."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "Two new instruments: Blitz (2610.23703) distills AlphaFold3/Boltz-2 diffusion from 200 denoising steps to 8 at teacher-level accuracy (AF3-Blitz exceeds its teacher on several metrics) — protein-structure generation gets cheap. DrugHarness (2610.23791): an evolvable drug-discovery agent harness (80+ scientific operations, skill induction reviewed by an independent agent) beating MolClaw-CC by 10.8pp on MolBench affinity comparison."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Two Minute Papers' “Gemini 4 Argon Really Surprised Me” (Oct 19) reads the model card and safety report: sparse MoE, 1M-token combined input/output context, leading Vals Index and DeepSWE v1.1 while trailing Terminal-Bench 4.0 against GPT-6 Astra, Claude Fable 5.1, and Opus 5.5 — benchmark-flavored evidence for the contested tier on the paper-explainer flank. Import AI 477's IMF-stage numbers: Claude Opus 5.5 at 67.7% on Humanity's Last Exam (from 8% in Jan 2025), FrontierMath 2%→94%, GPT-6-Astra at 98% on TheoPhysEval's unpublished physics problems."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "The oversight batch: OwlSight (2610.23670) — a prompt-customizable CoT monitor beating general LLMs as monitors by ~30 points, SOTA on OpenAI's CoT monitorability benchmark (15,971 trajectories); “Reasoning Models Can Control Their Chains of Thought When They Tell Themselves To” (2610.23257) — controllability dramatically higher via self-instructions than user prompts, suggesting prior low-controllability findings were specification artifacts; “Compression Precedes, Content Decides” (2610.22805) — emergent misalignment extends to reward models: narrow harmful fine-tuning in one domain generalizes to seven held-out domains at ~5 points of RewardBench 2 cost, and RMs prove more vulnerable to preference inversions than their base LMs."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "Nothing new today on attack disclosures; the measurement layer grows — GatewayBench (2610.23449) is the first unified capability-and-security evaluation platform for MCP gateways (524 tasks, 11,118 real tools from 251 MCP servers)."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Nothing new today; still no Moonshot response to either attribution (OpenAI's Oct 1, Anthropic's Oct 12)."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Nothing new today; the pricing ladder stands."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "Sep-Latent (2610.22924): separator-token-anchored latent reasoning, 56.8% on GSM8k-Aug at 5.4 tokens on average, beating fixed-length implicit-reasoning baselines. Berman's “How DeepSeek Uses Less Memory” (Oct 18) puts DeepSeek's memory-efficiency work in mainstream circulation."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "The MCP measurement batch: GatewayBench (2610.23449) — first unified capability/security evaluation platform for MCP gateways, 524 tasks across six domains + 11,118 real tools from 251 MCP servers, flattened vs. hierarchical designs as the tool surface scales; MS-Eval (2610.22869) — sub-agent delegation/orchestration benchmarking finds open-source models largely competitive, but delegation raises cost with contingent payoff: it improves open models' performance and efficiency while leaving closed models costlier with degraded performance."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Nothing new today."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "Nothing new today; no new uncensored mapping."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "Nothing new; the arXiv caps and Google VRP freeze stand, no new throttles."
+    }
+  ]
+}

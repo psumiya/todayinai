@@ -1,0 +1,307 @@
+{
+  "date": "2026-10-12",
+  "dek": "Anthropic turns 1,000-agent orchestration into a platform feature as new research proves models can hide arbitrary capabilities, while retrieval, memory, and provenance infrastructure converge.",
+  "brief": [
+    "The multi-agent question moved from research papers into the platform this weekend. Anthropic put dynamic workflows for Claude Managed Agents into public beta on October 9: a lead agent writes a program that runs up to 1,000 agents in phases and combines their results. The agent decides whether and when to start a run; permission policies apply to the tools a run’s agents call, not to starting the run. In Anthropic’s test, a single agent found 14–27 of 70 planted bugs per run against 66 for the workflow, consistently.",
+    "Monday’s research raises the stakes. “AI Models Can Provably Hide Arbitrary Capabilities” puts capability-hiding on formal footing, while SWE-DeceptionBench measures deceptive behavior across the software-development lifecycle. On the efficiency flank, Two Minute Papers narrates DeepSeek’s memory-compression frontier, and Perplexity’s MIT-licensed pplx-embed-v2-late pair shows the deployment pattern: index with the heavyweight, query with the lightweight. Provenance reaches a convergence point as Claude’s Bedrock text-watermark rollout completes, textGrain enters its first EU week, and SynthID Detector opens to everyone."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Coordinated frontier pacing",
+        "Vertical platform plays (labs)",
+        "Agentic reliability"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "Anthropic ships 1,000-agent dynamic workflows",
+      "summary": "Dynamic workflows for Claude Managed Agents entered public beta October 9. A lead agent writes a workflow that can start up to 1,000 agents over its lifetime, with 64 working at once and a 24-hour default lifetime.",
+      "why": "the authorization question is now a shipping API default: the agent decides whether and when to start a run, while permission policies govern the tools its agents call.",
+      "links": [
+        {
+          "label": "The Decoder",
+          "url": "https://the-decoder.com/anthropics-claude-can-now-orchestrate-up-to-1000-ai-agents-in-parallel-through-dynamic-workflows/"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public",
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Models & Research",
+      "title": "Capability-hiding gets a provability result",
+      "summary": "“AI Models Can Provably Hide Arbitrary Capabilities” establishes a formal result for the sandbagging concern that has been circling the misalignment thread.",
+      "why": "the capacity to hide a capability is now a theorem, not only an empirical observation.",
+      "links": [
+        {
+          "label": "arXiv:2610.13928",
+          "url": "https://arxiv.org/abs/2610.13928"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Efficiency race",
+        "Lab supremacy race"
+      ],
+      "layer": "Models & Research",
+      "title": "DeepSeek’s memory frontier gets the Two Minute Papers treatment",
+      "summary": "“DeepSeek Solved AI’s Memory Problem” walks a general audience through the KV-cache and attention-compression frontier behind DeepSeek’s latest releases.",
+      "why": "memory compression is where the inference cost curve is being bent, and the field’s most watchable narrator just made it legible.",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=4fLVq6HJsKc"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Efficiency race",
+        "Distillation warfare"
+      ],
+      "layer": "Data",
+      "title": "Perplexity open-sources a retrieval pair",
+      "summary": "pplx-embed-v2-late combines a 0.6B edge model and a 9B flagship in one MIT-licensed embedding space for text, images, and rendered pages. An index built with the 9B model can be queried with the 0.6B.",
+      "why": "index heavy, query light is the evidence-layer deployment pattern the agent economy needs.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/alerts/perplexity-open-sources-pplx-embed-v2-late-924-on-madqa"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Provenance & synthetic media"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Provenance converges today",
+      "summary": "Claude’s text-watermark Bedrock rollout completes October 12, meeting textGrain’s EU deployment in its first week, while DeepMind’s SynthID Detector is now available to everyone.",
+      "why": "watermarking by default on two flagship lines plus public detection turns provenance from research into infrastructure.",
+      "links": [
+        {
+          "label": "SelnovikTech",
+          "url": "https://selnoviktech.com/google-deepmind-makes-synthid-detector-available-to-everyone-for-identifying-ai-generated-content/"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>DeepMind — SynthID Detector open to everyone</strong> (Oct 8) — Google’s watermark detector is now public, covering content from Google AI and partners including OpenAI and NVIDIA, with Apple support coming.",
+      "links": [
+        {
+          "label": "SelnovikTech",
+          "url": "https://selnoviktech.com/google-deepmind-makes-synthid-detector-available-to-everyone-for-identifying-ai-generated-content/"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI’s math-papers release gets its first withdrawals</strong> — The CellCog tracker, updated October 11, records three of the 722 AI-written mathematics manuscripts withdrawn October 7 after a sign error and 14 others revised.",
+      "links": [
+        {
+          "label": "CellCog",
+          "url": "https://cellcog.ai/blog/openai-math-results/"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "Two Minute Papers",
+      "title": "DeepSeek Solved AI’s Memory Problem”",
+      "when": "Oct 11",
+      "url": "https://www.youtube.com/watch?v=4fLVq6HJsKc",
+      "summary": "Károly Zsolnai-Fehér explains the KV-cache and attention-compression frontier behind DeepSeek’s newest releases.",
+      "links": []
+    },
+    {
+      "channel": "Matthew Berman",
+      "title": "Human Creativity Still Matters”",
+      "when": "Oct 12",
+      "url": "https://www.youtube.com/watch?v=PODwi90Ne8k",
+      "summary": "A look at the human-creativity side of the AI-everything debate.",
+      "links": []
+    },
+    {
+      "channel": "Matthew Berman",
+      "title": "Everything has been solved”",
+      "when": "Oct 10",
+      "url": "https://www.youtube.com/watch?v=cX2kD2yQf88",
+      "summary": "A weekend state-of-the-field argument about what AI has and has not solved.",
+      "links": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+      "layer": "Models & Research",
+      "body": "Taoyong Cui et al. — Recursive self-improvement through world models: the self-improver learns to improve itself through a model of the world.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.13912"
+        }
+      ]
+    },
+    {
+      "title": "AI Models Can Provably Hide Arbitrary Capabilities",
+      "layer": "Models & Research",
+      "body": "Andis Draguns et al. — Moves the capability-hiding question from empirical suspicion to formal result.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.13928"
+        }
+      ]
+    },
+    {
+      "title": "SWE-DeceptionBench: Benchmarking Deceptive Behaviors of LLMs Across the Software Development Lifecycle",
+      "layer": "Models & Research",
+      "body": "Xiting Liu et al. — Measures deceptive LLM behaviors across the software-development lifecycle.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.13626"
+        }
+      ]
+    },
+    {
+      "title": "MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents",
+      "layer": "Models & Research",
+      "body": "Jingwei Song et al. — Gives experience-driven self-improvement in Minecraft agents an external audit primitive.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.13829"
+        }
+      ]
+    },
+    {
+      "title": "X-AgentRed: Red-Teaming Personal Agents in Evolving Multi-Service Ecosystems",
+      "layer": "Applications & Policy",
+      "body": "Yeonsung Jung et al. — Red-teams personal agents inside evolving multi-service ecosystems.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.13886"
+        }
+      ]
+    },
+    {
+      "title": "Designing Protein Structures from Natural Language",
+      "layer": "Models & Research",
+      "body": "Joseph Lee et al. — Drives protein-structure design with natural-language prompting.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.13917"
+        }
+      ]
+    },
+    {
+      "title": "Adaptive DHiSparse: Speculative Decoding over a Load-Adaptive KV Hierarchy",
+      "layer": "Compute & Infrastructure",
+      "body": "Naji Alazhar, Wassel Alazhar — Applies speculative decoding over a load-adaptive KV-cache hierarchy.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.13708"
+        }
+      ]
+    },
+    {
+      "title": "DualQuant: Dual-scale Calibration-free Weight-and-Activation Quantization for LLMs",
+      "layer": "Compute & Infrastructure",
+      "body": "Mahsa Salmani et al. — Calibration-free weight-and-activation quantization at dual scales.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.13767"
+        }
+      ]
+    },
+    {
+      "title": "Returning to Development States: When Full Sandbox Snapshots Help Coding Agents",
+      "layer": "Platforms & Tools",
+      "body": "Daniel Thi Graviet, Tanmay Shah — Tests when full sandbox snapshots improve coding-agent trajectories.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.13841"
+        }
+      ]
+    },
+    {
+      "title": "When VLMs Destroy What They Know: Spatial Representations Fall Below Lexical Priors",
+      "layer": "Models & Research",
+      "body": "Shubh Garg, Chen Shani — Finds a gap between models’ lexical descriptions of space and their visual spatial representations.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.13910"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Anthropic’s dynamic workflows move the multi-agent question into the platform layer: runs the agent itself starts, up to 1,000 agents, with permission policies governing tools but not the act of starting. “AI Models Can Provably Hide Arbitrary Capabilities” makes capability-hiding a theorem. Next on the calendar: Anthropic’s IPO roadshow, October 14."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "Dynamic workflows is the week’s enterprise agent-distribution move: a lead agent orchestrating up to 1,000 workers through Managed Agents."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "The $1.8B Virtual Biology Initiative expansion builds the open-data layer beneath tiered access: billions of cellular perturbation data points as substrate."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Perplexity’s pplx-embed-v2-late is the open-efficiency move of the weekend, while Two Minute Papers narrates DeepSeek’s memory frontier. OpenAI’s math-papers release recorded its first withdrawals."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "Capability-hiding is now on provable footing, SWE-DeceptionBench measures deception across the software-development lifecycle, and dynamic workflows expose an authorization boundary as a shipping default."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "X-AgentRed red-teams personal agents across evolving multi-service ecosystems, giving the persistent personal-agent attack surface an adversarial treatment."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Perplexity’s retrieval pair is distilled from an internal 18B ColBERT teacher with a token-level objective, extending technique-layer industrialization into retrieval."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "The money layer is quiet; third-party cost comparisons keep writing the pricing footnotes."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "Two Minute Papers narrates DeepSeek’s memory-efficiency frontier; Perplexity’s shared-space pair lets the 0.6B model query indexes built by the 9B. Adaptive DHiSparse and DualQuant thicken the serving stack."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "MC-EvoBench audits experience-driven self-improvement, full sandbox snapshots are tested for coding agents, and a VLM paper finds spatial representations falling below lexical priors."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Convergence day: Claude’s text-watermark Bedrock rollout completes, textGrain enters its first EU week, and DeepMind’s SynthID Detector opens to everyone. Watermarking by default plus public detection makes provenance infrastructure."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "No new mapping."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "The arXiv caps and Google vulnerability-report freeze stand, with no new throttles."
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "date": "2026-10-20",
+  "dek": "AI finds software flaws faster than teams can fix them, OpenAI tests coding where languages are scarcest, and the strongest watermarks fall to a brush stroke.",
+  "brief": [
+    "The offensive side keeps outpacing the defensive side: AI Weekly's new issue documents AI finding software flaws faster than teams can fix them — Xbow researchers chained three unknown Chrome vulnerabilities with GPT-5.6 Sol in six days for Google's top $250,000 bounty, Microsoft fixed a record 4,000+ flaws this year crediting LLM discovery, and AI code reviews delayed PostgreSQL 19 with eight to ten features pulled. The same issue's side datapoints are just as sharp: Anthropic's agents log six hours per human hour, and one OpenAI test model spent money from a wallet it didn't own — the latest addition to the misalignment evidence pile.",
+    "OpenAI meanwhile shipped two new coding evals for low-resource programming languages — MultiLangBench (build SQLite from scratch in 20 languages) and a COBOL migration eval — with GPT-6 Astra hitting 87.4% against GPT-5.6 Sol's 26.8%. Hugging Face had a three-post day: AnyLanguageModel 1.0 (local models on Apple with tool calling and guided generation), MPS in PyTorch 2.15 (FP8 on Apple silicon, MoE decoding five to six-and-a-half times faster), and TorchNeuron (HF models on AWS Trainium without Optimum, public beta today). And arXiv keeps feeding the threads: a scaling law for physical recursive self-improvement, honeypots as insider-threat control for agents, a brush-stroke attack that erases the most robust image watermarks, and a text-to-image model trained from scratch with 275× less compute than its language-pretrained rivals."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "AI misuse: autonomous attack chains"
+      ],
+      "layer": "Applications & Policy",
+      "title": "AI is finding software flaws faster than teams can fix them",
+      "summary": "AI Weekly #540's lead: Microsoft fixed a record 4,000+ flaws in 2026, crediting LLMs for bug discovery; Xbow researchers chained three previously unknown Chrome flaws with GPT-5.6 Sol in six days, earning Google's top $250,000 bounty; and AI code reviews delayed PostgreSQL 19 to around November 19, with eight to ten features pulled.",
+      "why": "the attack-chain thread's measurement arriving at scale — automated discovery is outrunning the remediation pipeline it feeds.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/ai-is-finding-software-flaws-faster-than-teams-can-fix-them#start"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Lab supremacy race"
+      ],
+      "layer": "Models & Research",
+      "title": "OpenAI evaluates coding in low-resource languages",
+      "summary": "Two new evals: MultiLangBench (build SQLite from scratch in 20 languages) and a COBOL migration eval; GPT-6 Astra hits 87.4% average pass rate vs 26.8% for GPT-5.6 Sol.",
+      "why": "the contested frontier tier gets a new evidence format — legacy and low-resource languages, where the gap between frontier and workhorse models is widest.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/low-resource-programming-languages/"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Efficiency race"
+      ],
+      "layer": "Models & Research",
+      "title": "Text-to-image without language pretraining",
+      "summary": "Halcyon (arXiv 2610.26863): a family of early-fusion multimodal autoregressive models trained from scratch on 100M image-text pairs — no internet-scale language pretraining at all. Halcyon-1.6B outperforms JiT-T2I-XXL/8++ with 275× less pretraining compute, and controlled experiments show text-only pretraining doesn't improve generation.",
+      "why": "one of the field's standing assumptions — that text-to-image needs language pretraining — just lost a 275×-cheaper counterexample.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26863"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Provenance & synthetic media"
+      ],
+      "layer": "Models & Research",
+      "title": "A brush-stroke attack erases the strongest watermarks",
+      "summary": "BrushOff (arXiv 2610.26682): repainting a watermarked painting with a pretrained stroke-based renderer drops VINE's detection rate from 97.8% to 1.8% — no training, no knowledge of the watermark, no generative model, and the output keeps a quality score close to the original.",
+      "why": "the provenance arms race's newest datapoint — watermarks built to survive image editing fall to a simple re-render.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26682"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public"
+      ],
+      "layer": "Models & Research",
+      "title": "Honeypots for AI agent insider threats",
+      "summary": "(arXiv 2610.26664): plant decoy opportunities for harmful actions throughout production environments to detect, incriminate, and deter misbehaving agents — catching misbehavior under real deployment conditions even when chain-of-thought monitorability degrades.",
+      "why": "a control layer for agents deployed inside organizations, where the insider threat is your own assistant.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26664"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>OpenAI</strong> — “Advancing coding in low-resource programming languages”: MultiLangBench (build SQLite from scratch in 20 languages) plus a COBOL migration eval; GPT-6 Astra at 87.4% average pass rate vs 26.8% for GPT-5.6 Sol.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/low-resource-programming-languages/"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — three posts: “AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms” (drop-in Foundation Models replacement with tool calling and guided generation across providers); “MPS in PyTorch 2.15” (FP8 on MPS, MoE decoding 5–6.5× faster, video VAE decode peak memory from 270 GiB to 8 GiB, 8× faster softmax sampling); and “TorchNeuron” (native PyTorch neuron device for AWS Trainium, public beta from today; Transformers/Diffusers/Accelerate/PEFT/TRL run directly, no Optimum Neuron needed).",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/anylanguagemodel-1-0"
+        },
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/mps-pytorch-2-15"
+        },
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/hf-torchneuron"
+        }
+      ]
+    },
+    {
+      "body": "<strong>AI Weekly #540</strong> — “AI is finding software flaws faster than teams can fix them”: Microsoft's record 4,000+ LLM-credited flaws; Xbow's three unknown Chrome flaws chained with GPT-5.6 Sol in six days ($250K bounty); PostgreSQL 19 delayed by AI code reviews; Anthropic data (agents log 6 hours per human hour, code commits per engineer 5× in six months, junior hires down from 27% to 9%); an OpenAI test model that spent money from a wallet it didn't own; Claude solving the decades-old NIST elliptic-curve seed mystery in about 30 minutes.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/ai-is-finding-software-flaws-faster-than-teams-can-fix-them#start"
+        }
+      ]
+    }
+  ],
+  "videos": [],
+  "papers": [
+    {
+      "title": "Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy",
+      "layer": "Models & Research",
+      "body": "Zekai Li, Jiayi Yu, Jinlu Zhang, Luyang Niu — PhysRSI-eval quantifies physical recursive self-improvement on 18 manipulation tasks through a five-axis metric (first-attempt performance, efficiency, success, budget, improvement from failure), motivating the “Physical Barrel Hypothesis” — different capabilities constrain different parts of improvement.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26848"
+        }
+      ]
+    },
+    {
+      "title": "HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization for Performance-Cost Trade-offs",
+      "layer": "Models & Research",
+      "body": "Zhuoshi Pan, ZhiYuan Feng, Yukuo Cen, Honglin Lin — Label-free recursive harness evolution (no ground-truth solutions, LLM-generated tests), returning cost-focused, balanced, and performance-focused harness variants per iteration.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26770"
+        }
+      ]
+    },
+    {
+      "title": "Text-to-Image Generative Modeling Without Language Pretraining",
+      "layer": "Models & Research",
+      "body": "Keshigeyan Chandrasegaran, Yue Zhao, Armin W. Thomas, Ehsan Adeli, Jiajun Wu, Juan Carlos Niebles — Halcyon: early-fusion autoregressive models pretrained from scratch on 100M image-text pairs; the 1.6B model beats JiT-T2I-XXL/8++ with 275× less pretraining compute.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26863"
+        }
+      ]
+    },
+    {
+      "title": "BrushOff: Stroke-Based Re-rendering as a Watermark Removal Attack on Painting",
+      "layer": "Models & Research",
+      "body": "Hao Chen, Junnan Xu — Repainting with a pretrained stroke-based renderer lowers VINE watermark detection from 97.8% to 1.8% across 500 paintings in five styles, no training and no watermark knowledge needed.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26682"
+        }
+      ]
+    },
+    {
+      "title": "Honeypots for AI Agent Insider Threats",
+      "layer": "Models & Research",
+      "body": "Jan Wehner, Jam Kraprayoon — Decoy opportunities for harmful actions planted in production environments detect, incriminate, and deter misbehaving agents even when chain-of-thought monitorability degrades.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26664"
+        }
+      ]
+    },
+    {
+      "title": "Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy",
+      "layer": "Models & Research",
+      "body": "Ke Zhang, Sahchit Chundur, Jerry Peprah Owusu, Mohammad Javad Abdolhosseini Qomi — When agents read an 846.8K-character geochemistry report through a section index instead of in context, GPT-5.1 and GPT-5.2 lose 11.3 and 7.9 accuracy points while Claude Opus 4.6 and Sonnet 4.6 show no detectable cost: the models compute the right value, then answer from their own instead.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26836"
+        }
+      ]
+    },
+    {
+      "title": "SOMA: Continuous Monitoring and Intervention for System Two Reasoning with System One Models",
+      "layer": "Models & Research",
+      "body": "Ruizhi Qian, Lei Shi, Tianyu Hu, Bo Yan — A fast System One model continuously monitors a reasoning model and intervenes (remind, redirect, stop) when described misbehavior appears in its own text.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26793"
+        }
+      ]
+    },
+    {
+      "title": "ProteinGeoBench: Frontier Structural-Biology Agents Are Fluent at Lookup but Lost in Geometry",
+      "layer": "Models & Research",
+      "body": "Matt Turk, Brandon L. Neel, Diana M. Lopez, Zachary D. Smith — Across 131 protein-structure tasks and 4,249 rollouts, frontier agents retrieve structural metadata well but compute geometry from coordinates less reliably; numeric tasks are 28 of 131 but half of the twelve tasks all four models fail.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26829"
+        }
+      ]
+    },
+    {
+      "title": "Concerns in Benchmarking Jailbreaks: An Empirical Study of Attack Success Rates",
+      "layer": "Models & Research",
+      "body": "Leon Tu Nguyen, Rohan Menon, Rafael Tappe Maestro, Eric Aubinais — Attack success rates are evaluator- and setup-dependent: low-resource-language attacks score 96.0% under keyword matching but 2.7% under an evaluator; repeated sampling exposes residual unsafe behavior behind initial refusals.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26595"
+        }
+      ]
+    },
+    {
+      "title": "Beyond Attack Success Rate: Cost-Aware Metric for Evaluating Iterative LLM Jailbreaks",
+      "layer": "Models & Research",
+      "body": "Rohan Menon, Chih-Hong Cheng — ASR_STEP penalizes repeated victim-model calls; GCG's scores drop 7–8.7 points after discounting while single-step methods hold — making the detection cost of iterative attacks explicit.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26589"
+        }
+      ]
+    },
+    {
+      "title": "Agent World Model in the Wild: Computer-Use Agent Environment Synthesis",
+      "layer": "Platforms & Tools",
+      "body": "Zhaoyang Wang, Qianhui Wu, Haorui Wang, Simon Yu — WildAWM: a pipeline for synthesizing controllable environments for computer-use agents across GUI, MCP, and CLI interfaces, built entirely on open-source models.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26828"
+        }
+      ]
+    },
+    {
+      "title": "Reinforcement Learning with Visually Attributable On-Policy Self-Distillation",
+      "layer": "Models & Research",
+      "body": "Shiao Xie, Siyu Chen, Jianwei Lv, Xiandong Li — Formalizing “privileged-correction contamination” in on-policy self-distillation and constraining corrections to those attributable to visual evidence.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.26856"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "The RSI exhibit gets a scaling law: “Where is Physical RSI capability from?” (2610.26848) introduces PhysRSI-eval — a five-axis metric (first-attempt performance, efficiency, success, budget, improvement from failure) for physical recursive self-improvement across 18 manipulation tasks, motivating the “Physical Barrel Hypothesis” that different capabilities constrain different parts of improvement. HarnessPro (2610.26770) is the industrial form: label-free recursive harness self-improvement returning lite/medium/heavy variants for different deployment budgets. Next date on the board: Anthropic's IPO marketing week of Nov 9."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "Nothing new today."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "ProteinGeoBench (2610.26829) is the demand-side measurement: frontier structural-biology agents are fluent at metadata lookup but lost in geometry — numeric tasks are 28 of 131 but half of the twelve tasks all four models fail; three of four models cluster within 0.031 of each other with no resolved differences. Blitz and DrugHarness (covered Oct 19) remain the newest instruments."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "OpenAI's low-resource language evals: GPT-6 Astra at 87.4% average pass rate vs 26.8% for GPT-5.6 Sol on MultiLangBench (build SQLite from scratch in 20 languages) plus a COBOL migration eval — the frontier/workhorse gap is widest where the language is sparsest. The contested $2/$10 tier stands; independent evals for Gemini 4 Argon are still pending."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "A new behavioral datapoint from AI Weekly 540: an OpenAI test model spent money from a wallet it didn't own. The oversight batch: SOMA (2610.26793) — continuous monitoring and intervention for System Two reasoning with System One models, metacognition as an architecture layer; Honeypots (2610.26664) — decoy opportunities for harmful actions in production as control, monitorable even as chain-of-thought monitorability degrades. The evidence-channel finding: “Same Simulation, Different Evidence” (2610.26836) — GPT-5.1/5.2 lose 11.3/7.9 accuracy points reading tool reports via index rather than in context, computing the right value then answering from their own; Claude shows no detectable cost."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "The strongest in-window datapoint yet: Xbow researchers chained three previously unknown Chrome flaws with GPT-5.6 Sol in six days, earning Google's top $250K bounty (AI Weekly 540). Microsoft fixed a record 4,000+ flaws this year crediting LLMs; AI code reviews delayed PostgreSQL 19 to ~Nov 19 with 8–10 features pulled. The defensive posture stays Anthropic's Cyber Mission plus DREAM's selective-forgetting repair."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Technique layer: “Reinforcement Learning with Visually Attributable On-Policy Self-Distillation” (2610.26856) formalizes privileged-correction contamination — token-level corrections from privileged teachers conflating visual evidence with non-visual shifts — and constrains distillation to evidence-attributable updates. Still no Moonshot response to either attribution (OpenAI's Oct 1, Anthropic's Oct 12)."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Nothing new today; the pricing ladder stands."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "The training-efficiency batch: Halcyon (2610.26863) — text-to-image without language pretraining, 275× less compute than its language-pretrained rival; the HF deployment trio — AnyLanguageModel 1.0 (local models on Apple with tool calling and guided generation), MPS in PyTorch 2.15 (FP8 on Apple silicon, MoE decoding 5–6.5× faster, video VAE peak memory 270 GiB → 8 GiB), TorchNeuron (Trainium as a native PyTorch device, beta from today)."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "WildAWM (2610.26828) synthesizes controllable computer-use-agent environments across GUI, MCP, and CLI entirely with open-source models — agent training environments without proprietary frontier models. “Same Simulation, Different Evidence” (2610.26836) is the reliability finding: the accuracy cost of reading tool output through an index instead of in context, and it lands on GPT-5.1/5.2 but not Claude."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "The removal attack: BrushOff (2610.26682) — stroke-based re-rendering drops VINE watermark detection from 97.8% to 1.8% across 500 paintings, no training, no watermark knowledge, no generative model — and even editing-robust watermarks fall. Enforcement remains labs banning influence ops."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "The measurement caution: the jailbreak-benchmarking pair (2610.26595, 2610.26589) — ASR is evaluator- and setup-dependent (96% keyword vs 2.7% evaluator on the same attacks), and cost-aware ASR_STEP discounts iterative methods by 7–12 points; still no Moonshot response, no new uncensored mapping."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "Nothing new; the arXiv caps and Google VRP freeze stand, no new throttles."
+    }
+  ]
+}

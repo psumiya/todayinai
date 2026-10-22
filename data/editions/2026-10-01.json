@@ -1,0 +1,305 @@
+{
+  "date": "2026-10-01",
+  "dek": "Google brings a gated frontier model to the $2/$10 tier while Washington pairs voluntary self-policing with an FTC product-risk probe.",
+  "brief": [
+    "Three frontier models now sit at the same price. Google DeepMind launched <strong>Gemini 4 Argon</strong> on September 30 — its first Gemini 4-series model — at $2/$10 per million tokens, exactly the price point Anthropic staked out with Sonnet 5.5 and OpenAI with GPT-6.1 Sol. Argon’s first users won’t be developers or consumers, though: vetted cybersecurity specialists and US government partners through the Fairwind Program, a capability-gating rollout that treats a frontier launch as a security instrument first. Google claims 77.9% on DeepSWE v1.1 and benchmark wins across a dozen-plus tests — its own numbers, self-reported — behind a 1M-token output ceiling.",
+    "Washington had its own governance theater the same day. After lunch with more than twenty AI executives in the White House East Room, Trump announced a voluntary two-page “AI Agreement” signed by six companies — Anthropic, OpenAI, Google, Meta, xAI, and NVIDIA — committing to multi-layered controls, external audits, and independent board committees. It has no enforcement mechanism, no disclosure requirement, and no deadlines, and the companies choose their own auditors. Critics call it grading one’s own homework; the FT notes it was drafted hastily in the East Room. Huang and Zuckerberg were reportedly the key drivers against stronger proposals. One report adds a “Super Intelligence” rebranding executive order — thinly sourced, treat as unconfirmed.",
+    "The enforcement arm moved separately: the FTC confirmed a product-risk investigation into OpenAI, Anthropic, and unnamed others on September 30, with Reuters reporting planned information demands and executive testimony including evaluation firm METR. Not proven subpoenas, not a violation finding — but the regulator is now in the room.",
+    "And in Canberra, the Senate inquiry’s October 1 hearing on the Medicare-systems incident sits today — without Altman or Amodei, both of whom declined on late notice. The political track keeps learning what an invitation compels: not much."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Lab supremacy race",
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Models & Research",
+      "title": "Gemini 4 Argon: Google’s frontier entry at the contested price point",
+      "summary": "DeepMind’s September 30 launch is the first Gemini 4 model: $2/$10 per million tokens, a 1M-token output limit, and a claimed 77.9% on DeepSWE v1.1 — all self-reported. First access goes to vetted cyber defenders and US government partners through the Fairwind Program, not the public.",
+      "why": "the mid-tier price war now has three occupants at identical list price, and the gated rollout makes capability-gating — not open release — the default posture for frontier launches. Treat benchmark claims as self-reported until independent evaluations land.",
+      "links": [
+        {
+          "label": "Google",
+          "url": "https://blog.google/intl/en-in/products/gemini-4-argon-our-next-era-of-frontier-intelligence/"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Applications & Policy",
+      "title": "White House voluntary AI accord: self-policing, signed",
+      "summary": "Trump and the leaders of Anthropic, OpenAI, Google, Meta, xAI, and NVIDIA signed a two-page voluntary agreement on September 30: multi-layered controls, external audits, and independent board committees — with no enforcement, no disclosure requirement, no deadlines, and self-chosen auditors.",
+      "why": "the coordination thread is now official — voluntary, industry-led, and shaped by the companies it governs. Huang and Zuckerberg reportedly drove the weak form; Huang publicly questioned Amodei’s risk posture at the table.",
+      "links": [
+        {
+          "label": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/09/30/openai-google-and-meta-pledge-outside-ai-audits-under-voluntary-white-house-deal"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public"
+      ],
+      "layer": "Applications & Policy",
+      "title": "FTC opens product-risk probe into OpenAI, Anthropic, and others",
+      "summary": "The FTC confirmed the investigation on September 30; Reuters reports planned information demands and executive testimony, including evaluation firm METR.",
+      "why": "this is the regulatory counterpart to the voluntary accord — the same day the industry signs self-policing, the regulator opens a product-safety file. Not proven subpoenas, not a violation finding.",
+      "links": [
+        {
+          "label": "Archynetys",
+          "url": "https://www.archynetys.com/trend/2026-09-30/ftc-opens-probe-into-ai-giants-including-anthropic-and-openai"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Distillation warfare"
+      ],
+      "layer": "Models & Research",
+      "title": "OpenAI names a distillation adversary: Moonshot-linked campaign disrupted",
+      "summary": "OpenAI says it disrupted a coordinated model-distillation campaign first seen in early July and peaking at roughly 16,000 extraction requests on July 24–25. The company attributes a core cluster to individuals linked to Moonshot AI’s Kimi; accounts were banned and mitigations deployed.",
+      "why": "the industrial distillation-theft story now has a named adversary from a lab — and Moonshot was already implicated in Anthropic’s September threat report. Watch for a response.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Canberra hearing sits today — without the CEOs",
+      "summary": "The Senate inquiry’s October 1 hearing on the Medicare-systems incident goes ahead in Canberra; Altman and Amodei declined on late notice. Anthropic is seeking another date, while OpenAI sends strategy chief Jason Kwon to a separate Sydney committee on October 6.",
+      "why": "the first foreign-government questioning of lab CEOs over agent behavior proceeds as a CEO-less hearing — a data point on what invitations compel.",
+      "links": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/legal/litigation/anthropic-openai-will-not-attend-australian-senate-ai-hearing-october-1-2026-09-28/"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>Google DeepMind — “Gemini 4 Argon: our next era of frontier intelligence”</strong> (Sep 30) — The first Gemini 4-series model, with a 1M-token output ceiling for long multi-step reasoning, a claimed 77.9% on DeepSWE v1.1, $2/$10 introductory pricing, and a phased rollout starting with the Fairwind Program’s cyber defenders and US government partners.",
+      "links": [
+        {
+          "label": "Google",
+          "url": "https://blog.google/intl/en-in/products/gemini-4-argon-our-next-era-of-frontier-intelligence/"
+        }
+      ]
+    },
+    {
+      "body": "<strong>DeepMind — “Introducing SynthID Bio”</strong> (Sep 30) — Watermarking for AI-designed protein sequences and predicted structures, paired with a Nature paper; wet-lab tests show watermarked binders match unwatermarked ones on function.",
+      "links": [
+        {
+          "label": "DeepMind",
+          "url": "https://deepmind.google/blog/introducing-synthid-bio/"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI — “Disrupting a coordinated model-distillation campaign”</strong> (Sep 30) — A coordinated adversarial-distillation campaign targeting protected model reasoning, with a core cluster linked to Moonshot AI individuals; accounts were banned and mitigations deployed.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI — “Helping small businesses put AI to work”</strong> (Sep 30) — A partnership with America’s SBDC, with 150 advisors trained and more than 1,000 small businesses targeted, plus an OpenAI report claiming roughly 4 million small-firm employees used its tools during September 9–15.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work/"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Anthropic — “Barclays scales Claude”</strong> (Oct 1) — Barclays expands Claude across software development, a Colleague Knowledge Assistant used by more than 16,000 colleagues, and Global Markets email routing at roughly 120,000 emails per day, targeting Claude Code for half of its developers by the end of 2026.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/barclays-scales-claude"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face — “Open TTS Leaderboard”</strong> (Sep 30) — A standardized objective-metrics leaderboard for open-source multilingual text-to-speech and voice cloning, addressing fragmented evaluation across more than 8,000 Hub models.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/open-tts-leaderboard"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Anthropic Research — “Can we predict the jobs robots will do?”</strong> (Sep 30) — A robot labor-exposure index from Anthropic’s research blog: the jobs-automation question with the lab’s own measurement instrument.",
+      "links": []
+    }
+  ],
+  "videos": [],
+  "papers": [
+    {
+      "title": "Linguistic Loopholes in LLM Unlearning: From a 174-Language Benchmark to Coverage-Aware Unlearning",
+      "layer": "Models & Research",
+      "body": "Tyler Skow, Shravan Chaudhari, Rama Chellappa, Abhay Yadav et al. — Unlearning a fact in one language does not remove it in others: changing the query or answer language reopens “forgotten” knowledge; a 174-language benchmark plus coverage-aware unlearning offers a fix.",
+      "links": [
+        {
+          "label": "arXiv:2609.40286",
+          "url": "https://arxiv.org/abs/2609.40286"
+        }
+      ]
+    },
+    {
+      "title": "Turbo Harness: Instance-Adaptive Harness Optimization",
+      "layer": "Platforms & Tools",
+      "body": "Tunyu Zhang, Hao Wang, Kai Xu, Dimitris N. Metaxas et al. — Automates harness search per task instance instead of relying on one global harness — a step toward agents that recursively self-improve their own scaffolding.",
+      "links": [
+        {
+          "label": "arXiv:2609.40330",
+          "url": "https://arxiv.org/abs/2609.40330"
+        }
+      ]
+    },
+    {
+      "title": "Cogentic: Multi-Agent Orchestration for Automated Proof Discovery",
+      "layer": "Models & Research",
+      "body": "Yang Cai, Vineet Gupta, Yanchen Jiang, Christopher Liaw et al. — A multi-agent harness for automated proof discovery on open research problems, exploring competing conjectures beyond single-shot generation.",
+      "links": [
+        {
+          "label": "arXiv:2609.40324",
+          "url": "https://arxiv.org/abs/2609.40324"
+        }
+      ]
+    },
+    {
+      "title": "PhantomEnvironments: Training LLM Agents in Fictional Worlds",
+      "layer": "Models & Research",
+      "body": "Anmol Kabra, Swathi Saravana Selvam, Albert Gong, Chao Wan et al. — Reinforcement-learning environments built as fictional worlds, with verifiable rewards, long-horizon interaction, and cheap scaling without human-curated environments.",
+      "links": [
+        {
+          "label": "arXiv:2609.40221",
+          "url": "https://arxiv.org/abs/2609.40221"
+        }
+      ]
+    },
+    {
+      "title": "cua-speedrun: Standardized Benchmarking of the Speed of Computer-Use Agents",
+      "layer": "Models & Research",
+      "body": "Pranjal Aggarwal, Lawrence Keunho Jang, Sean Welleck, Daniel Fried et al. — Computer-use agents beat humans on capability benchmarks, but speed has gone largely unmeasured; this supplies a standardized benchmark for the deployment-readiness gap.",
+      "links": [
+        {
+          "label": "arXiv:2609.40284",
+          "url": "https://arxiv.org/abs/2609.40284"
+        }
+      ]
+    },
+    {
+      "title": "How Much Is an AI Token Worth? Scaling Laws for Wild AI-Generated Web Text",
+      "layer": "Data",
+      "body": "Jenna Russell, Ben Glickenhaus, Katherine Thai, John Wieting et al. — After FineWeb filtering, 27.5% of June 2026 web tokens are AI-generated per Pangram, rising to 31.1% by August — the training corpus is now measurably synthetic.",
+      "links": [
+        {
+          "label": "arXiv:2609.40295",
+          "url": "https://arxiv.org/abs/2609.40295"
+        }
+      ]
+    },
+    {
+      "title": "Removing Timing Shortcuts Improves Non-Invasive Brain-to-Text",
+      "layer": "Models & Research",
+      "body": "Dulhan Jayalath, Oiwi Parker Jones — Reported gains in decoding words from non-invasive brain recordings reproduce without any brain data; timing shortcuts, not the neural signal, were doing the work.",
+      "links": [
+        {
+          "label": "arXiv:2609.40359",
+          "url": "https://arxiv.org/abs/2609.40359"
+        }
+      ]
+    },
+    {
+      "title": "PivotOPD: Learning to Recover from Pivotal Mistakes in Multi-Turn Agents",
+      "layer": "Models & Research",
+      "body": "Yinghui He, Yapei Chang, Khushi Bhardwaj, Daniele Molinari et al. — On-policy distillation for multi-turn agents that learns to recover from pivotal mistakes, where early errors compound across turns.",
+      "links": [
+        {
+          "label": "arXiv:2609.40285",
+          "url": "https://arxiv.org/abs/2609.40285"
+        }
+      ]
+    },
+    {
+      "title": "EvoDuet: Bilevel Co-Evolution of Web Searching and Task Solving for Scientific Discovery",
+      "layer": "Models & Research",
+      "body": "Young-Jun Lee, Jinheon Baek, Soyeong Jeong, Minki Kang et al. — Co-evolves web search and task solving so the agent stops retrieving the same pages as its solutions change — search that adapts to the science.",
+      "links": [
+        {
+          "label": "arXiv:2609.40340",
+          "url": "https://arxiv.org/abs/2609.40340"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Voluntary coordination went to the White House: Trump signed a two-page voluntary “AI Agreement” with six companies on September 30 — multi-layered controls, external audits, independent board committees; non-binding, no enforcement, no deadlines, and self-chosen auditors. The same day, Google gated Gemini 4 Argon to vetted cyber defenders and US government partners through the Fairwind Program. Canberra’s hearing sits today without either CEO."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Gemini 4 Argon makes the contested tier a three-way fight at $2/$10: Sonnet 5.5, GPT-6.1 Sol, and now Google’s first Gemini 4 model, with a 1M-token output ceiling and a self-reported 77.9% on DeepSWE v1.1. Independent evaluations have not landed for any of the three at this tier."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "The FTC confirmed a product-risk investigation of OpenAI, Anthropic, and unnamed others; Reuters reports planned information demands and executive testimony including METR — not proven subpoenas, not a violation finding. Canberra’s hearing sits today without the CEOs. “Linguistic Loopholes in LLM Unlearning” shows that unlearning a fact in one language does not remove it in others."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "Quiet on new incidents. Fairwind-gated Argon — cyber defenders first — is the deployment-side defensive posture; the accord’s “multi-layered controls” remain self-attested."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "OpenAI names the adversary: a coordinated adversarial-distillation campaign, first seen in early July and peaking near 16,000 extraction requests on July 24–25, with a core cluster attributed to individuals linked to Moonshot AI. Accounts were banned and mitigations deployed. It is the first named-and-shamed campaign from a lab."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "The harness stack thickens: Turbo Harness, PivotOPD, Cogentic, PhantomEnvironments, EvoDuet, and Semifactual Credit-Augmented PO. cua-speedrun standardizes speed benchmarking for computer-use agents; “Removing Timing Shortcuts” is the useful negative result, showing brain-to-text gains that reproduce without brain data."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "Quiet on technique; the product layer got its third $2/$10 occupant in Gemini 4 Argon."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "SynthID Bio watermarks AI-designed protein sequences and predicted structures; wet-lab tests show watermarked binders match unwatermarked ones on function. “How Much Is an AI Token Worth?” measures the other side: 27.5% of June 2026 web tokens are AI-generated per Pangram, rising to 31.1% by August."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "Barclays scales Claude across software development, a Colleague Knowledge Assistant used by more than 16,000 colleagues, and Global Markets email routing at roughly 120,000 emails per day, targeting Claude Code for half of its developers by the end of 2026. OpenAI’s SBDC partnership is the long-tail version of the same move."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "The small-business push: an SBDC partnership plus a report claiming roughly 4 million small-firm employees used OpenAI tools during September 9–15 — OpenAI’s numbers. Long-tail subscription capture sits alongside the Pro-tier persistent-agent draw."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "SynthID Bio is the thread’s new instrument: watermarking for AI-designed proteins and binders as the provenance layer for bio-capability deployment. Tiering-by-capability is Anthropic’s life-sciences-lab story; watermarking is DeepMind’s answer to the dual-use question."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "Quiet. Hugging Face’s Open TTS Leaderboard is the adjacent data point: more than 8,000 open TTS models getting standardized evaluation — the open ecosystem growing up, not the unfiltered kind."
+    }
+  ]
+}

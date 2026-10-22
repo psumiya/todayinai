@@ -1,0 +1,46 @@
+name: Daily edition
+
+on:
+  workflow_dispatch: {}
+  # Off until you turn it on. Uncomment to run daily at 07:43 Pacific (14:43 UTC during PDT).
+  # schedule:
+  #   - cron: "43 14 * * *"
+
+permissions:
+  contents: write   # commit the new edition back to the repo
+  id-token: write   # OIDC role for S3; no long-lived AWS keys
+
+concurrency:
+  group: daily-edition
+  cancel-in-progress: false
+
+jobs:
+  edition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - name: Generate edition
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m newsletter.run
+      - name: Commit data
+        run: |
+          git config user.name "today-in-ai-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data logs
+          git diff --cached --quiet || git commit -m "Edition $(TZ=America/Los_Angeles date +%F)"
+          git push
+      - run: python -m newsletter.build --strict
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION || 'us-west-2' }}
+      - name: Deploy
+        env:
+          S3_BUCKET: ${{ vars.S3_BUCKET }}
+          CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}
+        run: ./deploy.sh

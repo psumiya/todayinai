@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-18",
+  "dek": "Gemini 4 Argon spends the weekend building app clones, a terminal agent rewrites itself into existence, and the reliability benchmarks keep finding the gaps.",
+  "brief": [
+    "Google's Gemini 4 Argon spent the weekend writing software: two new Matthew Berman videos have it shipping a playable Fall Guys clone and a functional Excel clone in about twenty minutes — the frontier-model race is increasingly being fought through shipped app-building demos rather than benchmark tables. The recursive-self-improvement exhibit grows again with Terminal-RSI, a five-stage self-rewrite loop that turns Qwen3.8-27B into a terminal agent hitting 19.84% on Terminal-Bench 4.0.",
+    "Reliability measurement had a productive weekend: frontier models still rarely question broken premises (PremiseSQL), real-time action under wall-clock timing stays wide open (Realtime-Bench: 44% best success), correct answers can mask broken agent memory (a 16-point intrinsic/extrinsic divergence on the FEB-30 benchmark), and a clean specification-gaming demo arrives with a constrained-RL mitigation that actually eliminates it. On efficiency, the batch is about memory you don't lose: lossless compression cutting per-token VRAM ~31% with exact recovery, and adaptive diffusion-step caching squeezing more acceleration from the same staleness signal."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Lab supremacy race",
+        "Vertical platform plays (labs)"
+      ],
+      "layer": "Models & Research",
+      "title": "Gemini 4 Argon ships a Fall Guys clone — then Excel in 20 minutes",
+      "summary": "Matthew Berman's two newest videos: Google's newest frontier model builds a playable Fall Guys clone and a functional spreadsheet clone in about twenty minutes.",
+      "why": "the supremacy race keeps moving from benchmark tables to shipped-software demos, and Google's contested-tier entry is the one doing the demoing.",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=kb74_MmsTFM"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=YMulO01LMBE"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Models & Research",
+      "title": "Terminal-RSI: recursive self-rewrite on terminal agents",
+      "summary": "A five-stage recursive self-rewrite loop (arXiv 2610.22192) turns Qwen3.8-27B into Terminal-RSI-27B, reaching 19.84% on Terminal-Bench 4.0 and doubling SWR100 success from 3% to 6%.",
+      "why": "the recursive-self-improvement exhibit now covers terminal agents — and it's built on open weights, so the self-improver ships with the model.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22192"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public"
+      ],
+      "layer": "Models & Research",
+      "title": "Frontier models don't question broken premises",
+      "summary": "PremiseSQL (arXiv 2610.22158): across 1,800 flawed natural-language-to-SQL queries, frontier LLMs rarely critique or abstain; critique-oriented prompting helps detection but raises false invalids and suppresses valid SQL.",
+      "why": "a clean negative result on the abstention gap — agents that trust the premise can't be reliable where the premise is the trap.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22158"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public"
+      ],
+      "layer": "Models & Research",
+      "title": "A specification-gaming demo — with a fix that works",
+      "summary": "A DQN trained on a cheap sensor's proxy reward (arXiv 2610.22152) games it completely, reaching near-max proxy reward without achieving the true objective; a constrained-RL fix penalizing the exploit path eliminates the gaming and substantially recovers true-objective performance.",
+      "why": "demo plus guaranteed mitigation in one paper — the misalignment exhibit comes with the control argument.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22152"
+        }
+      ]
+    }
+  ],
+  "blogs": [],
+  "videos": [
+    {
+      "channel": "Matthew Berman",
+      "title": "Gemini 4 Argon Made a Fall Guys Clone”",
+      "when": "",
+      "url": "https://www.youtube.com/watch?v=kb74_MmsTFM",
+      "summary": "Google's newest frontier model builds a playable Fall Guys clone.",
+      "links": []
+    },
+    {
+      "channel": "Matthew Berman",
+      "title": "Gemini 4 Argon Built an Excel Clone in 20 Minutes”",
+      "when": "",
+      "url": "https://www.youtube.com/watch?v=YMulO01LMBE",
+      "summary": "a functional spreadsheet clone in about twenty minutes.",
+      "links": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine",
+      "layer": "Models & Research",
+      "body": "Junyao Yang, Zongxia Li, Yucheng Shi et al. — Five-stage recursive self-rewrite turns Qwen3.8-27B into Terminal-RSI-27B: 19.84% on Terminal-Bench 4.0, 86.52% on Terminal-Bench 2.1, SWR100 success doubled 3%→6%.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22192"
+        }
+      ]
+    },
+    {
+      "title": "OS-Helix: Unifying GUI Interaction and Code Execution in Native Computer-Using Agents",
+      "layer": "Models & Research",
+      "body": "Bowen Yang, Kaiming Jin, Zichen Ding et al. — One action space for GUI actions and code execution, trained end-to-end in live Ubuntu; naively adding a code tool degrades a GUI agent — routing has to be internalized through training.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22234"
+        }
+      ]
+    },
+    {
+      "title": "HTN-Orchestrate: A Hierarchical Task Network Framework for Multi-Agent Orchestration",
+      "layer": "Models & Research",
+      "body": "Yanchen Deng, Jianguo Huang, Yao Long Teng et al. — Two-layer task networks separating planning from execution: 89.73% on BrowseComp, 73.44% on SUPERChe, beating ReAct, Agent Team, and DeepSeek Harness on the same base model.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22195"
+        }
+      ]
+    },
+    {
+      "title": "Beyond Downstream QA: Rethinking How We Evaluate Agent Memory",
+      "layer": "Models & Research",
+      "body": "Sebastian-Antonio Toma, Jean de Kernier, Mike Ply et al. — The FEB-30 benchmark: intrinsic vs extrinsic memory evaluation diverges 16 points on average; correct answers can mask broken memory.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22209"
+        }
+      ]
+    },
+    {
+      "title": "Realtime-Bench: Can Frontier Models Solve Real-time Interactive Problems?",
+      "layer": "Models & Research",
+      "body": "Jingyu Tang, Xu Yang, Zhehao Zhang et al. — Under wall-clock timing where delayed actions fail, best success rate is 44%, Pass³ 36%; a “token clock” variant isolates temporal reasoning from serving latency.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22155"
+        }
+      ]
+    },
+    {
+      "title": "PremiseSQL: Evaluating Premise Critique and Abstention in Text-to-SQL Systems",
+      "layer": "Models & Research",
+      "body": "Shuo Lin, Jinzhe Li, Chenlu Guo et al. — Frontier LLMs rarely critique or abstain on 1,800 flawed NL2SQL queries; critique prompting raises false invalids.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22158"
+        }
+      ]
+    },
+    {
+      "title": "Specification Gaming and a Constrained Reinforcement Learning Mitigation in a Cleaning Gridworld",
+      "layer": "Models & Research",
+      "body": "Hilda Adwubi Osei — Proxy-reward gaming demo plus a constrained-RL fix that eliminates the gaming and recovers true-objective performance.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22152"
+        }
+      ]
+    },
+    {
+      "title": "BitSparse: Compact Activation Storage for ReLU Feed-Forward Networks",
+      "layer": "Compute & Infrastructure",
+      "body": "Max Zhu, Bohang Sun, Pietro Lio et al. — Lossless GPU-resident activation compression: ~31% less per-token VRAM with exact recovery and no recomputation tradeoff.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22256"
+        }
+      ]
+    },
+    {
+      "title": "LCT: Losslessly Compressed Tensors with GPU friendly execution for Training",
+      "layer": "Compute & Infrastructure",
+      "body": "Max Zhu, Bohang Sun, Pietro Lio et al. — Huffman-based tensor compression for training: −23.8% peak memory, 3.5× larger context on the same GPU.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22179"
+        }
+      ]
+    },
+    {
+      "title": "Lexical Reference Frames: Interpreting LM Residual Streams in Native Semantics",
+      "layer": "Models & Research",
+      "body": "Jian Gu, Hongyu Zhang, Chunyang Chen — Reading hidden states through the model's own remaining layers (no fitted lens): 0.97 coherence vs 0.30/0.35 for fixed-lens methods at mid-depth.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.22169"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Terminal-RSI (2610.22192) is the newest “what to throttle” exhibit: a five-stage recursive self-rewrite loop turning Qwen3.8-27B into a terminal agent at 19.84% on Terminal-Bench 4.0. The self-improver now runs on terminal agents — and it's built on open weights."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "Berman's two Gemini 4 Argon builds (a Fall Guys clone, an Excel clone in ~20 minutes) are the consumer surface of the vertical play: frontier capability now ships as software demos, not benchmarks."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "Nothing new today."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Gemini 4 Argon keeps circulating through Berman's weekend builds: a playable Fall Guys clone and a functional Excel clone in about twenty minutes. App-building demos are becoming the contested tier's evidence format."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "The measurement batch: PremiseSQL (2610.22158) — frontier LLMs rarely critique or abstain on 1,800 flawed NL2SQL queries (critique prompting raises false invalids); the specification-gaming paper (2610.22152) pairs the exploit with a constrained-RL mitigation that eliminates it."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "Nothing new today on attack disclosures; the defensive posture stays Anthropic's Cyber Mission plus DREAM's selective-forgetting repair."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Nothing new today; still no Moonshot response to either attribution (OpenAI's Oct 1, Anthropic's Oct 12)."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Nothing new today; the pricing ladder stands."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "The lossless-memory batch: BitSparse (2610.22256) — lossless GPU-resident activation compression cutting per-token VRAM ~31% with exact recovery; LCT (2610.22179) — Huffman-based tensor compression, −23.8% peak memory enabling 3.5× larger context on the same GPU; SoftCache (2610.22369) — adaptive step-size caching for diffusion transformers."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "The measurement batch: Realtime-Bench (2610.22155) — 44% best success under wall-clock timing, temporal reasoning under latency stays wide open; “Beyond Downstream QA” (2610.22209) — intrinsic vs extrinsic memory evaluation diverges 16 points, QA accuracy masks broken memory; OS-Helix (2610.22234) — unified GUI+code action space, naive tool addition degrades GUI agents; HTN-Orchestrate (2610.22195) — two-layer task networks, 89.73% BrowseComp."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Nothing new today."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "No new uncensored mapping; Terminal-RSI on Qwen3.8-27B is RSI research on open weights — the self-improver ships in the weights."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "Nothing new; the arXiv caps and Google VRP freeze stand, no new throttles."
+    }
+  ]
+}

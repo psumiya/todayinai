@@ -1,0 +1,391 @@
+{
+  "date": "2026-09-23",
+  "dek": "Frontier labs turn the price war into a same-day duel, Claude reaches the Ebola frontline, and open evaluation infrastructure answers the benchmark credibility gap.",
+  "brief": [
+    "The frontier price war went same-day. Anthropic launched Claude Opus 5.5—Fable 5.1-class performance at 40% lower cost—while OpenAI rolled out GPT-6 Sol and Luna at half the price of their predecessors. Both labs are now selling cost per completed job, not raw benchmark points. Claude is also operating in the eastern DRC’s Bundibugyo Ebola response, while the UK AI Security Institute and EvalEval are publishing verified evaluation configurations and results."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Lab supremacy race",
+        "Efficiency race",
+        "OpenAI monetization"
+      ],
+      "layer": "Models & Research",
+      "title": "The frontier price war goes same-day",
+      "summary": "Anthropic’s Claude Opus 5.5 claims Fable 5.1-class performance at roughly 40% lower cost than Opus 5, with $4/$20 per million-token pricing and 30%+ faster output. Hours apart, OpenAI shipped GPT-6 Sol at $2/$10 and Luna at $0.10/$0.50 per million tokens, both at 50% price cuts.",
+      "why": "the labs are competing on cost per completed job now. A frontier flagship, a workhorse, and a volume tier have become the shared product structure.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/claude-opus-5-5"
+        },
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/technology/openai-expands-gpt-6-lineup-with-cheaper-sol-luna-models-2026-09-22/"
+        },
+        {
+          "label": "MacRumors",
+          "url": "https://www.macrumors.com/2026/09/22/openai-gpt-6-sol-luna/"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Tiered bio-capability access"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Claude goes to the Ebola frontline",
+      "summary": "In the eastern DRC, a WHO AFRO data team built a Claude skill that extracts case and lab numbers from district PowerPoint decks and drafts the daily situation report, cutting a day-long task to under an hour. CEPI tracks vaccine-development workstreams, while INRB applies the Claude Science workbench to genome assembly.",
+      "why": "the tiered bio-capability debate is now field deployment: genuinely life-saving work and high-stakes pathogen data on the same frontier-model workbench.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/features/ebola-response"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agentic reliability",
+        "Lab supremacy race"
+      ],
+      "layer": "Models & Research",
+      "title": "Open eval results, published properly",
+      "summary": "The UK AI Security Institute is releasing verified results, context, and configurations through EvalEval’s shared infrastructure: five major general evaluations across six frontier models, plus two cyber evaluations, published as Evaluation Cards in the Every Eval Ever schema.",
+      "why": "the vendor-versus-independent evaluation gap now has an open, verifiable reference point instead of dueling press releases.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/evaleval-aisi"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Coordinated frontier pacing",
+        "Agentic reliability"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "Recursive self-improvement leaves the realm of opinion",
+      "summary": "AIDE² implements a loop in which a frontier AI research agent rewrites its own code, with each accepted rewrite becoming the agent the next round edits.",
+      "why": "recursive self-improvement is the process the pacing debate is trying to throttle, and it now has a working implementation.",
+      "links": [
+        {
+          "label": "arXiv 2609.26457",
+          "url": "https://arxiv.org/abs/2609.26457v1"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "AI misuse: autonomous attack chains",
+        "Agentic reliability"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "MCP agents can be hijacked at 93.6%",
+      "summary": "A2M, a two-stage black-box attack combining metadata attraction with trace-refined manipulation, reaches a 93.6% malicious tool-invocation rate against MCP agents on LiveMCPBench. A separate paper shows a custom tool can induce frontier models to externalize hidden chain-of-thought through a standard API feature.",
+      "why": "tool-using agents keep proving to be a semantic supply chain, and the hidden-reasoning boundary is leakier than assumed.",
+      "links": [
+        {
+          "label": "arXiv 2609.26761",
+          "url": "https://arxiv.org/abs/2609.26761v1"
+        },
+        {
+          "label": "arXiv 2609.26637",
+          "url": "https://arxiv.org/abs/2609.26637v1"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>Anthropic (Sep 22)</strong> — <em>Introducing Claude Opus 5.5</em>: the first model in the 5.5 family, externally evaluated by Frontier Design and METR, with the best scores on Anthropic’s automated behavioral audit and Fable-class biology and cybersecurity safeguards.",
+      "links": [
+        {
+          "label": "Link",
+          "url": "https://www.anthropic.com/claude-opus-5-5"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Anthropic (Sep 22)</strong> — <em>The Situation Report</em>: Claude in the DRC’s Bundibugyo Ebola response, from WHO AFRO situation-report automation to CEPI vaccine tracking and INRB genome assembly.",
+      "links": [
+        {
+          "label": "Link",
+          "url": "https://www.anthropic.com/features/ebola-response"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face (Sep 22)</strong> — <em>How UK AISI and EvalEval Are Making Benchmark Results Reproducible</em>: open evaluation infrastructure with verified results and configurations, published through the Every Eval Ever schema.",
+      "links": [
+        {
+          "label": "Link",
+          "url": "https://huggingface.co/blog/evaleval-aisi"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "Matthew Berman",
+      "title": "Anthropic went CRAZY (Opus 5.5)",
+      "when": "",
+      "url": "https://www.youtube.com/watch?v=OWu2kjKrRTA",
+      "summary": "A first look at Opus 5.5, Berman’s own tests, its speed and price claims, and the familiar gap between company benchmarks and independent scoring.",
+      "links": []
+    },
+    {
+      "channel": "Matthew Berman",
+      "title": "GPT-6 SOL AND LUNA ARE OUT!!!",
+      "when": "",
+      "url": "https://www.youtube.com/watch?v=5MFORiebZks",
+      "summary": "Covers OpenAI’s Sol and Luna launch, the simplified Astra/Sol/Luna/Terra lineup, and the rollout to ChatGPT Work, Codex, and the API.",
+      "links": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "Recursive self-improvement of AI research agents",
+      "layer": "Platforms & Tools",
+      "body": "Dhruv Srikanth, Bingchen Zhao, Dixing Xu, Yuxiang Wu et al. — a frontier AI research agent rewrites its own code, with each accepted rewrite becoming the agent the next round edits.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26457v1"
+        }
+      ]
+    },
+    {
+      "title": "Capable yet Parsimonious: Extracting and Characterizing Hidden Chain-of-Thought in Frontier Models",
+      "layer": "Models & Research",
+      "body": "Xiaoyu Luo, Tao Ren, Wenrui Yu, Xiao Li et al. — registering a custom tool through a standard API induces frontier models to externalize hidden reasoning while preserving competition-math performance.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26637v1"
+        }
+      ]
+    },
+    {
+      "title": "A2M: Trace-Optimized Agent Hijacking in the MCP Ecosystem",
+      "layer": "Platforms & Tools",
+      "body": "Laizhen Li, Xuan Wang, Peicheng Zhao, Juanjuan Zhao et al. — a two-stage black-box attack reaches a 93.6% malicious tool-invocation rate against MCP agents on LiveMCPBench.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26761v1"
+        }
+      ]
+    },
+    {
+      "title": "Slow Decay and Silenced Expression: Iterated Subliminal Trait Transfer in Language-Model Lineages",
+      "layer": "Models & Research",
+      "body": "Ryan Vo, Duc-Vu Nguyen, Matt Kretchmar, Ngan Luu-Thuy Nguyen — tracks an instilled trait across ten generations of models training on each other’s outputs.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.25721v1"
+        }
+      ]
+    },
+    {
+      "title": "CliffCompaction: Cost-Efficient Compaction for Long-Horizon Coding Agents",
+      "layer": "Platforms & Tools",
+      "body": "Trang Nguyen, Eulrang Cho, Bingqing Chen, Tim Dettmers — autocompaction cuts per-rollout cost up to 50% while adding more than 10 points on Terminal-Bench.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26779v1"
+        }
+      ]
+    },
+    {
+      "title": "Greedy Decoding Is Not Precision-Invariant: Cross-Precision Output Divergence in LLM Inference",
+      "layer": "Compute & Infrastructure",
+      "body": "Gaoyuan Du, Anam Nawaz Khan, Rex Zhou, Xiaoyang Liu et al. — identical greedy decoding in BF16 versus FP16 diverges on 49–100% of prompts, with one token flip cascading into trajectory divergence.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26621v1"
+        }
+      ]
+    },
+    {
+      "title": "Train Where the Quantized Model Goes: On-Policy Distillation for Low-Bit Reasoning",
+      "layer": "Models & Research",
+      "body": "Yuanteng Chen, Zhilei Liu, Peisong Wang, Yuantian Shao et al. — diagnoses sub-3-bit quantization’s damage to reasoning as amplified exposure bias, then repairs it with on-policy distillation on the quantized model’s own trajectories.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26708v1"
+        }
+      ]
+    },
+    {
+      "title": "Disaggregated Quantization: Specializing LLM Prefill and Decode",
+      "layer": "Compute & Infrastructure",
+      "body": "Andrei Panferov, Maximilian Kleinegger, Sweta Priyadarshi, Tijmen Blankevoort et al. — splits quantization by phase, using compute-native low-precision weights for prefill and compact 2–3-bit weights for decode.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26333v1"
+        }
+      ]
+    },
+    {
+      "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
+      "layer": "Compute & Infrastructure",
+      "body": "Quan Nguyen-Tri, Mukul Ranjan, Zhiqiang Shen — a training-free framework jointly solves KV caching and parallel decoding for diffusion LLMs while accounting for the I/O bottlenecks created when both are applied together.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26796v1"
+        }
+      ]
+    },
+    {
+      "title": "Beyond Repeated Sampling: Learning Search Policies for LLM Reasoning",
+      "layer": "Models & Research",
+      "body": "Ismail Labiad, Matthieu Kowalski, Marc Schoenauer, Rémi Munos et al. — argues test-time compute should explore diverse concepts and strategies within a trajectory rather than rely on near-duplicate independent samples.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26704v1"
+        }
+      ]
+    },
+    {
+      "title": "When Recursive Models Finish Computing",
+      "layer": "Models & Research",
+      "body": "Hare Krishna, Shubham Singh, Stephen Ebert, Hao-Yu Sun — extending recurrence from 16 to 512 steps raises hard-Sudoku solve rates from 59.2% to 87.5% for attention and from 74.4% to 91.9% for MLP variants.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26487v1"
+        }
+      ]
+    },
+    {
+      "title": "The Sirens’ Song: When Proximal Background Context Overshadows Distant Evidence",
+      "layer": "Models & Research",
+      "body": "Xiaoyu Yang, Jie Lu, Wei Duan, En Yu — names the Proximity Trap behind long-context retrieval failures and proposes LYRA to reweight attention toward distant evidence.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26718v1"
+        }
+      ]
+    },
+    {
+      "title": "Spoken Language Models that Think Aloud",
+      "layer": "Models & Research",
+      "body": "Junyi Ao, Kainan Peng, Mingbo Ma, Shun Zhang et al. — an asynchronous Thinker-Talker architecture emits short progress utterances while reasoning continues, avoiding serial think-then-speak pauses.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26488v1"
+        }
+      ]
+    },
+    {
+      "title": "Double Descent and Malign Overfitting in Diffusion Models",
+      "layer": "Models & Research",
+      "body": "Raphaël Urfin, Tony Bonnaire, Giulio Biroli, Marc Mézard — finds overparameterization in diffusion models drives U-Nets into a catastrophic memorization regime rather than benign overfitting.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26392v1"
+        }
+      ]
+    },
+    {
+      "title": "A Spectral Theory of Grokking: Weight Decay induces Feature Learning",
+      "layer": "Models & Research",
+      "body": "Lenz Pracher, Pascal de Jong, Oskar Lieshaus, Alan Jeffares et al. — models grokking as a transition from lazy to rich learning, where post-memorization residuals feed back into kernel eigendynamics.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26679v1"
+        }
+      ]
+    },
+    {
+      "title": "φ-RIE: From Photorealistic Reconstruction to Interactive Environments",
+      "layer": "Models & Research",
+      "body": "Runyi Yang, Deheng Zhang, Xiaoye Wang, Kanzhi Wu et al. — turns selected objects from 3D Gaussian-splat reconstructions into movable simulator assets, disentangling them from the background and reconstructing occluded geometry.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26795v1"
+        }
+      ]
+    },
+    {
+      "title": "DreamStream: Towards Policy-Oriented Generative Simulation for End-to-End Driving",
+      "layer": "Models & Research",
+      "body": "Ziyang Leng, Sicheng Mo, Seth Z. Zhao, Haoyuan Cai et al. — a generative closed-loop driving simulator distills its video model with traffic-layout guidance so simulated observations preserve policy-relevant features.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26792v1"
+        }
+      ]
+    },
+    {
+      "title": "HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis",
+      "layer": "Models & Research",
+      "body": "Shufan Sun, Chen Wang, Enxin Song, Jiatao Gu et al. — combines agentic spatial reasoning with visual-geometry foundation models to recover a complete, inter-object-consistent 3D scene from one indoor image.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.26793v1"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Opus 5.5 is Anthropic’s first release since Amodei’s pacing call. The same day, AIDE² put a working recursive-self-improvement loop on arXiv, sharpening the question of what, exactly, pacing would throttle."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Same-day duel: Opus 5.5 versus GPT-6 Sol and Luna. The self-report versus independent-evaluation gap persists, with the UK AISI and EvalEval release providing the structural answer the industry has been missing."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "Both launches are framed as cost per completed job. CliffCompaction, low-bit on-policy distillation, disaggregated quantization, Flash-dLLM, semantic test-time search, and long-recurrence gains thicken the technique layer. Caveat: greedy decoding is not precision-invariant."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "The Situation Report moves the thread from governance theory to field deployment: Claude in the active Bundibugyo Ebola response, with life-saving situation reports and pathogen bioinformatics on the same workbench."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "A2M reaches a 93.6% MCP-agent hijack rate, while a registered custom tool induces GPT-6 Astra to externalize hidden reasoning. The affordances built for extensibility reach both tool choice and the model’s inner workings."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "On-policy distillation rescues low-bit reasoning, while subliminal traits persist across ten training generations: distillation as lineage, where properties survive beyond a single release’s controls."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "UK AISI and EvalEval add reproducibility infrastructure; greedy precision divergence undermines deterministic-serving claims; AIDE² adds a self-improving-agent loop; and adversarial research exposes tool hijacking and hidden-reasoning extraction."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "The subliminal-trait-transfer result extends redistribution-as-persistence from repositories to training lineages."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "The GPT-6 lineup is now a three-tier price ladder: Astra flagship, Sol workhorse, Luna volume, with Terra small. The September 23 Shopify app launch did not surface in today’s sources."
+    }
+  ]
+}
