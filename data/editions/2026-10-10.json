@@ -1,0 +1,314 @@
+{
+  "date": "2026-10-10",
+  "dek": "Recursive self-improvement moves from a single idea to three engineering paths, while new work tests whether deployed agents can actually be told when not to reason.",
+  "brief": [
+    "The self-improvement loop is having a week. Xiaomi’s MiMo-V2.6 scales reinforcement learning toward self-improvement across code, general, visual, and cyber domains at up to one-million-token context. Memento 3 gives frozen LLM agents a natural-language rulebook they revise into executable world models, while Embodied Turing Machines takes the same idea into robotics and proposes deciding in code rather than keeping a VLM in the control loop. From the other side, “Thinking Inertia” finds that LLMs keep reasoning when told not to: the usual proxies for no-thinking leak reasoning or mistake filler for thought.",
+    "Infrastructure is becoming policy in code. Ai2 published the scheduler running its thousands of H100s and B200s, replacing priority queues with GPU time budgets and scheduling contracts. On the bio front, DeepMind’s AlphaGenome Atlas maps the predicted effects of every possible DNA letter change in the human genome. Together, the day’s work stretches control from the model’s hidden reasoning to the cluster queue and the genome-wide map."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Coordinated frontier pacing",
+        "Efficiency race"
+      ],
+      "layer": "Models & Research",
+      "title": "Xiaomi scales RL toward self-improvement",
+      "summary": "The MiMo-V2.6 report scales reinforcement learning through bigger asynchronous batches, more diverse code, general, visual, and cyber environments, and more grader compute, at up to one-million-token context.",
+      "why": "a frontier-scale lab is publishing RL-as-the-path-to-self-improvement as an engineering report, not a research bet.",
+      "links": [
+        {
+          "label": "arXiv:2610.11959",
+          "url": "https://arxiv.org/abs/2610.11959"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Coordinated frontier pacing",
+        "Agentic reliability"
+      ],
+      "layer": "Models & Research",
+      "title": "Memento 3: RSI without touching the weights",
+      "summary": "Frozen LLM agents maintain a revisable natural-language rulebook of environment hypotheses, compile it into executable code, and accept revisions only after verification.",
+      "why": "recursive self-improvement is no longer gated on training runs; a persistent memory loop can do the work.",
+      "links": [
+        {
+          "label": "arXiv:2610.11794",
+          "url": "https://arxiv.org/abs/2610.11794"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public",
+        "Agentic reliability"
+      ],
+      "layer": "Models & Research",
+      "title": "LLMs keep thinking when told not to",
+      "summary": "“Thinking Inertia” finds that disabled thinking modes still emit reasoning and that long traces can be filler, then introduces metrics for answer-only compliance, trace relevance, and explicit inference.",
+      "why": "if “don’t think, just answer” cannot be enforced, neither can the rest of the instruction hierarchy.",
+      "links": [
+        {
+          "label": "arXiv:2610.11765",
+          "url": "https://arxiv.org/abs/2610.11765"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Efficiency race"
+      ],
+      "layer": "Compute & Infrastructure",
+      "title": "Ai2’s answer to GPU squatting",
+      "summary": "Ai2’s infrastructure team describes GPU time budgets and hierarchical fair-share allocation replacing a priority system that invited squatting and priority inflation, with scheduling contracts protecting a minimum runtime.",
+      "why": "when demand runs two to three times over supply, scheduling policy becomes the difference between training and waiting.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/allenai/impactful-scheduling"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Tiered bio-capability access"
+      ],
+      "layer": "Models & Research",
+      "title": "AlphaGenome Atlas maps every possible DNA variant",
+      "summary": "DeepMind’s predictive map covers every possible DNA letter change in the human genome, as shown in Two Minute Papers’ October 7 walkthrough.",
+      "why": "variant-effect prediction is becoming genome-wide infrastructure, bringing the tiered-bio-capability question to the map itself.",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=Wkaw03p3BrM"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>Hugging Face — killing the priority queue</strong> (Oct 9) — Ai2’s infrastructure team on GPU-cluster scheduling at scale: demand outstripping supply two to three times, priority inflation and squatting as the failure modes, and time budgets and scheduling contracts as the fix.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/allenai/impactful-scheduling"
+        }
+      ]
+    },
+    {
+      "body": "<strong>The Batch — Ng’s data-center argument</strong> (Oct 9) — Andrew Ng argues that the industry still underestimates the data-center build-outs needed to meet AI demand; the issue also recaps DevDay, Gemini 4 Argon, and FLUX 3’s move into robotics and Audi factory lines.",
+      "links": [
+        {
+          "label": "The Batch",
+          "url": "https://www.deeplearning.ai/the-batch/"
+        }
+      ]
+    },
+    {
+      "body": "<strong>AI Weekly — research taste is still human</strong> (Issue 536, Oct 8) — “Top AI models failed a test of inventing new AI research” keeps the research-taste question open even as agent scaffolds multiply.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "",
+      "title": "AI Is Recreating Photoshop and Other Adobe Apps",
+      "when": "Oct 9",
+      "url": "https://www.youtube.com/watch?v=TqxHhuOve2Q",
+      "summary": "A tour of AI tools recreating Photoshop and other Adobe creative apps: the consumer app layer becoming the agent distribution surface.",
+      "links": []
+    },
+    {
+      "channel": "",
+      "title": "DeepMind’s New AI Just Cracked The Code Of Life",
+      "when": "Oct 7",
+      "url": "https://www.youtube.com/watch?v=Wkaw03p3BrM",
+      "summary": "AlphaGenome Atlas: a predictive map of every possible DNA letter change in the human genome, presented after a DeepMind invite.",
+      "links": []
+    },
+    {
+      "channel": "",
+      "title": "Mistral Large 4 Failed My Rubik’s Cube Test",
+      "when": "Oct 8",
+      "url": "https://www.youtube.com/watch?v=QnxXx1FpnF8",
+      "summary": "Matthew Berman puts Mistral’s new model through his Rubik’s-cube reasoning benchmark; per the title, it fails — a quick independent spot-check of frontier reasoning.",
+      "links": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "Thinking Inertia: LLMs Keep Thinking When Told Not To",
+      "layer": "Models & Research",
+      "body": "Dianqiao Lei, Kevin Qinghong Lin, Pan Lu, Philip Torr, James Zou — Measures no-thinking at three levels and finds that disabled thinking modes and short traces both leak reasoning.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.11765"
+        }
+      ]
+    },
+    {
+      "title": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
+      "layer": "Models & Research",
+      "body": "Haoyu Zhao, Zhengxu Yu, Zhiyuan He, Meng Fang, Rasul Tutunov, Haitham Bou-Ammar, Weilin Luo, Jun Wan — Frozen agents maintain a revisable rulebook, compile it to executable code, and accept revisions only after verification.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.11794"
+        }
+      ]
+    },
+    {
+      "title": "MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement",
+      "layer": "Models & Research",
+      "body": "Xiaomi LLM-Core Team — Scales RL across batch throughput, environment diversity, and groupwise agentic grading at up to one-million-token context.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.11959"
+        }
+      ]
+    },
+    {
+      "title": "Harness Evolution Hits a Ceiling: When Weight Training Should Begin",
+      "layer": "Models & Research",
+      "body": "Yuan Tian, Bing Hu, Hao Wang, Binghang Lu, Fang Wu — Separates process failures that harness evolution can fix from content failures that call for weight training.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.11655"
+        }
+      ]
+    },
+    {
+      "title": "OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport",
+      "layer": "Models & Research",
+      "body": "Babak Barazandeh, Connor Swanson, Chinmay Kulkarni, Nikhil Mungel — Compares streaming agent steps with successful trajectories, enabling alerts or blocking in about a millisecond per step.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.12375"
+        }
+      ]
+    },
+    {
+      "title": "Predicting Alignment Generalization with Value Representations",
+      "layer": "Models & Research",
+      "body": "Andy Liu, Mehar Bhatia, Karolina Stanczak, Mona Diab, Vered Shwartz, Daniel Fried — Activation-based representations predict how post-training on one of 66 values changes behavior on held-out values.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.12410"
+        }
+      ]
+    },
+    {
+      "title": "DIAL-OPD: Learning More from Fewer Tokens in On-Policy Distillation",
+      "layer": "Models & Research",
+      "body": "Anhao Zhao, Haoran Xin, Junlong Tong, Yingqi Fan, Xuan Lu, Ping Nie, Wenjie Li, Xiaoyu Shen — Selects tokens by learning value and shows that fewer tokens can beat full-token supervision in on-policy distillation.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.11659"
+        }
+      ]
+    },
+    {
+      "title": "Which Skill to Distill? SGUID: Selecting a Compact Skill Bank for Model-Skill Co-Evolution",
+      "layer": "Models & Research",
+      "body": "Yuhan Liu, Xiyao Ma, Zhongkai Sun, Xu Han, Chengyuan Ma, Benjamin Z. Yao, Chenlei Guo — Finds fewer than 25% of retrieved skills give useful distillation signals; six selected skills match the full bank.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.12367"
+        }
+      ]
+    },
+    {
+      "title": "SparseDecoding: Decoding-Aware Pruning for Accurate and Efficient LLM Inference",
+      "layer": "Models & Research",
+      "body": "Qitong Wang, Xinwei Niu, Mingluo Su, Shanwei Zhao, Shiai Zhu, Huan Wang — Aligns pruning with self-generated decoding tokens to correct a distribution shift that hurts pruned-model quality.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.12327"
+        }
+      ]
+    },
+    {
+      "title": "VFold: Symmetry-Aware Cross-Layer Value Cache Compression",
+      "layer": "Models & Research",
+      "body": "Neha Verma, Sungwon Kim, Kenton Murray, Kevin Duh — Uses inter-layer value-cache symmetry to cut KV memory without architectural changes and composes with quantization and key pruning.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.12338"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "MiMo-V2.6 scales RL toward self-improvement across cyber domains; Memento 3 puts recursive self-improvement in a frozen model through a revisable rulebook; Embodied Turing Machines proposes robot self-improvement through code-only policies. “Thinking Inertia” adds the control problem: the instruction not to think is not reliably enforceable."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Quiet on launches. Xiaomi’s MiMo-V2.6 is the industrial self-improvement datapoint; Berman’s Rubik’s-cube test of Mistral Large 4 is an independent spot-check. Anthropic’s IPO roadshow begins October 14."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "Berman’s “AI Is Recreating Photoshop and Other Adobe Apps” is the consumer-app-layer datapoint: creative software becoming an agent surface. The Batch keeps the DevDay distribution story in circulation."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "AlphaGenome Atlas, DeepMind’s predictive map of every possible DNA letter change in the human genome, is the newest instrument. Variant-effect prediction is becoming infrastructure; the tiering question now applies to the map."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "“Thinking Inertia” measures the no-thinking control surface; OnTrack brings streaming intervention to agent trajectories at about one millisecond per step; value representations forecast how one alignment target spills into held-out behaviors."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "Quiet on new incidents. OnTrack’s streaming intervention is the defensive-side primitive of the day."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "DIAL-OPD shows fewer, better-chosen tokens can beat full-token on-policy distillation. SGUID finds fewer than 25% of retrieved skills carry useful distillation signals; six selected skills match the full bank."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Quiet for the weekend. The pricing ladder stands; Andrew Ng’s Batch letter reframes the capital question as data-center build-outs the industry is underestimating."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "SparseDecoding fixes pruning’s distribution shift; VFold finds underused capacity in the value cache and cuts KV memory without architectural changes. Ai2’s GPU time budgets and scheduling contracts answer squatting and priority inflation at thousands-of-GPUs scale."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "“Harness Evolution Hits a Ceiling” supplies a decision rule for when to stop evolving the harness and start training weights: process failures versus content failures. AI Weekly keeps the research-taste question open."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Quiet. Claude’s text-watermark Bedrock rollout approaches October 12 completion; textGrain’s first EU week continues."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "Quiet; no new mapping."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "Quiet; the arXiv caps and Google vulnerability-report freeze stand, with no new throttles."
+    }
+  ]
+}

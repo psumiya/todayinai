@@ -1,0 +1,162 @@
+[
+ {
+  "source": "OpenAI",
+  "kind": "blog",
+  "title": "post",
+  "url": "https://openai.com/index/openai-models-google-cloud",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "post"
+ },
+ {
+  "source": "OpenAI",
+  "kind": "blog",
+  "title": "post",
+  "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "post"
+ },
+ {
+  "source": "OpenAI",
+  "kind": "blog",
+  "title": "post",
+  "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "post"
+ },
+ {
+  "source": "OpenAI",
+  "kind": "blog",
+  "title": "post",
+  "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "post"
+ },
+ {
+  "source": "OpenAI",
+  "kind": "blog",
+  "title": "post",
+  "url": "https://openai.com/index/building-chatgpt-ad-stack",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "post"
+ },
+ {
+  "source": "arXiv",
+  "kind": "paper",
+  "title": "RSI Control: Can AI Models Perform Covert Sabotage in the Self-Improvement Process?",
+  "url": "https://arxiv.org/abs/2610.27735",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "RSI Control: Can AI Models Perform Covert Sabotage in the Self-Improvement Process?"
+ },
+ {
+  "source": "arXiv",
+  "kind": "paper",
+  "title": "The Show-Up Attack: When Subagents Win Over Their Supervisor",
+  "url": "https://arxiv.org/abs/2610.27574",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "The Show-Up Attack: When Subagents Win Over Their Supervisor"
+ },
+ {
+  "source": "OpenAI",
+  "kind": "blog",
+  "title": "post",
+  "url": "https://openai.com/index/terminal-x",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "post"
+ },
+ {
+  "source": "Hugging Face",
+  "kind": "blog",
+  "title": "post",
+  "url": "https://huggingface.co/blog/nvidia/kumo-forecast",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "post"
+ },
+ {
+  "source": "Hugging Face",
+  "kind": "blog",
+  "title": "post",
+  "url": "https://huggingface.co/blog/allenai/fairstress",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "post"
+ },
+ {
+  "source": "Hugging Face",
+  "kind": "blog",
+  "title": "post",
+  "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "post"
+ },
+ {
+  "source": "Hugging Face",
+  "kind": "blog",
+  "title": "post",
+  "url": "https://huggingface.co/blog/hf-torchtpu",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "post"
+ },
+ {
+  "source": "arXiv",
+  "kind": "paper",
+  "title": "Can Native Safety Travel? Reusing Safety Pretraining Across Models via On-Policy Distillation",
+  "url": "https://arxiv.org/abs/2610.27555",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "Can Native Safety Travel? Reusing Safety Pretraining Across Models via On-Policy Distillation"
+ },
+ {
+  "source": "arXiv",
+  "kind": "paper",
+  "title": "Polarity Blindness in LLM Safety: A Systematic Study of Negation, Antonym Substitution, and Adversarial Framing",
+  "url": "https://arxiv.org/abs/2610.27908",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "Polarity Blindness in LLM Safety: A Systematic Study of Negation, Antonym Substitution, and Adversarial Framing"
+ },
+ {
+  "source": "arXiv",
+  "kind": "paper",
+  "title": "Proof-Carrying Contracts: Commitments AI Agents Cannot Break",
+  "url": "https://arxiv.org/abs/2610.28484",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "Proof-Carrying Contracts: Commitments AI Agents Cannot Break"
+ },
+ {
+  "source": "arXiv",
+  "kind": "paper",
+  "title": "Cache Engineering for Agents",
+  "url": "https://arxiv.org/abs/2610.28577",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "Cache Engineering for Agents"
+ },
+ {
+  "source": "arXiv",
+  "kind": "paper",
+  "title": "The Token-Energy Law of LLM Decode: Active Bytes and Realized Time Account for Joules per Token",
+  "url": "https://arxiv.org/abs/2610.28576",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "The Token-Energy Law of LLM Decode: Active Bytes and Realized Time Account for Joules per Token"
+ },
+ {
+  "source": "arXiv",
+  "kind": "paper",
+  "title": "Large Flow Language Models",
+  "url": "https://arxiv.org/abs/2610.28559",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "Large Flow Language Models"
+ },
+ {
+  "source": "arXiv",
+  "kind": "paper",
+  "title": "Sage-A1.5: From Long-Horizon Execution to Scientific Exploration with Capability Composition",
+  "url": "https://arxiv.org/abs/2610.28578",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "Sage-A1.5: From Long-Horizon Execution to Scientific Exploration with Capability Composition"
+ },
+ {
+  "source": "arXiv",
+  "kind": "paper",
+  "title": "GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery",
+  "url": "https://arxiv.org/abs/2610.28629",
+  "published": "2026-10-22T14:00:00+00:00",
+  "summary": "GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery"
+ }
+]

@@ -1,0 +1,277 @@
+{
+  "date": "2026-09-17",
+  "dek": "Frontier labs talk about pacing, researcher trust fractures, and reward-hacking detection gets practical.",
+  "brief": [
+    "Frontier labs test coordinated pacing even as researcher dissent and IPO incentives strain the coalition. OpenAI’s ad rollout gets concrete, reward-hacking detectors move from theory toward practice, and the day’s visual explainers and papers reward a deeper read."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Applications & Policy",
+      "title": "The frontier labs start talking about pacing — together",
+      "summary": "Bloomberg and The Information report OpenAI, Anthropic, and Google DeepMind are engaging on shared safety standards and a possible industry safety body. Sam Altman said OpenAI won't wait for Congress or an antitrust exemption, will write explicit safety cases before training runs expected to significantly raise capability, and welcomes independent auditors — while insisting \"pacing\" does not mean \"stopping.\"",
+      "why": "the race narrative is shifting from pure speed to managed speed; release calendars and early-weights access may follow.",
+      "links": [
+        {
+          "label": "Read",
+          "url": "https://abhs.in/blog/openai-anthropic-google-ai-safety-body-pacing-frontier-altman-2026"
+        },
+        {
+          "label": "TechCrunch on Amodei's plan",
+          "url": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Coordinated frontier pacing",
+        "Agent misalignment goes public"
+      ],
+      "layer": "Applications & Policy",
+      "title": "The pacing push's first casualty: researcher trust",
+      "summary": "Former Anthropic researcher Jacob Coxon resigned publicly, saying the labs are \"racing\" to build AI that can build and fix itself and are \"gambling with our lives.\" Amodei wrote that two things convinced him safety work is losing the race: the OpenAI–Hugging Face swarm hack and AI's growing ability to \"build the next generation of AI.\" Altman (\"I agree with Dario\") and Musk (\"Dario is right\") endorsed. Anthropic is unilaterally giving independent evaluators employee-like access; OpenAI says it will match.",
+      "why": "internal dissent is becoming the forcing function behind the labs' safety pledges.",
+      "links": [
+        {
+          "label": "CNN",
+          "url": "https://www.cnn.com/2026/09/12/tech/anthropic-ceo-essay-ai?cid=external-feeds_iluminar_meta"
+        },
+        {
+          "label": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/09/12/anthropic-ceo-calls-for-ai-race-to-slow-down-musk-and-openai-s-altman-agrees"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Michael Burry says the safety talk smells like IPO theater",
+      "summary": "Burry argues the labs' safety concerns and IPO incentives may be more intertwined than acknowledged (Anthropic and OpenAI filed S-1s in June; IPOs expected this fall and next year). David Sacks counters that labs could simply slow down unilaterally if they believed their own warnings.",
+      "why": "the pacing narrative is about to be stress-tested against roadshows and quarterly earnings.",
+      "links": [
+        {
+          "label": "TheStreet",
+          "url": "https://www.thestreet.com/investing/stocks/michael-burry-has-a-strong-verdict-on-the-ongoing-ai-bubble-anthropic-openai-elon-musk-sam-altman-dario-amodei"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agentic reliability"
+      ],
+      "layer": "Models & Research",
+      "title": "A practical tool for catching reward hacking",
+      "summary": "Leon Bergen, Usha Bhalla, Andrew Lee et al. show simple difference-of-means vectors reliably detect reward hacking from internal representations in frontier open models (Kimi K3, GLM 5.2, Qwen 3.8 Max) — generalizable and interpretable.",
+      "why": "gaming-the-eval is a daily failure mode; a cheap, readable internal detector is exactly what labs need ahead of the \"explicit safety cases\" Altman just promised.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.19101"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>OpenAI (Sep 16)</strong> — <em>Our framework for reporting model misalignment</em>: six incident reports, disclosure-favored posture, \"alignment isn't solved enough for max-speed scaling.\" Covered in yesterday's edition; CNN's Sep 16 writeup extends its reach.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/model-misalignment-reporting-framework/"
+        },
+        {
+          "label": "CNN",
+          "url": "https://www.cnn.com/2026/09/16/tech/ai-models-acting-deceptively-openai?cid=external-feeds_iluminar_meta"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI (Sep 16)</strong> — <em>Reimagining advertising with AI</em>: Sponsored Agents pilot; Reuters adds launch advertisers — Wayfair, Angi, Newegg, Best Buy, Lowe's, VistaPrint — plus ChatGPT Ads Manager plugin, HubSpot as first CRM partner, Shopify e-commerce app launching Sep 23.",
+      "links": [
+        {
+          "label": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/openai-tests-advertiser-sponsored-agents-expands-ai-tools-chatgpt-ads-2026-09-16/"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face / IBM Research (Sep 15)</strong> — <em>Your Agent Aced the Task. Will It Do It Again?</em>: Pass^k exposes a 24.4-point agent consistency gap; mined consistency guidelines halve it.",
+      "links": [
+        {
+          "label": "Link",
+          "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Dario Amodei (Sep 12)</strong> — <em>\"We Must Pace the Frontier\"</em> (3,800-word essay): slow capability gains so eval/monitoring catch up; narrow antitrust waiver for lab coordination; embedded third-party evaluators; cooperation with China where possible.",
+      "links": [
+        {
+          "label": "TechCrunch explainer",
+          "url": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "Two Minute Papers",
+      "title": "Claude Is Now Leaving Invisible Fingerprints In Its Text",
+      "when": "~Sep 15",
+      "url": "https://www.youtube.com/watch?v=YoEWjZSwoys",
+      "summary": "Anthropic's invisible fingerprinting of Claude-generated text, the detection research behind it (proceedings paper, Nature), and what it means for attribution and misuse prevention.",
+      "links": []
+    },
+    {
+      "channel": "AI Explained",
+      "title": "How AI Inference Engines Build Answers One Token at a Time",
+      "when": "~Sep 16",
+      "url": "https://www.youtube.com/watch?v=3VQYK-uuT-I",
+      "summary": "an infrastructure explainer: tokenization, prefill/attention, decoding, the KV cache, temperature, stopping rules — and why fluent output ≠ verified truth.",
+      "links": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "Monitoring and Discovering Reward Hacking with Internal Representations during LLM Evaluations",
+      "layer": "Models & Research",
+      "body": "Leon Bergen, Usha Bhalla, Andrew Lee et al. — internal difference-of-means vectors reliably detect reward hacking in frontier open models; generalizable and interpretable.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.19101"
+        }
+      ]
+    },
+    {
+      "title": "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments",
+      "layer": "Platforms & Tools",
+      "body": "Hejia Geng, Zesen Huang, Haoyang Li et al. — converts scientific code repos into programmable, expert-verified environments for training and evaluating scientific agents; attacks the \"scientific experience bottleneck.\"",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.19134"
+        }
+      ]
+    },
+    {
+      "title": "A Zeroth-Order Paradigm for LLM Preference Alignment",
+      "layer": "Models & Research",
+      "body": "Peter Chen, Xi Chen, Wotao Yin, Tianyi Lin — ComPO extracts alignment signal from small-margin preference pairs, sidestepping DPO's likelihood displacement, with convergence guarantees.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.19144"
+        }
+      ]
+    },
+    {
+      "title": "Preventing Model Collapse: A Fisher-Rao Perspective on the Dynamics of Training with Synthetic Data",
+      "layer": "Data",
+      "body": "Matteo Marchi, João Pedro Silvestre, Bahman Gharesifard, Paulo Tabuada — rigorous minimum human-to-synthetic data ratios to prevent recursive-training collapse.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.18878"
+        }
+      ]
+    },
+    {
+      "title": "Affora: A Design System for Agent-Friendly Interfaces",
+      "layer": "Platforms & Tools",
+      "body": "Jin Gao — interfaces readable by both humans and computer-use agents, backed by three controlled studies; agents can keep visual freedom while interaction meaning is preserved.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.19125"
+        }
+      ]
+    },
+    {
+      "title": "Flag Game: A Toy Model for Mechanistic Swarm Interpretability",
+      "layer": "Models & Research",
+      "body": "Elizabeth Pavlova, Hidenori Tanaka — minimal toy model of collective belief formation in agent swarms reproducing non-monotonic scaling of performance with population size.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.19124"
+        }
+      ]
+    },
+    {
+      "title": "Objective vs. Search: Decomposing What Makes a Good Tokeniser",
+      "layer": "Data",
+      "body": "Ahmetcan Yavuz, Clara Meister, Tiago Pimentel — completes the objective×search 2×2 design space of BPE vs. UnigramLM tokenisers.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.19145"
+        }
+      ]
+    },
+    {
+      "title": "PANORAMA: Panoptic Grounded Captioning via Mask Proposal Selection",
+      "layer": "Models & Research",
+      "body": "Sara Pieri, Evangelos Kazakos, Shizhe Chen, Josef Sivic, Cordelia Schmid — panoptic grounded captioning plus the PanoCaps dataset, pushing VLMs toward comprehensive grounded image understanding.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.19143"
+        }
+      ]
+    },
+    {
+      "title": "Higher-order pruning of experts in mixture-of-experts language models",
+      "layer": "Compute & Infrastructure",
+      "body": "Alex M. Tseng, Prannay Kaul, Luca Zancato, Wei Xia, Stefano Soatto — HOPE, a second-order MoE expert-pruning objective accounting for cooperative expert interactions; REAP emerges as a special case.",
+      "links": [
+        {
+          "label": "abs",
+          "url": "https://arxiv.org/abs/2609.18916"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Amodei's Sep 12 \"We Must Pace the Frontier\" essay → Coxon resignation → Altman/Musk endorsements → mid-Sept lab talks on shared standards and a possible industry safety body, with Altman's pledge of safety cases + independent auditors without waiting for Congress. Watch whether coordination survives contact with IPO timelines (Anthropic this fall, OpenAI next year)."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "CNN amplified OpenAI's six incident reports to mainstream reach; Amodei's essay cites the OpenAI–HF swarm hack as a trigger, and the pacing talks now include shared misalignment/monitoring standards — this thread is merging into the pacing thread."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "no new items today; still the shadow behind the pacing debate."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Reuters fleshes out the ads rollout: six named launch advertisers, Ads Manager plugin, HubSpot/Shopify, Shopify app Sep 23. Watch the Sep 23 app launch and user reception."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "HOPE's second-order MoE expert pruning and ComPO's cheap alignment signal both extend the frugality story: fewer active parameters, fewer wasted gradient steps."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "reward-hacking detection adds the detection-side tool to Pass^k's measurement; ScienceIDE targets the evaluation side for scientific agents. Still the freshest open question in agent land."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "TMP's fingerprint explainer takes Claude text fingerprinting mainstream; PANORAMA pushes generation-grounding forward."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "quiet today; no new benchmark moves surfaced."
+    }
+  ]
+}

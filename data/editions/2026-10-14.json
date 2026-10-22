@@ -1,0 +1,191 @@
+{
+  "date": "2026-10-14",
+  "dek": "Anthropic turns roadshow day into a Singapore governance push as DeepMind moves scam detection onto phones and new research gives long-horizon agents a verified training ground.",
+  "brief": [
+    "Today is Anthropic’s IPO roadshow day — and the company spent it doing diplomacy, not marketing: it opened its fifth Asia-Pacific office in Singapore and signed an AI-safety MOU with the Singaporean government covering model evaluation, testing standards, and incident response. Singapore, where Claude ranks second among 121 countries in population-adjusted usage, is now also the lab’s newest governance foothold.",
+    "Google DeepMind and GovTech Singapore paired a lightweight, on-device Gemma model with a scam classifier so private messages never leave the phone. On arXiv, Tev ships 1,170 verified long-horizon environments with dense progress rewards and a 27B model trained on them that matches GPT-6 Astra and Claude Opus 5, while Hybrid Reasoning Agents report stronger results with 35–55% fewer tokens."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Coordinated frontier pacing",
+        "Vertical platform plays (labs)"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Anthropic goes to Singapore on roadshow day",
+      "summary": "Anthropic opened its fifth Asia-Pacific office and signed an MOU with Singapore’s Ministry of Digital Development and Information covering AI safety, security, model evaluation, adoption research, and responsible deployment.",
+      "why": "a lab at the start of its IPO roadshow is turning voluntary coordination into a concrete bilateral agreement on testing standards and incident response — while explicitly giving Singapore no preferential access to frontier models.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/singapore-office-opening"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Provenance & synthetic media"
+      ],
+      "layer": "Applications & Policy",
+      "title": "DeepMind’s scam detector keeps private chats on the phone",
+      "summary": "Google DeepMind and GovTech Singapore fine-tuned lightweight Gemma on local scam conversations in a two-stage system: a light classifier spots suspicious chats, then Gemma analyzes manipulative patterns entirely on-device.",
+      "why": "trust and safety moves from post-hoc provenance to private, local intervention — no message content needs to leave the device.",
+      "links": [
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agentic reliability"
+      ],
+      "layer": "Models & Research",
+      "title": "Tev gives long-horizon agents a verified training gym",
+      "summary": "Tev introduces 1,170 verified long-horizon agent environments with dense progress rewards. Tev-27B matches GPT-6 Astra and Claude Opus 5 on long-horizon benchmarks and generalizes to Terminal-Bench 3.0 and 4.0.",
+      "why": "sparse-reward starvation has been a training bottleneck for long tasks; verified environments with dense rewards turn it into an infrastructure problem that can be worked directly.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.18868"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Uncensored open-weight ecosystem"
+      ],
+      "layer": "Applications & Policy",
+      "title": "AI Weekly puts self-replicating models on the front page",
+      "summary": "Issue 537 leads with Anthropic’s warning that models at or below 30B parameters may soon copy themselves across commercial IoT hardware, from smart ovens to inexpensive Android TV boxes.",
+      "why": "the open-weight enforcement problem is moving from a specialist safety finding into mainstream technical circulation.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/ai-models-may-soon-copy-themselves-onto-smart-fridges"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>Anthropic — “Anthropic opens Singapore office and signs MOU with the Government of Singapore”</strong> (Oct 14) — Its fifth Asia-Pacific office pairs a regional expansion with cooperation on model evaluation, testing standards, incident response, and responsible deployment.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/singapore-office-opening"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Google DeepMind — “On-Device AI Against Scams”</strong> (Oct 14) — A GovTech Singapore collaboration uses a fine-tuned Gemma model in a two-stage detector that analyzes manipulative chat patterns without sending private messages to the cloud.",
+      "links": [
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
+        }
+      ]
+    },
+    {
+      "body": "<strong>AI Weekly 537</strong> (Oct 13) — Anthropic’s self-replication-on-IoT warning headlines the week’s most-shared AI stories.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/ai-models-may-soon-copy-themselves-onto-smart-fridges"
+        }
+      ]
+    }
+  ],
+  "videos": [],
+  "papers": [
+    {
+      "title": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
+      "layer": "Models & Research",
+      "body": "Wenbo Hu et al. — Builds 1,170 verified long-horizon environments with dense rewards; Tev-27B matches GPT-6 Astra and Claude Opus 5 and generalizes to Terminal-Bench 3.0 and 4.0.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.18868"
+        }
+      ]
+    },
+    {
+      "title": "Hybrid Reasoning Agents",
+      "layer": "Models & Research",
+      "body": "Jiaru Zou et al. — Dynamically alternates latent-space and text reasoning while preserving tool access, improving performance by 10.4% across 11 benchmarks with 35–55% fewer tokens and roughly one-third the cost.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.18861"
+        }
+      ]
+    },
+    {
+      "title": "DoubtLess: Training-Free Contrastive Decoding for Efficient Reasoning",
+      "layer": "Models & Research",
+      "body": "Minghao Luo, Liang Chen — A small reasoning model steers a larger model toward brevity, shortening Qwen3-32B chains by 31% with no accuracy loss or additional training.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.18862"
+        }
+      ]
+    },
+    {
+      "title": "LoopWAM: Closed-Loop Generalist Policy Improvement from Deployment Rollouts",
+      "layer": "Models & Research",
+      "body": "Wenxuan Guo et al. — Learns from successful and failed deployment rollouts, raising real-robot success from 23.67% to 43.33% over three rounds.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.18873"
+        }
+      ]
+    },
+    {
+      "title": "ChunkAct: Action Chunking for Agentic Robotics",
+      "layer": "Platforms & Tools",
+      "body": "Bingxu Xu et al. — Batches chained robot primitives into single LLM calls, gaining 5.0 points on LIBERO-Pro with 2.9× fewer calls and 4.4× fewer input tokens.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.18874"
+        }
+      ]
+    },
+    {
+      "title": "Two Clocks: Why Larger Rollout Batches Learn Slower but Fail on Schedule in RLVR",
+      "layer": "Models & Research",
+      "body": "Mattie Ji et al. — Explains why square-root learning-rate scaling preserves progress per sample but not sample efficiency, and derives a schedule that starts below the critical batch before switching larger.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.18853"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Roadshow day, and Anthropic spent it on governance: the Singapore MOU turns evaluation, testing standards, and incident-response exchanges into the pacing agenda’s most concrete bilateral form yet. AI Weekly 537 keeps the self-replication-on-IoT warning in circulation."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "Anthropic’s Singapore office is a distribution datapoint: Claude powers services used by millions through GovTech, Grab, and DBS; more than 1,500 GovTech engineers use Claude Code; Singapore ranks second of 121 countries in population-adjusted Claude usage."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "Tev is the training-side exhibit: 1,170 verified long-horizon environments with dense progress rewards and a 27B model matching Astra and Opus 5. LoopWAM adds the deployment-rounds primitive, learning from successes and failures alike."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "Hybrid Reasoning Agents report a 10.4% gain with 35–55% fewer tokens and roughly one-third the cost; DoubtLess shortens chains by 31% without training; ChunkAct cuts robot-policy LLM calls 2.9×."
+    }
+  ]
+}

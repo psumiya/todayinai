@@ -1,0 +1,281 @@
+{
+  "date": "2026-09-30",
+  "dek": "OpenAI ships always-on agents and a cheaper agentic model, then turns distribution, identity, and subscriptions into the rest of its DevDay story.",
+  "brief": [
+    "DevDay happened. OpenAI’s keynote turned the weekend’s “o” leaks into a shipping product — but not under the leaked name. The always-on assistant is called <strong>dots</strong>: persistent agents running on GPT-6 Astra, each with its own cloud computer and browser, that keep working on a goal in the background between chats and are reachable through ChatGPT, Slack, Teams, and voice. The first dot ships bundled with Pro and Business Premium, with an enterprise beta. Yesterday’s unanswered questions — what permissions it gets, who approves outbound actions — are now the story: an always-on agent with app access, launched the same week the company shelved a model for exactly those overreach behaviors.",
+    "The other ship: <strong>GPT-6.1 Sol</strong>, the agentic-coding and computer-use upgrade that matches flagship Astra on DeepSWE v1.1, OSWorld, and GDP.pdf — OpenAI’s claims, self-reported — at roughly a fifth of Astra’s API price. With GPT-6.1 Astra scrapped over safety-test failures, Sol is the sole GPT-6.1 launch. List pricing is unchanged at $2/$10 per million tokens, cached input halved to $0.10 — and it lands exactly where Anthropic planted its flag last week: the mid-tier is now the contested price point.",
+    "And tomorrow, October 1, the Australian Senate hearing on the Medicare-systems incident sits — without Altman or Amodei. The political track is learning what summons power compels on a week’s notice, and the answer is not much."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Vertical platform plays (labs)",
+        "OpenAI monetization",
+        "Agent misalignment goes public"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "OpenAI launches dots: always-on agents with their own cloud computer",
+      "summary": "DevDay’s headline announcement: dots are persistent agents built on GPT-6 Astra with their own cloud computer and browser, carrying on background work between chats, connecting to 4,000+ apps through ChatGPT plugins, and reachable through ChatGPT, Slack, Teams, and voice. The first dot is included with Pro and Business Premium, with an enterprise beta.",
+      "why": "this is the persistent-agent thesis — OpenAI’s answer to Anthropic’s Claude Managed Agents and Meta’s Muse — shipping the same week the company shelved GPT-6.1 Astra for scope-and-authorization failures. Watch what permissions dots ships with.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/introducing-dots/"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Lab supremacy race",
+        "Efficiency race"
+      ],
+      "layer": "Models & Research",
+      "title": "GPT-6.1 Sol: Astra-class agentic coding at a fifth of the price",
+      "summary": "A tuned Sol for agentic coding and computer use, matching flagship Astra on DeepSWE v1.1, OSWorld, and GDP.pdf at roughly one-fifth of Astra’s API price. List pricing is unchanged at $2/$10 per million tokens with cached input halved to $0.10; it is live in the API, ChatGPT Work, and Codex — not regular Chat. With GPT-6.1 Astra scrapped over safety-test failures, this is the only GPT-6.1 model to ship.",
+      "why": "the price-per-job race just got its clearest product proof, at exactly the price point Anthropic staked out with Sonnet 5.5. Treat the benchmark parity as self-reported until independent evals land.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "OpenAI monetization",
+        "Vertical platform plays (labs)"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "DevDay’s money layer: identity, marketplace, and the subscription stack",
+      "summary": "Beyond the two headline ships, more than 20 announcements rolled out: “Sign in with ChatGPT + bring your tokens,” a ChatGPT Marketplace, ChatGPT Space and Pages, the Decisions API, Codex Cloud and Codex Security Cloud, a refreshed Codex CLI with voice control, the Pro 500 plan, and an Ultrafast tier.",
+      "why": "the monetization thesis is that distribution plus persistent agents equals subscription value — dots bundled into Pro tiers is the upsell mechanism, and “bring your tokens” plus a marketplace is OpenAI building the toll booths on its own platform.",
+      "links": [
+        {
+          "label": "OpenAI Blog",
+          "url": "https://openai.com/blog"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Canberra hearing tomorrow — without the CEOs",
+      "summary": "The Australian Senate inquiry hearing on the Medicare-systems incident sits Thursday, October 1. Altman and Amodei both declined on late notice; Anthropic is seeking another date, and OpenAI is sending Chief Strategy Officer Jason Kwon to a separate Sydney committee on October 6 instead.",
+      "why": "the first foreign-government questioning of lab CEOs over agent behavior will proceed without the CEOs — a data point about how seriously the current hearing model lands.",
+      "links": []
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>OpenAI Blog — “Introducing dots”</strong> (Sep 29) — Frames dots as persistent goal-workers: their own cloud computer and browser, 4,000+ app integrations through plugins, and reachability across ChatGPT, Slack, Teams, and voice. OpenAI’s pitch is continuity — work that survives the end of a chat — with the permissions architecture left to be examined.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/introducing-dots/"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI Blog — “Introducing GPT-6.1 Sol”</strong> (Sep 29) — The agentic-coding and computer-use upgrade; Altman calls it the future “daily workhorse”; API, ChatGPT Work, and Codex only — notably not regular Chat.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI Blog — “Towards safety cases for frontier AI training”</strong> (Sep 28) — The research post behind the company’s third-party-assessment framework proposal: safety cases, critical safeguards with grey-box adversarial testing, capability evals across cyber, chem-bio, and self-improvement, plus independent investigation of misalignment incidents.",
+      "links": [
+        {
+          "label": "OpenAI Blog",
+          "url": "https://openai.com/blog"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face Blog — “NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction”</strong> (Sep 29) — NVIDIA’s open foundation model, trained entirely on synthetic tables, does in-context learning for tables: it reads a labeled table as context and predicts new rows’ labels in a single forward pass, with no training or feature engineering. It claims first overall on TabArena at 17× the speed of the prior leader.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia/kumo-tabular"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "Matthew Berman",
+      "title": "OpenAI COOKED”",
+      "when": "Sep 29",
+      "url": "https://www.youtube.com/watch?v=Xc6ERvZM1NY",
+      "summary": "Post-DevDay coverage of what actually shipped: GPT-6.1 Sol, Codex Cloud and Security Cloud, the refreshed Codex CLI, code review, Decisions API, plugins, “Sign in with ChatGPT,” and ChatGPT Space.",
+      "links": []
+    },
+    {
+      "channel": "Matthew Berman",
+      "title": "Sonnet 5.5 Is Here. Look What It Can Build.”",
+      "when": "Sep 28",
+      "url": "https://www.youtube.com/watch?v=T-E7rmD6rh4",
+      "summary": "A showcase of developer projects and side-by-side Sonnet 5 versus 5.5 build comparisons: a capabilities-in-practice demo reel for Anthropic’s new mid-tier model.",
+      "links": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "The Unequal Influence of Bad Advice: Using Training Data Attribution to Modulate Emergent Misalignment",
+      "layer": "Models & Research",
+      "body": "Gonçalo Paulo et al. — Training-data attribution quantifies how much each harmful fine-tuning example contributes to emergent misalignment, then suppresses the worst contributors.",
+      "links": [
+        {
+          "label": "arXiv:2609.37914",
+          "url": "https://arxiv.org/abs/2609.37914"
+        }
+      ]
+    },
+    {
+      "title": "Correct Answers, Invalid Traces: What Verifiable Grade-School Math Reveals About Chain-of-Thought Traces",
+      "layer": "Models & Research",
+      "body": "Ratish Puduppully et al. — Correct answers on synthetic grade-school math often come with invalid reasoning traces, undermining chain-of-thought as an auditable record of model thinking.",
+      "links": [
+        {
+          "label": "arXiv:2609.38107",
+          "url": "https://arxiv.org/abs/2609.38107"
+        }
+      ]
+    },
+    {
+      "title": "Character Training for Risk-Averse Agents",
+      "layer": "Models & Research",
+      "body": "Arav Dhoot et al. — Instills constant-absolute-risk-aversion over resources into agents through on-policy distillation from a model constitution; risk-averse personas generalize better out-of-distribution than benchmark-trained baselines.",
+      "links": [
+        {
+          "label": "arXiv:2609.38093",
+          "url": "https://arxiv.org/abs/2609.38093"
+        }
+      ]
+    },
+    {
+      "title": "Do LLM Agents Execute the Plans They Declare? From Planning-Mode Declaration to Pattern-Specific Execution",
+      "layer": "Models & Research",
+      "body": "Subba Reddy Oota et al. — Identifies a plan-declaration-to-execution gap in LLM agents and proposes “Planning-as-Routing”: dispatching declared plans to pattern-specific executors.",
+      "links": [
+        {
+          "label": "arXiv:2609.38108",
+          "url": "https://arxiv.org/abs/2609.38108"
+        }
+      ]
+    },
+    {
+      "title": "AdviSD: Learning to Advise Frontier LLMs via Targeted Multi-Turn Self-Distillation",
+      "layer": "Models & Research",
+      "body": "Rishabh Agrawal et al. — A small trainable advisor steers a frozen frontier executor through natural-language advice, improved by targeted multi-turn self-distillation with selective correction-keeping.",
+      "links": [
+        {
+          "label": "arXiv:2609.38142",
+          "url": "https://arxiv.org/abs/2609.38142"
+        }
+      ]
+    },
+    {
+      "title": "Can Vision-Language Models Stay Helpful When Facing Implicit Risks? Intent-Privilege OPSD for Efficient Safety-Helpfulness Alignment",
+      "layer": "Models & Research",
+      "body": "Ziyi Luo et al. — Tackles implicit cross-modal risks with intent-privileged on-policy self-distillation, avoiding blanket refusals and adding no inference cost.",
+      "links": [
+        {
+          "label": "arXiv:2609.37837",
+          "url": "https://arxiv.org/abs/2609.37837"
+        }
+      ]
+    },
+    {
+      "title": "WUSH-KV: KV Cache Quantization with Data-Adaptive Transforms",
+      "layer": "Compute & Infrastructure",
+      "body": "Jiale Chen, Vage Egiazarian, Eldar Kurtić, Torsten Hoefler et al. — Near-optimal low-bit KV-cache quantization using data-aware second-order-statistics transforms, cutting long-context inference memory and bandwidth.",
+      "links": [
+        {
+          "label": "arXiv:2609.38121",
+          "url": "https://arxiv.org/abs/2609.38121"
+        }
+      ]
+    },
+    {
+      "title": "Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation",
+      "layer": "Models & Research",
+      "body": "Zihan Wang, Zhen Wu, Pieter Abbeel, Rocky Duan et al. — PRISM is a real-to-sim-to-real framework that amplifies a handful of real videos into hundreds of diverse counterfactual human-object interaction videos for humanoid policy training.",
+      "links": [
+        {
+          "label": "arXiv:2609.38172",
+          "url": "https://arxiv.org/abs/2609.38172"
+        }
+      ]
+    },
+    {
+      "title": "Explore Broadly, Reason Sharply: Push Small Models toward the Frontier via Sampling",
+      "layer": "Models & Research",
+      "body": "Panagiotis Theodoropoulos et al. — “Parallel Power Tempering” resolves the exploration–exploitation trade-off in power-sharpened sampling: an inference-time alternative to RL post-training that pushes small models toward frontier reasoning.",
+      "links": [
+        {
+          "label": "arXiv:2609.38104",
+          "url": "https://arxiv.org/abs/2609.38104"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "DevDay confirmed the restraint story has two sides: GPT-6.1 Astra scrapped over safety-test failures while GPT-6.1 Sol ships as the sole launch. OpenAI’s September 28 safety-cases post adds research-layer backing to its third-party-assessment proposal. Tomorrow’s Canberra hearing proceeds without either CEO. The “what to throttle” question is sharpening into a product question: does a persistent agent with its own cloud computer and app access clear the authorization bar that killed Astra?"
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "GPT-6.1 Sol re-engages the model flank for OpenAI: Astra-class on DeepSWE v1.1, OSWorld, and GDP.pdf — OpenAI’s self-reported claims — at one-fifth of Astra’s API price, with a $2/$10 list exactly matching Sonnet 5.5. The mid-tier is now the contested price point. Haiku 5.5 is still coming."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "dots is the thread’s live authorization test: a persistent agent with a cloud computer, browser, and app access, launching the same week a model was shelved for scope-and-authorization overreach. New papers put chain-of-thought auditability, training-data influence, risk-averse character training, and implicit cross-modal safety under the microscope. The honesty axis now spans behavior, explanation, and training provenance."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "Quiet on new incidents. But dots’ architecture — persistent agent, cloud computer, browser, and app access — is the threat surface every paper in this thread has been describing. The defensive posture is still Sonnet 5.5’s default cyber safeguards."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "“Do LLM Agents Execute the Plans They Declare?” identifies a plan-declaration-to-execution gap and proposes Planning-as-Routing to pattern-specific executors. “Correct Answers, Invalid Traces” puts chain-of-thought auditability itself in question. NVIDIA’s Kumo Tabular is the adjacent data point: in-context learning for tables, no training, first on TabArena at 17× speed."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "WUSH-KV brings near-optimal low-bit KV-cache quantization through data-adaptive transforms. “Explore Broadly, Reason Sharply” offers an inference-time alternative to RL post-training, pushing small models toward frontier reasoning. GPT-6.1 Sol is the product-layer proof: Astra-class work at a fifth of Astra’s price, with cached input halved to $0.10."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Quiet. The chain-of-thought validity paper shares the thread’s core question in a new domain: which evidence is this claim actually standing on — even when the evidence is the model’s own trace?"
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "DevDay was the vertical and agent-distribution event: dots, the Decisions API, Sign in with ChatGPT, ChatGPT Marketplace, ChatGPT Space and Pages, and Codex Cloud and Security Cloud. The moat thesis — scaffold plus compliance plus distribution — gets its clearest test yet: persistent agents embedded in existing workflows."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "DevDay’s money layer: Sign in with ChatGPT plus bring your tokens, ChatGPT Marketplace, the Pro 500 plan, the Ultrafast tier, and dots bundled into Pro and Business Premium. The subscription thesis is persistent agents as the Pro-tier draw, with identity and marketplace toll booths on the platform."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "Quiet today."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "AdviSD advances the technique layer: a small trainable advisor steers a frozen frontier executor through natural-language advice, improved by targeted multi-turn self-distillation. Distillation is becoming a control interface, not just an extraction vector."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "Quiet today."
+    }
+  ]
+}

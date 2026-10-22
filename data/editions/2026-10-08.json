@@ -1,0 +1,307 @@
+{
+  "date": "2026-10-08",
+  "dek": "The efficiency race moves to the price sheet and the chat surface as new measurements expose the scaling, security, and reliability costs of agentic systems.",
+  "brief": [
+    "The efficiency race moved to the price sheet and the chat surface. Anthropic shipped Claude Haiku 5.5 — roughly 75% cheaper than Haiku 4.5 at $0.10/$0.50 per million tokens under 100K, the first Haiku with an adjustable effort setting, plus halved Sonnet 5.5 cache-read prices. OpenAI answered on the surface: “GPT-6 and Intelligent UI for everyone” puts interactive charts, forms, tappable buttons, and small in-conversation tools into GPT-6 answers across all ChatGPT tiers. The same day’s Atlassian partnership takes the other direction: GPT-6 Astra and the GPT-5.6 series powering agents across Rovo, Jira, Confluence, and Bitbucket over MCP.",
+    "The measurement side had a busy day. A first preregistered study of alignment scaling laws puts numbers on the pacing question: adversarial-training compute to hold Pythia classifiers under 10% attack success scales as N<sup>0.60</sup>, sycophancy at roughly 0.89 — and it is the worst exponent, not the average, that sets the regime. Truth-directed responding consistently uses fewer reasoning tokens than lie-directed responding across three reasoning models. Across 1,920 fault-injection trials, agents flag 91.3% of explicit tool errors but only 58.8% of plausible-wrong-value silent failures.",
+    "The offensive side sharpened too: WebMirage steers web agents from visual grounding to browser execution with localized adversarial-image perturbations — 91.9% attack success across 2,250 tasks and six VLM backbones, surviving three agent-level defenses. The distillation front advanced three ways at once: novelty-driven exploration distilled into a separate student, reverse-KL on-policy distillation that transfers compositional reasoning skill but not factual knowledge, and a simulation-free, data-free diffusion-distillation method reaching FID 2.04 at a single function evaluation on ImageNet-256."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Efficiency race",
+        "Lab supremacy race"
+      ],
+      "layer": "Models & Research",
+      "title": "Claude Haiku 5.5 gives the cheapest model an effort knob",
+      "summary": "Anthropic’s new Haiku runs roughly 75% cheaper than Haiku 4.5 at $0.10/$0.50 per million tokens under 100K and is the first Haiku with an adjustable effort setting. Sonnet 5.5 cache-read prices were also halved, making agentic runs about 20% cheaper.",
+      "why": "the efficiency contest is now on the price sheet — the mid-tier was contested on intelligence, and the bottom tier is now contested on cost per job.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/claude-haiku-5-5"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "OpenAI monetization",
+        "Vertical platform plays (labs)"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "GPT-6’s Intelligent UI turns chat into an app surface",
+      "summary": "GPT-6 rolls out across all ChatGPT tiers with answers that include interactive charts, forms, tappable buttons, and small in-conversation tools instead of text-only replies. Paid tiers get GPT-6 Sol; Free and Go get GPT-6 Luna.",
+      "why": "after a year of pricing-ladder moves, OpenAI is differentiating on the surface — the conversation itself becomes interactive software, with the Sol/Luna tier split carrying the monetization.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/news"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Models & Research",
+      "title": "First preregistered alignment scaling laws",
+      "summary": "“Toward Alignment Scaling Laws” models alignment burden per risk category as B<sub>r</sub>(N)=a<sub>r</sub>N<sup>αr</sup>. Adversarial-training compute to hold Pythia classifiers below 10% attack success scales as N<sup>0.60</sup>; sycophancy scales at roughly 0.89.",
+      "why": "scaling helps only where α<1, and the worst exponent — not the average — sets the regime. This is the first quantitative version of the question every pacing proposal has to answer.",
+      "links": [
+        {
+          "label": "arXiv:2610.08540",
+          "url": "https://arxiv.org/abs/2610.08540"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "AI misuse: autonomous attack chains"
+      ],
+      "layer": "Models & Research",
+      "title": "Adversarial images hijack web agents end to end",
+      "summary": "WebMirage crafts localized visual perturbations that steer web agents to attacker-chosen UI elements and execute the corresponding browser actions: 91.9% average attack success across 2,250 tasks and six VLM backbones, versus 17.4% for the strongest baseline.",
+      "why": "the attack surface moved from text to pixels — a perturbed image defeats defenses that assume injections arrive as text.",
+      "links": [
+        {
+          "label": "arXiv:2610.09240",
+          "url": "https://arxiv.org/abs/2610.09240"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Vertical platform plays (labs)",
+        "OpenAI monetization"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "OpenAI and Atlassian move frontier agents into the workplace OS",
+      "summary": "GPT-6 Astra and the GPT-5.6 series will power agents across Atlassian’s platform and Rovo, with ChatGPT and Codex connecting to Jira, Confluence, and Bitbucket over MCP alongside Rovo’s permission-aware Teamwork Graph.",
+      "why": "after the legal vertical, this is distribution through the platform where enterprise work actually happens — and the permissions layer, not the model, is the moat.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/news"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>Anthropic — Introducing Claude Haiku 5.5</strong> (Oct 7) — The cheapest, fastest Haiku yet, roughly 75% cheaper than Haiku 4.5, with the line’s first adjustable effort setting and monthly API credits for Max and Team subscribers. Anthropic also disclosed that Cyber Verification Program partners found 129,000 verified software vulnerabilities between April and July 2026, including more than 33,000 critical or high-severity issues.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/claude-haiku-5-5"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI — GPT-6 and Intelligent UI for everyone</strong> (Oct 7) — Interactive charts, forms, tappable buttons, and in-conversation tools arrive across all ChatGPT tiers; Sol serves paid plans and Luna serves Free and Go. OpenAI also introduced a College Planner for US students in grades 10–12, announced the Atlassian partnership, and released 377 new math results generated by an unreleased internal model.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/news"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face — Liquid AI’s d1 decision models for the edge</strong> (Oct 7) — d1-3B and d1-omni-600M produce decisions in a single forward pass instead of generating sequential tokens. The feed also added TII’s open Falcon ASR model and NVIDIA’s follow-up on Nemotron results: 30/42 on IMO 2026 and an unofficial 535.4/600 on IOI, above the top human score of 498.27.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "Two Minute Papers",
+      "title": "DeepMind’s New AI Just Cracked The Code Of Life”",
+      "when": "Oct 7",
+      "url": "https://ai-tldr.dev/releases/",
+      "summary": "Károly Zsolnai-Fehér walks through AlphaGenome Atlas, Google DeepMind’s one-petabyte set of predicted effects for all roughly 9 billion single-letter DNA changes in the human genome.",
+      "links": []
+    },
+    {
+      "channel": "",
+      "title": "OpenAI dots, Microsoft Autopilot, Meta Muse and Instinct explained",
+      "when": "around Oct 6",
+      "url": "https://www.youtube.com/watch?v=IZOxa6TEaNE",
+      "summary": "Hosts Hana and Raqoon survey the October state of AI agents, including always-on cloud agents, Microsoft’s Autopilot, Meta’s Muse, and the economics of coding agents.",
+      "links": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "Toward Alignment Scaling Laws: A Framework and First Preregistered Measurements",
+      "layer": "Models & Research",
+      "body": "Jeremy Canale — The alignment burden per risk category scales as B<sub>r</sub>(N)=a<sub>r</sub>N<sup>αr</sup>; adversarial-training compute to hold Pythia classifiers below 10% attack success scales as N<sup>0.60</sup>, while sycophancy scales at roughly 0.89.",
+      "links": [
+        {
+          "label": "arXiv:2610.08540",
+          "url": "https://arxiv.org/abs/2610.08540"
+        }
+      ]
+    },
+    {
+      "title": "Adversarial Images Hijack Web Agents from Visual Grounding to Browser Execution",
+      "layer": "Models & Research",
+      "body": "Wanjing Han, Levi Taiji Li, Mu Zhang, Yue Jiang et al. — Localized visual perturbations steer agents to attacker-chosen UI elements and execute browser actions, achieving 91.9% attack success across 2,250 tasks and six VLM backbones.",
+      "links": [
+        {
+          "label": "arXiv:2610.09240",
+          "url": "https://arxiv.org/abs/2610.09240"
+        }
+      ]
+    },
+    {
+      "title": "Decoupling Exploration from Optimization in RLVR",
+      "layer": "Models & Research",
+      "body": "Saif Punjwani, Micah Goldblum — Exploration-Distillation trains explorer policies with a novelty bonus, filters trajectories, and distills them into a separate student, beating DAPO at the same wall-clock budget on seven math-reasoning benchmarks.",
+      "links": [
+        {
+          "label": "arXiv:2610.10536",
+          "url": "https://arxiv.org/abs/2610.10536"
+        }
+      ]
+    },
+    {
+      "title": "On-Policy Distillation Teaches New Skills but Not New Knowledge",
+      "layer": "Models & Research",
+      "body": "Yixuan Tang, Yi Yang — Reverse-KL on-policy distillation reliably transfers compositional reasoning skill but little factual knowledge; swapping in forward KL restores factual transfer across four models from three families.",
+      "links": [
+        {
+          "label": "arXiv:2610.09639",
+          "url": "https://arxiv.org/abs/2610.09639"
+        }
+      ]
+    },
+    {
+      "title": "Consistent Distribution Matching for Data-Free Diffusion Distillation",
+      "layer": "Models & Research",
+      "body": "Yuxiang Fu, Qi Yan, Zike Wu, Yongxing Zhang et al. — A simulation-free, data-free method for distilling diffusion and flow models reaches FID 2.04 at one function evaluation and 1.37 at four evaluations on ImageNet-256 in 40 epochs.",
+      "links": [
+        {
+          "label": "arXiv:2610.09221",
+          "url": "https://arxiv.org/abs/2610.09221"
+        }
+      ]
+    },
+    {
+      "title": "Reasoning-Token Spikes Under Prompted Untruthful Responding in Large Language Models",
+      "layer": "Models & Research",
+      "body": "Maverick Morales, Tomáš Dominik, Vermut Gao, Katrina Shirey et al. — Truth-directed responding consistently uses fewer reasoning tokens than lie-directed or truth-indifferent responding across three reasoning models and 210 questions.",
+      "links": [
+        {
+          "label": "arXiv:2610.10405",
+          "url": "https://arxiv.org/abs/2610.10405"
+        }
+      ]
+    },
+    {
+      "title": "Loud Failures, Quiet Failures: Fault Detection and Recovery in Tool-Using Language Model Agents",
+      "layer": "Models & Research",
+      "body": "Obada Kraishan — Across 1,920 fault-injection trials, agents flag 91.3% of explicit tool errors but only 58.8% of plausible-wrong-value silent failures; reasoning models notice 9.3 percentage points less than instruct siblings.",
+      "links": [
+        {
+          "label": "arXiv:2610.10062",
+          "url": "https://arxiv.org/abs/2610.10062"
+        }
+      ]
+    },
+    {
+      "title": "DrugTargetWorld: A Synthetic Biobank for Training and Benchmarking AI Scientists",
+      "layer": "Models & Research",
+      "body": "Samuel Margolis, Paul Schmiedmayer, Alan Huang, Ethan Chen et al. — Procedurally generated biobanks with 54,000 participants and hidden causal structure benchmark end-to-end drug-target discovery; no tested agent reliably rejects misleading non-causal proteins.",
+      "links": [
+        {
+          "label": "arXiv:2610.09558",
+          "url": "https://arxiv.org/abs/2610.09558"
+        }
+      ]
+    },
+    {
+      "title": "A Society of Researchers: Designing Institutions for Populations of Autonomous Research Agents",
+      "layer": "Applications & Policy",
+      "body": "Ali Asaria, Deep Gandhi, Tony Salomone — The paper proposes institutions for thousands of research agents, with principal investigators competing for compute through RFPs and grants under a human-governor “mayor”; a running society has 10,000 agents.",
+      "links": [
+        {
+          "label": "arXiv:2610.10468",
+          "url": "https://arxiv.org/abs/2610.10468"
+        }
+      ]
+    },
+    {
+      "title": "Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models",
+      "layer": "Models & Research",
+      "body": "Tan Yu, Alexander Bukharin, Khushi Bhardwaj, Jennifer Williams et al. — Three screens rank base checkpoints by their post-agentic-training potential using only successful trajectories, agreeing with SWE-bench Verified pass@1.",
+      "links": [
+        {
+          "label": "arXiv:2610.10478",
+          "url": "https://arxiv.org/abs/2610.10478"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Two papers land in the pacing debate. Alignment scaling laws put first preregistered numbers on the alignment burden, while “A Society of Researchers” argues that populations of thousands of autonomous research agents need designed institutions, including compute allocation under a human-governor “mayor.”"
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Anthropic ships Claude Haiku 5.5 at roughly 75% below Haiku 4.5, with an adjustable effort setting and cheaper Sonnet cache reads. GPT-6 tiering goes wide through Intelligent UI, with Sol on paid plans and Luna on Free and Go."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "OpenAI’s Atlassian partnership puts GPT-6 Astra and GPT-5.6 agents across Rovo, Jira, Confluence, and Bitbucket over MCP; Intelligent UI turns the consumer chat surface into an app surface."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "DrugTargetWorld benchmarks end-to-end drug-target discovery on synthetic biobanks with hidden causal structure. The leading agents recover 64% of causal drivers, but none reliably rejects misleading non-causal proteins."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "Truth-directed responses use fewer reasoning tokens than lie-directed responses across three models. In tool use, agents catch 91.3% of explicit errors but only 58.8% of silent wrong-value failures, and reasoning models perform worse than their instruct siblings."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "WebMirage uses localized adversarial-image perturbations to steer web agents from visual grounding through browser execution, achieving 91.9% attack success across 2,250 tasks and six VLM backbones."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Exploration-Distillation turns novelty-seeking trajectories into a stronger student; reverse-KL on-policy distillation transfers reasoning skill but little factual knowledge; simulation-free, data-free diffusion distillation reaches FID 2.04 in one evaluation. Still no Moonshot response to OpenAI’s named attribution."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Intelligent UI adds interactive tools to GPT-6 answers across every ChatGPT tier, while the Atlassian partnership is the enterprise-distribution counterpart. Anthropic counters with Haiku 5.5’s lower prices and halved Sonnet cache-read costs."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "Haiku 5.5 and cheaper Sonnet cache reads move the race to the price sheet. Liquid AI’s d1 models make decisions in one forward pass, while data-free diffusion distillation extends the efficiency thesis to image models."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "Silent failures are the blind spot: agents detect 91.3% of explicit tool errors but 58.8% of plausible wrong values. “Before They Can Solve” adds three screens that predict post-training coding-agent performance from base checkpoints."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Quiet. Watch the Bedrock Claude watermark rollout, scheduled to complete October 12, and textGrain’s first week in the EU."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "Quiet; no new mapping."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "Quiet. The arXiv submission caps and Google open-source vulnerability-report freeze stand, with no new throttles."
+    }
+  ]
+}

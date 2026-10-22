@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-05",
+  "dek": "The accountability wave reaches City Hall while a Monday measurement salvo exposes brittle agents, detectors, and open-weight safeguards.",
+  "brief": [
+    "The accountability wave moved to City Hall. Ex-Anthropic researcher Jacob Coxon testifies today before the New York City Council at Speaker Julie Menin’s request — one week after his quit-for-pause post went mainstream — alongside fellow whistleblowers Alex Turner, formerly of DeepMind, and Daniel Kokotajlo, formerly of OpenAI and now at the AI Futures Project. Anthropic’s Logan Graham, head of the Frontier Red Team, joins OpenAI’s Morgan Dwyer, Meta’s Shane Cahill, and Google’s Alice Friend in the room. The council is weighing third-party validation of AI systems, nation-leading whistleblower incentives, and a right-to-sue bill. Meanwhile Canberra’s federal track continues: OpenAI’s Jason Kwon appears before the Sydney committee tomorrow.",
+    "The measurement layer had a busy Monday on arXiv. Workspace agents fall to runtime attacks up to 68% of the time in EvoRiskBench. Prompt-injection detectors that top one benchmark catch 2% on another — Meta’s Prompt Guard 2 among them. Watermark-style misuse detectors for open-weight models break entirely under a new attack framework. A recursive harness self-improvement paper puts the RSI loop the pacing agenda wants to throttle back on the page, in code. Jack Clark’s Import AI 475 supplies the economics for the swarm thesis: scaling agents is inference scaling with a coordination tax — ten times the agents buys three to five times the performance."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Coordinated frontier pacing",
+        "Agent misalignment goes public"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Coxon testifies at New York City Council’s AI hearing today",
+      "summary": "Coxon appears at Speaker Julie Menin’s request as lawmakers weigh AI-safety bills, joined by Alex Turner and Daniel Kokotajlo. Anthropic, OpenAI, Meta, and Google send Logan Graham, Morgan Dwyer, Shane Cahill, and Alice Friend. The package includes third-party validation, whistleblower incentives, and a right to sue.",
+      "why": "the accountability wave has moved from lab departures and federal investigations into a municipal chamber considering enforceable rights.",
+      "links": [
+        {
+          "label": "Bloomberg via Moneyweb",
+          "url": "https://www.moneyweb.co.za/news/ai/ex-anthropic-researcher-coxon-to-appear-at-nyc-hearing-on-ai/"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Efficiency race",
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Models & Research",
+      "title": "Import AI 475: swarm scaling is inference scaling with a coordination tax",
+      "summary": "Toby Ord’s analysis, highlighted by Jack Clark, treats swarms as parallel inference. Parallelization cuts wall-clock time, but coordination produces diminishing returns: multiplying agents tenfold yields roughly three-to-five-times the performance, not tenfold. The issue also covers SynthID Bio and the AI science economy.",
+      "why": "the swarm thesis now has an economics: speed is real, but so is the “stepping on toes” tax.",
+      "links": [
+        {
+          "label": "Import AI",
+          "url": "https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "AI misuse: autonomous attack chains",
+        "Agentic reliability"
+      ],
+      "layer": "Models & Research",
+      "title": "October 5 arXiv batch: the measurement salvo",
+      "summary": "EvoRiskBench brings 450 executable adversarial tasks and a worst-case 68.44% attack-success rate. “Passing the Test You Trained On” shows detector rankings transfer poorly: the best BIPIA system catches 2% of AgentDojo injections at a 1% false-positive rate. Untag breaks open-weight trigger-tag misuse detectors, while task-harness co-evolution drives solver accuracy from 100% to 54.8% over fourteen rounds with weights fixed.",
+      "why": "four papers turn abstract safety claims into failure rates, cross-benchmark transfer gaps, breakable detectors, and executable self-improvement loops.",
+      "links": [
+        {
+          "label": "EvoRiskBench",
+          "url": "https://arxiv.org/abs/2610.03153"
+        },
+        {
+          "label": "Prompt-injection detectors",
+          "url": "https://arxiv.org/abs/2610.03448"
+        },
+        {
+          "label": "Trigger-tag fragility",
+          "url": "https://arxiv.org/abs/2610.03124"
+        },
+        {
+          "label": "Recursive harnesses",
+          "url": "https://arxiv.org/abs/2610.03548"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>Import AI 475 — “Swarm scaling; Google DeepMind watermarks biology; and the AI science economy”</strong> (Oct 5) — Jack Clark highlights Toby Ord’s model of swarms as inference scaling: parallelization trades more total tokens for less wall-clock time, while coordination imposes diminishing returns. The issue also covers SynthID Bio and the emerging AI science economy.",
+      "links": [
+        {
+          "label": "Import AI",
+          "url": "https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/"
+        }
+      ]
+    }
+  ],
+  "videos": [],
+  "papers": [
+    {
+      "title": "EvoRiskBench: An Evolving Benchmark for Runtime Security Risks in Workspace Agents",
+      "layer": "Models & Research",
+      "body": "A benchmark of 450 executable adversarial tasks across six scenarios and nine model-harness configurations. The worst configuration, Codex with DeepSeek-V4-Pro-0813, reaches a 68.44% attack-success rate.",
+      "links": [
+        {
+          "label": "arXiv:2610.03153",
+          "url": "https://arxiv.org/abs/2610.03153"
+        }
+      ]
+    },
+    {
+      "title": "The Fragility of Trigger-Tag Mechanisms for Misuse Detection in Open-Weight LLMs",
+      "layer": "Models & Research",
+      "body": "Formalizes token-level and weight-level trigger tags, then introduces the Untag attack framework. Across the evaluated designs, attacks render existing mechanisms ineffective once adversaries can transform outputs or modify open weights.",
+      "links": [
+        {
+          "label": "arXiv:2610.03124",
+          "url": "https://arxiv.org/abs/2610.03124"
+        }
+      ]
+    },
+    {
+      "title": "Efficient Reasoning Training Does Not Always Harm CoT Faithfulness and Monitorability",
+      "layer": "Models & Research",
+      "body": "Efficient-reasoning training affects two oversight properties differently: faithfulness falls in most settings, while monitorability remains more robust even as chains of thought become much shorter.",
+      "links": [
+        {
+          "label": "arXiv:2610.03509",
+          "url": "https://arxiv.org/abs/2610.03509"
+        }
+      ]
+    },
+    {
+      "title": "Recursive Harness Self-Improvement for Frontier Reasoning Data Synthesis",
+      "layer": "Models & Research",
+      "body": "Task-harness co-evolution adapts skills, prompts, and workflows while keeping model weights and verification fixed. Mean solver accuracy drops from 100% to 54.8% over fourteen rounds as the generated tasks become harder.",
+      "links": [
+        {
+          "label": "arXiv:2610.03548",
+          "url": "https://arxiv.org/abs/2610.03548"
+        }
+      ]
+    },
+    {
+      "title": "Passing the Test You Trained On: Re-evaluating Prompt-Injection Detectors for LLM Agents",
+      "layer": "Models & Research",
+      "body": "Detection rankings transfer poorly across benchmarks. The best detector on BIPIA catches 2% of AgentDojo injections at a 1% false-positive rate; the study includes Meta’s Prompt Guard 2.",
+      "links": [
+        {
+          "label": "arXiv:2610.03448",
+          "url": "https://arxiv.org/abs/2610.03448"
+        }
+      ]
+    },
+    {
+      "title": "FrugalEvo: Towards Cost-Aware LLM-Guided Program Evolution",
+      "layer": "Models & Research",
+      "body": "A strong model explores strategies while a cheaper model implements and refines code, with cache-efficient prompts. Its GPT-5.6 configuration reaches a new circle-packing result for $1.68 versus roughly $50 for multi-agent baselines.",
+      "links": [
+        {
+          "label": "arXiv:2610.03675",
+          "url": "https://arxiv.org/abs/2610.03675"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "New York City’s hearing puts whistleblowers, lab representatives, third-party validation, incentives, and a right to sue in one chamber. Jason Kwon’s October 6 Sydney committee appearance keeps the Australian track moving. Import AI’s swarm economics adds a practical answer to what scaling coordination costs."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Quiet at the frontier-lab layer. The adjacent result is Queen, a four-billion-parameter chess model reporting 2697 Elo while explaining its moves, arXiv:2610.03695."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "Quiet."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "Quiet; SynthID Bio returns in Import AI 475 as the provenance layer for designed biology."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "The chain-of-thought evidence cuts both ways. Efficient-reasoning training can reduce faithfulness while preserving monitorability, while arXiv:2610.03458 supplies the counter-direction in the same debate."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "EvoRiskBench’s worst configuration reaches 68.44% attack success. Prompt-injection detector rankings collapse across benchmarks, and Untag shows trigger-tag misuse detectors are brittle under matched attacks."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "“Divergence controls entropy in distillation” shows that the objective itself acts as an implicit entropy regularizer. There is still no Moonshot response to OpenAI’s named attribution. <a class=\"source-link\" href=\"https://arxiv.org/abs/2610.03529\" rel=\"noopener\" target=\"_blank\">arXiv:2610.03529</a>"
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Quiet."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "FrugalEvo pairs expensive strategy search with cheaper implementation, recursive harness improvement co-evolves task generation, swarm scaling pays a coordination tax, and Pivot-SD, arXiv:2610.03665, extends the efficiency stack."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "Recursive harness co-evolution joins 4DCodeBench, arXiv:2610.03715, and HyperBrowseComp, arXiv:2610.03574, in the measurement layer: agents are being evaluated against harder evolving tasks, four-dimensional code work, and browsing under pressure."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Writerslogic’s PAN 2026 work, arXiv:2610.03565, joins the attribution stack, while Claude’s text-watermark rollout on Amazon Bedrock continues toward October 12."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "Trigger-tag fragility is the new data point: watermark-style misuse detection does not survive an attacker who controls model weights or the output channel. No new ecosystem mapping."
+    }
+  ]
+}

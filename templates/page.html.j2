@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="light"><meta name="theme-color" content="#f3f1ed"><link rel="icon" href="data:,"><title>{{ site.title }}</title><meta name="description" content="{{ site.description }}"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,500;6..72,650&amp;display=swap" rel="stylesheet">
+<style>
+{{ css }}
+</style></head>
+{%- macro layer_chip(layer, with_title=true) -%}
+{%- if layer %}<span class="layer-chip" data-layer="{{ layer }}"{% if with_title %} title="Layer tag — open “What are layers?” for the legend"{% endif %}>Layer · {{ layer }}</span>{% endif -%}
+{%- endmacro -%}
+{%- macro links(items) -%}
+{%- for l in items %} <a class="source-link" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor -%}
+{%- endmacro -%}
+{%- macro pager(ed) -%}
+<nav class="edition-pager" aria-label="Browse editions">
+{%- if ed.older %}<button class="pager-button" type="button" data-edition-target="{{ ed.older }}">←<span>Older</span></button>{% else %}<button class="pager-button disabled" type="button" disabled>←<span>Older</span></button>{% endif -%}
+<span><strong>{{ ed.short_date }}</strong>{% if ed.latest %} <em class="latest-badge">LATEST</em>{% endif %}</span>
+{%- if ed.newer %}<button class="pager-button" type="button" data-edition-target="{{ ed.newer }}"><span>Newer</span>→</button>{% else %}<button class="pager-button disabled" type="button" disabled><span>Newer</span>→</button>{% endif -%}
+</nav>
+{%- endmacro -%}
+<body id="nlx"><div class="shell"><div class="toolbar"><div class="view-toggle" aria-label="Choose archive view"><button class="view-button active" type="button" data-view="edition" aria-pressed="true">Edition</button><button class="view-button" type="button" data-view="storylines" aria-pressed="false">Storylines</button></div><div class="search-wrap"><input class="global-search" type="search" aria-label="Search all editions" placeholder="Search all editions"><button class="search-clear" type="button" aria-label="Clear search">×</button></div></div>
+<aside class="archive-rail" aria-label="Edition archive"><p class="rail-label">Archive</p><p class="archive-count">{{ editions|length }} editions</p>
+{%- for month, eds in months %}<h2 class="month">{{ month }}</h2><ul class="edition-list">{% for ed in eds %}<li><a href="#edition-{{ ed.date }}" data-edition-target="{{ ed.date }}"{% if ed.latest %} aria-current="page"{% endif %}><span class="edition-day">{{ ed.day }}</span><span class="edition-meta"><strong>{{ ed.weekday }}</strong><small>{{ "Latest edition" if ed.latest else "Previous edition" }}</small></span></a></li>{% endfor %}</ul>{% endfor -%}
+</aside>
+{%- for ed in editions %}
+<main class="edition-panel" data-edition="{{ ed.date }}" id="edition-{{ ed.date }}" aria-label="AI Newsletter — {{ ed.long_date }}"{% if not ed.latest %} hidden{% endif %}>
+{{ pager(ed) }}
+<header class="article-header"><p class="eyebrow">{{ site.title }} · Daily edition · {{ ed.month }}</p><h1>{{ ed.weekday }},<br>{{ ed.month_day }}</h1><p class="dek">{{ ed.dek }}</p></header>
+<section class="day-brief"><div><h2>What matters today</h2><span class="read-time"></span></div>{% for p in ed.brief %}<p>{{ p|inline }}</p>{% endfor %}</section>
+<section class="edition-tools" aria-label="Story filters and layer legend"><div class="thread-filter-block"><div class="filter-heading"><span class="filter-label">Filter stories</span><span class="filter-status" aria-live="polite"></span></div><div class="thread-filters" role="group" aria-label="Filter stories by storyline"></div></div><details class="layer-guide"><summary>What are layers?</summary><div class="layer-popover"><p>Layers show where each item sits in the AI stack.</p><ul>{% for name, desc in layers %}<li><strong>{{ name }}</strong><span> — {{ desc }}</span></li>{% endfor %}</ul></div></details></section>
+<article class="article-body">
+<section class="content-section" data-section="top-stories" id="edition-{{ ed.date }}-top-stories"><div class="section-heading"><h2>Top stories</h2></div><ul class="stories">
+{%- for s in ed.top_stories %}<li class="searchable-item story{% if s.lead %} lead{% endif %}"><div class="story-ribbons">{% for t in s.threads %}<button type="button" class="story-ribbon" data-thread="{{ t }}" style="--ribbon:{{ threads[t].color }}">{{ t }}</button>{% endfor %}{{ layer_chip(s.layer) }}</div><h3>{{ s.title }}</h3><div class="story-copy">— {{ s.summary|inline }}</div>{% if s.why or s.links %}<blockquote><span>Why it matters</span>{{ s.why|inline }}{{ links(s.links) }}</blockquote>{% endif %}</li>{% endfor -%}
+</ul></section>
+{%- if ed.blogs %}
+<section class="content-section" data-section="blogs" id="edition-{{ ed.date }}-blogs"><details class="section-shell"><summary class="section-heading"><h2>Blog highlights</h2><b aria-hidden="true"></b></summary><ul class="content-list">
+{%- for b in ed.blogs %}<li class="searchable-item">{{ b.body|inline }}{{ links(b.links) }}</li>{% endfor -%}
+</ul></details></section>
+{%- endif %}
+{%- if ed.videos %}
+<section class="content-section" data-section="videos" id="edition-{{ ed.date }}-videos"><details class="section-shell"><summary class="section-heading"><h2>Video highlights</h2><b aria-hidden="true"></b></summary><ul class="video-grid">
+{%- for v in ed.videos %}<li class="searchable-item video-card">
+{%- if v.url %}<a class="video-watch" href="{{ v.url }}" target="_blank" rel="noopener" aria-label="Watch {{ v.title or v.channel }} on YouTube"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"></circle><path d="M19 15l15 9-15 9z"></path></svg><span>Watch on YouTube</span></a>
+{%- else %}<div class="video-watch unavailable"><span>Text brief</span></div>{% endif -%}
+<div class="video-copy"><strong>{{ v.channel }}{% if v.channel and v.title %} — {% endif %}{% if v.title %}“{{ v.title }}”{% endif %}</strong>{% if v.when %} ({{ v.when }}){% endif %} — {{ v.summary|inline }}{{ links(v.links) }}</div></li>{% endfor -%}
+</ul></details></section>
+{%- endif %}
+<section class="content-section" data-section="papers" id="edition-{{ ed.date }}-papers"><details class="section-shell"><summary class="section-heading"><h2>arXiv papers</h2><b aria-hidden="true"></b></summary><ul class="papers">
+{%- for p in ed.papers %}<li class="searchable-item"><details class="paper"><summary><span>{{ p.title }}</span>{{ layer_chip(p.layer, false) }}<b aria-hidden="true">+</b></summary><div>{{ p.body|inline }}{{ links(p.links) }}</div></details></li>{% endfor -%}
+</ul></details></section>
+<section class="content-section" data-section="threads" id="edition-{{ ed.date }}-threads"><details class="section-shell"><summary class="section-heading"><h2>Thread updates</h2><b aria-hidden="true"></b></summary><ul class="thread-list">
+{%- for t in ed.threads %}<li class="searchable-item thread-card" style="--thread:{{ threads[t.name].color }}" data-thread-name="{{ t.name }}"><strong>{{ t.name }}</strong><span class="thread-start">Started {{ threads[t.name].started }}</span><p>— {{ t["update"]|inline }}</p></li>{% endfor -%}
+</ul></details></section>
+</article>
+<footer class="edition-colophon"><span>{{ site.colophon }}</span> <span class="colophon-separator">·</span> <span>Edition dated <time datetime="{{ ed.date }}">{{ ed.month_day }}, {{ ed.year }}</time></span></footer>
+{{ pager(ed) }}</main>
+{%- endfor %}
+<section class="storylines-panel" hidden><p class="eyebrow">Across the archive</p><h2>Storylines</h2><p class="storylines-intro">Follow the questions that persist after the daily headlines move on.</p><div class="thread-picker">{% for name, t in threads.items() %}<button type="button" class="storyline-pick{% if loop.first %} active{% endif %}" data-thread="{{ name }}" style="--ribbon:{{ t.color }}">{{ name }}</button>{% endfor %}</div><div class="thread-overview"></div><div class="timeline"></div></section>
+<section class="search-panel" hidden><p class="eyebrow">Archive search</p><h2>Results across every edition.</h2><p class="search-summary"></p><div class="search-results"></div></section>
+<aside class="outline" aria-label="On this page"><p class="outline-label">In this edition</p><nav><a href="#" data-section-link="top-stories">Top stories</a><a href="#" data-section-link="blogs">Blog highlights</a><a href="#" data-section-link="videos">Video highlights</a><a href="#" data-section-link="papers">arXiv papers</a><a href="#" data-section-link="threads">Thread updates</a></nav><div class="progress-track"><span></span></div><p class="progress-label">Reading progress</p></aside>
+</div><script type="application/json" id="thread-registry">{{ registry_json }}</script><script>
+{{ js }}
+</script></body></html>
