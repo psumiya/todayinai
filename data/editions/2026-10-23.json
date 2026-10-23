@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-23",
+  "dek": "AI-assisted discovery of two critical PHP flaws, and the patching race that followed, dominates a day when OpenAI also details its storage layer for a billion ChatGPT users.",
+  "brief": [
+    "The biggest item is security. AI Weekly reports that two teams used frontier AI models to find PHP2Shell, a pair of 9.2-severity flaws in the PHP engine itself. Details leaked before a fix, and attackers were probing days early. It is the clearest recent case of AI compressing the path from bug to working exploit, and it sits alongside last week's warning that flaws are being found faster than teams can fix them.",
+    "OpenAI had two other posts. One is the second part of its account of scaling the online storage behind ChatGPT, with a claimed 12× read speedup. The other is a safety and security partnership with Poland's NASK. The rest of the batch is light, so the existing threads mostly hold still."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "AI misuse: autonomous attack chains"
+      ],
+      "layer": "Applications & Policy",
+      "title": "PHP2Shell: AI helped find the flaws, and attackers got there early",
+      "summary": "AI Weekly reports that two critical PHP flaws, CVE-2026-109618 and CVE-2026-109619 (rated 9.2 of 10), let one unauthenticated request take over a web server. They sit in the language engine, so WordPress, Drupal, Joomla and custom sites are all exposed. Fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35. Two teams found the bugs separately using frontier AI models. The issue says Wiz put the exploit-building effort at about a week for one researcher, work it says would previously have taken a top team months. Details leaked before the fix, attackers were probing four days early, and attempts are now in the millions. AI Weekly also notes a credit dispute: OpenAI says it led the coalition that found the flaw, while the Guardian reports the researcher says they used publicly available models.",
+      "why": "This is a concrete data point that frontier models lower the cost of turning long-standing bugs into exploits, which puts pressure on defenders' patch timelines.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/php2shell-millions-of-attacks-15m-servers-unpatched-on-day"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Efficiency race"
+      ],
+      "layer": "Compute & Infrastructure",
+      "title": "OpenAI details how it scaled ChatGPT's online storage to a billion users",
+      "summary": "In Part II of its storage series, OpenAI describes how it scaled Habitat with reliable multi-tenancy, global caching and Azure Cosmos DB. It says the result is 12× faster reads for ChatGPT.",
+      "why": "Efficiency work is not only about model weights and decoding; the data layer behind a consumer product at this scale is where latency is won or lost.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [],
+      "layer": "Applications & Policy",
+      "title": "OpenAI and Poland's NASK partner on AI safety and security",
+      "summary": "OpenAI says it is partnering with Poland's NASK on AI safety, security and technical research, aiming to strengthen safeguards and support a more resilient digital ecosystem.",
+      "why": "It is another sign that labs are building safeguard relationships with national institutions, though the announcement gives no detail on deliverables yet.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>AI Weekly</strong> — “PHP2Shell: Millions of Attacks, 1.5M Servers Unpatched on Day One”: reports that AI models helped researchers find two critical PHP flaws, covers what AI did on both the attacker and defender sides, and lists what to patch today, along with other AI security stories from the week, including rogue AI agents.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/php2shell-millions-of-attacks-15m-servers-unpatched-on-day"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)”: describes Habitat's multi-tenancy, global caching and Azure Cosmos DB, and claims 12× faster reads.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — “Does Your Model Run on AWS Trainium? Look It Up”: a post about checking model support on AWS Trainium through torch-neuronx.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/torch-neuronx-model-support"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face (Ai2)</strong> — “LitPivot: Developing research ideas through dynamic contextualization within the literature landscape”: a post on developing research ideas by situating them within the surrounding literature.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/allenai/litpivot"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "Matthew Berman",
+      "title": "Team AMA (and Kimi K3.1 Testing!!)",
+      "when": "Oct 23",
+      "url": "https://www.youtube.com/watch?v=7fZ1rFcm1nA",
+      "summary": "A team Q&A session that, per its title, also includes testing of Kimi K3.1.",
+      "links": []
+    },
+    {
+      "channel": "Matthew Berman",
+      "title": "Sam Altman on Why Your Most Important Advice Should Come From People",
+      "when": "Oct 23",
+      "url": "https://www.youtube.com/shorts/f8uIINtoJCM",
+      "summary": "A short clip of Sam Altman on where one's most important advice should come from, according to the title.",
+      "links": []
+    }
+  ],
+  "papers": [],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Nothing new; the next date on the board is still Anthropic's IPO marketing week of Nov 9."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "OpenAI's NASK partnership extends its safeguards-through-partners posture to a national research institute, while the storage deep-dive shows the infrastructure under the consumer product."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "Nothing new; tiering is still by acquisition and scale."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Matthew Berman's Kimi K3.1 testing is the only new model-side signal, and nothing in it settles the contested Gemini 4 Argon tier."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "Nothing new beyond a mention of rogue AI agents in AI Weekly's security roundup; the oversight literature stands as left."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "PHP2Shell is the day's evidence: AI models helped two teams build exploits for critical PHP flaws, with attackers probing early and attempts in the millions."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Nothing new; still no Moonshot response to either attribution (OpenAI's Oct 1, Anthropic's Oct 12)."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Nothing new on pricing; the storage post is about serving cost and scale, and the pricing ladder stands."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "OpenAI's storage post claims 12× faster reads for ChatGPT via caching and Cosmos DB, and Hugging Face's Trainium lookup eases hardware portability checks."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "Nothing new; the padding, deletion and playbook results stand."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Nothing new; enforcement remains labs banning influence ops."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "Nothing new; no new uncensored mapping."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "Nothing new; the arXiv caps and Google VRP freeze stand."
+    }
+  ]
+}
