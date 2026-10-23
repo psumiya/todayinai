@@ -6,6 +6,8 @@ any link in the generated edition that is not in this set, so the model cannot i
 import datetime as dt
 import json
 import re
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -18,10 +20,16 @@ ROOT = Path(__file__).resolve().parent.parent
 UA = {"User-Agent": "TodayInAI/1.0 (+https://sumiya.page/ainews.html)"}
 
 
-def get(url, timeout=30):
+def get(url, timeout=30, attempts=1):
     req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
+    for i in range(attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if i == attempts - 1 or e.code not in (404, 429, 500, 502, 503):
+                raise
+            time.sleep(2 ** i)
 
 
 def _when(entry):
@@ -87,7 +95,8 @@ def _page_summary(url):
 def fetch_youtube(src, since):
     if not src.get("channel_id"):
         return []
-    feed = feedparser.parse(get(f"https://www.youtube.com/feeds/videos.xml?channel_id={src['channel_id']}"))
+    # YouTube's feed endpoint intermittently 404s for channels that exist.
+    feed = feedparser.parse(get(f"https://www.youtube.com/feeds/videos.xml?channel_id={src['channel_id']}", attempts=6))
     out = []
     for e in feed.entries:
         when = _when(e)
