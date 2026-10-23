@@ -52,7 +52,7 @@ blogs:
     verified: true
   - name: bycloud
     kind: rss
-    url: null   # blog URL was never pinned in the Muse setup; add it to enable
+    url: null   # blog URL not pinned; add it to enable
     verified: false
 
 youtube:
