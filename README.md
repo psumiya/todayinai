@@ -23,7 +23,7 @@ The model writes data. It never touches HTML, so the design cannot drift and pro
 | `data/threads.json` | Storyline registry: start date, color, active flag. |
 | `data/sources.yaml` | Pinned feeds and channel ids. Edit to add or remove sources. |
 | `data/state.json` | Seen-URL ledger (60 days) so overlapping fetch windows never repeat an item. |
-| `templates/` | Page markup, CSS, and script (the locked Muse design). |
+| `templates/` | Page markup, CSS, and script (the locked design). |
 | `newsletter/` | `fetch`, `run`, `build`, `lint`, `schema`, `check_sources`, `prompt.md`. |
 | `logs/run-*.json` | Per-run gaps and validation attempts. Private; never rendered. |
 
@@ -56,7 +56,3 @@ A failed run leaves yesterday's page up and shows as a red run in Actions. Nothi
 - Reader text is rejected if it narrates source gaps or production ("blogs were quiet", "compiled at", "scheduled run").
 - Threads with no substantive update for 10 days go inactive and drop out of the prompt; they stay in the Storylines view.
 - One edition per date. Re-running the same day is a no-op.
-
-## Migration notes
-
-`scripts/migrate_from_muse.py` split the exported archive into the files above. It dropped 19 reader-facing source-gap notes from Sept 29 to Oct 8, normalized every colophon (older ones printed compile times), removed zero-padded day numbers, and dated each thread from its first appearance. Storylines are now built from all 36 editions' thread cards; the Muse page hard-coded a partial copy.
