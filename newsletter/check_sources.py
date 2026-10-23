@@ -8,7 +8,7 @@ import re
 import feedparser
 import yaml
 
-from newsletter.fetch import ROOT, get
+from newsletter.fetch import ROOT, fetch_page, get
 
 
 def main():
@@ -23,7 +23,9 @@ def main():
                 n = len(feedparser.parse(body).entries)
                 print(f"{'OK  ' if n else 'FAIL'} {s['name']}: {n} feed entries")
             else:
-                n = len(set(re.findall(s["link_pattern"].strip("^$").replace("/?", ""), body.decode("utf-8", "ignore"))))
+                probe = {"seen": {}, "fetched_sources": []}
+                fetch_page(s, probe)
+                n = len(probe["seen"])
                 print(f"{'OK  ' if n else 'FAIL'} {s['name']}: {n} matching article links")
         except Exception as e:
             print(f"FAIL {s['name']}: {e}")

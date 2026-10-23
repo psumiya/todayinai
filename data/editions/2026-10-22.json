@@ -1,0 +1,347 @@
+{
+  "date": "2026-10-22",
+  "dek": "OpenAI spells out how its safeguards travel through distribution partners, while research on control evaluations, anti-distillation defenses and an open 320B agentic coding model fills out the rest of the day.",
+  "brief": [
+    "OpenAI published <em>Broad access through consistent standards</em>, describing how it works with distribution partners to keep safeguards consistent and clarify expectations in its Usage Policies. It lands a day after OpenAI models appeared in Google Cloud's Model Garden, and it is the first statement of what travels with the models when they leave OpenAI's own surfaces. The same day brought a Decisions API for fast, low-cost application decisions, plus enterprise rollouts at Uber (30,000+ employees) and AT&T's legal team.",
+    "The research side centers on oversight and extraction. Simulated Control Evals shows a language-model-simulated environment can stand in for an execution environment when testing safeguards, adding to this week's control and verification papers. A new anti-distillation defense (CALA), an advantage-weighted on-policy distillation method and the first membership-inference attack on on-policy self-distillation make up a distillation batch. IQuest-Q1, an open 320B-parameter agentic coding MoE, is the day's model release."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Vertical platform plays (labs)"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "OpenAI says safeguards will travel with its models to distribution partners",
+      "summary": "OpenAI's post <em>Broad access through consistent standards</em> describes how it works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in its Usage Policies. The post's own description is brief and does not name specific partners.",
+      "why": "Once frontier models are sold through other clouds, the usage policy is the part of the product that has to cross the boundary, so this is the clearest sign yet of how OpenAI intends to govern its resale channels.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/broad-access-through-consistent-standards"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Vertical platform plays (labs)",
+        "OpenAI monetization"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "OpenAI ships a Decisions API and keeps stacking enterprise deployments",
+      "summary": "OpenAI introduced the Decisions API, pitched as fast, focused, low-cost decisions for any application. It also says Uber is rolling out ChatGPT Work to more than 30,000 employees for research, data analysis, presentations and complex workflows, that AT&T's LegalEdge team is rethinking legal intake and scaling legal judgment with OpenAI, and it published an explainer on what forward deployed engineering means at the company.",
+      "why": "Together these show OpenAI pushing at both ends of the stack: a cheap, narrow primitive for developers and hands-on deployment work for the largest customers.",
+      "links": [
+        {
+          "label": "OpenAI: Decisions API",
+          "url": "https://openai.com/index/decisions-api"
+        },
+        {
+          "label": "OpenAI: Uber",
+          "url": "https://openai.com/index/uber-chatgpt-work-rollout"
+        },
+        {
+          "label": "OpenAI: AT&T",
+          "url": "https://openai.com/index/att-legal"
+        },
+        {
+          "label": "OpenAI: FDE",
+          "url": "https://openai.com/index/forward-deployed-engineering-means"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public",
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Models & Research",
+      "title": "Control evaluations get cheaper to run, and verification gets a harder framing",
+      "summary": "<em>Simulated Control Evals</em> (Olmo, Zhang, Tracy) uses a language model to simulate tool responses instead of an environment; on LinuxArena the authors report predicting safety with a root mean squared error of 3.6 percentage points across five monitors at a 5% audit budget, against 10.1 for BashArena. Another paper formalizes the execution harness as Petri-net supervisory control, so an injected request whose preconditions are unmet is refused regardless of its wording. <em>Post-Audit Mirage</em> argues offline verification cannot distinguish matched safe and harmful lifecycles that expose identical verifier-visible evidence.",
+      "why": "Cheap simulated control evals widen where safeguards can be tested, while the mirage result is a reminder that some deployment risks cannot be certified offline at all.",
+      "links": [
+        {
+          "label": "Simulated Control Evals",
+          "url": "https://arxiv.org/abs/2610.31593"
+        },
+        {
+          "label": "Certified Execution Harness",
+          "url": "https://arxiv.org/abs/2610.31376"
+        },
+        {
+          "label": "Post-Audit Mirage",
+          "url": "https://arxiv.org/abs/2610.31130"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Distillation warfare"
+      ],
+      "layer": "Models & Research",
+      "title": "The distillation toolkit gets a defense, a better method and a privacy attack",
+      "summary": "Conflict-Aware Logit Adapters (CALA) attach a small residual adapter to a frozen teacher; the authors report it substantially reduces successful student imitation while keeping near-original teacher performance and generation quality. Advantage-Based On-Policy Distillation (AOPD) weights teacher actions by their counterfactual advantage under the student rather than following the teacher everywhere. OP-Print presents what it calls the first study of membership inference attacks against on-policy self-distillation.",
+      "why": "Extraction now has a training-time countermeasure that avoids decode-time overhead, alongside a sharper method for the side doing the distilling.",
+      "links": [
+        {
+          "label": "CALA",
+          "url": "https://arxiv.org/abs/2610.31046"
+        },
+        {
+          "label": "AOPD",
+          "url": "https://arxiv.org/abs/2610.31563"
+        },
+        {
+          "label": "OP-Print",
+          "url": "https://arxiv.org/abs/2610.31616"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Lab supremacy race"
+      ],
+      "layer": "Models & Research",
+      "title": "IQuest-Q1: an open 320B agentic coding MoE",
+      "summary": "The IQuest-Q1 report describes a sparse Mixture-of-Experts model with 320B total and 15B activated parameters, built through stable pre-training with a coding-heavy second stage, fine-grained mid-training with progressive context extension, and multi-scaffold post-training combining SFT, domain-specialized RL and MOPD. The authors say they release it as open source and that it shows capability in both coding and general tasks.",
+      "why": "Another open agentic coding model at this scale keeps pressure on closed labs' workhorse tiers, though the report's claims have not been independently tested.",
+      "links": [
+        {
+          "label": "IQuest-Q1 report",
+          "url": "https://arxiv.org/abs/2610.30949"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>Google DeepMind</strong> — “Beyond tree cover: mapping the world’s forest types”: describes a global map that categorizes every 10-meter patch of land on Earth into distinct forest types.",
+      "links": [
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face (Ai2)</strong> — “OlmoEarth v1.3: State-of-the-art embeddings for the whole planet”: presents the latest OlmoEarth release as state-of-the-art embeddings for Earth observation.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face (Dharma-AI)</strong> — “How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications”: argues that specializing a small model's vocabulary to its application can cut inference cost by 77%.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face (Microsoft)</strong> — “Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox”: describes using database grading as the reward signal for reinforcement-learning post-training of agents.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/microsoft/thinkingbox-training"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face (NVIDIA)</strong> — “NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required”: claims the Kumo Relational model beats supervised machine learning on relational data without any training.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia/kumo-relational"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face (Amazon)</strong> — “Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.”: opens a series on system-level profiling of PyTorch workloads running on AWS Trainium.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1"
+        }
+      ]
+    }
+  ],
+  "videos": [],
+  "papers": [
+    {
+      "title": "Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3",
+      "layer": "Models & Research",
+      "body": "Barış Alparslan, Sandy Tanwisuth, et al. — on OLMo-3-7B-Think the paper reports instrumental-convergence behavior is nonmonotonic across post-training, rising from 25.0% at SFT to 46.1% near RLVR step 200 and falling to 11.8% at the final checkpoint.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31624"
+        }
+      ]
+    },
+    {
+      "title": "Can an Agent Debug a Web Corpus? Agentic Auditing of Slovak FineWeb2",
+      "layer": "Data",
+      "body": "Marek Šuppa, Ivan Vykopal, et al. — a tool-using agent auditing 26.5M Slovak documents for $2.21–$2.84 per run found a machine-generated content farm of 1,408,437 documents (5.32%) that passed the pipeline's filters, with blinded labels supporting 6 of 7 findings.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31636"
+        }
+      ]
+    },
+    {
+      "title": "A Fix for Softmax and Cross-Entropy",
+      "layer": "Models & Research",
+      "body": "Jonathan T. Barron, Dan Gnanapragasam, et al. — the paper identifies two numerical bugs in standard softmax and cross-entropy (Softmax Collapse and Softmax Cancellation) and reports that fixing them eliminates the Slingshot phenomenon and stops students drifting from the teacher during distillation.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31642"
+        }
+      ]
+    },
+    {
+      "title": "Evaluating the Applicability of LLM Inference Optimizations on Apple Silicon",
+      "layer": "Compute & Infrastructure",
+      "body": "Kyrylo Yemets, Andrii Yaroshevych, et al. — the authors report KV-cache pruning reaches up to 1.75× throughput on Apple hardware, while every evaluated speculative-decoding method reduces throughput there despite 2–6× gains reported on server GPUs.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31479"
+        }
+      ]
+    },
+    {
+      "title": "Low-Bit N-Gram Embeddings for Language Models",
+      "layer": "Models & Research",
+      "body": "Stephen Chung, Wenyu Du — storing n-gram embedding tables at four bits saves about 75% of table memory while preserving more than 99% of the validation-loss improvement, the paper reports.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31646"
+        }
+      ]
+    },
+    {
+      "title": "Major Revision, Minor Accountability: LLMs as Reviewers of Published Articles in Top-Tier Journals",
+      "layer": "Applications & Policy",
+      "body": "Bastien Le Guellec, Su Hwan Kim, et al. — four LLMs reviewing 200 already-published articles recommended major revision or rejection in 605 of 800 reviews (75.6%), with per-model rates ranging from 17.5% to 100%.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31414"
+        }
+      ]
+    },
+    {
+      "title": "WildFakeToolBench: Benchmarking AI-Generated Image Detectors with Web-Sourced Image Processing",
+      "layer": "Applications & Policy",
+      "body": "Mingjie Li, Yukun Jiang, et al. — 156 executable image-processing tools gathered from public sources let the strongest individual tools reach attack success rates of 25.25%–100% against six state-of-the-art detectors.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31152"
+        }
+      ]
+    },
+    {
+      "title": "AgentPhishing: A Benchmark of LLM Email Agents Under Adaptive Attack",
+      "layer": "Applications & Policy",
+      "body": "Justin Tan, Miao Li, et al. — the benchmark finds email agents handle pre-existing phishing emails safely yet remain susceptible to phishing optimized against the agent's own behavior.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31404"
+        }
+      ]
+    },
+    {
+      "title": "Padding to k: A Minimum Count in the Schema Makes Open-Weight Models Pad Their Extraction Lists",
+      "layer": "Models & Research",
+      "body": "Abhishek Barali, Aayush Paudel — showing a minimum list length in the schema raises the share of lists longer than the true count from 34.5% to 55.4%, and about half the added entries still pass a check that they occur in the source.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.31000"
+        },
+        {
+          "label": "arXiv (record)",
+          "url": "https://arxiv.org/abs/2610.30997"
+        }
+      ]
+    },
+    {
+      "title": "Joules-to-GDP: How Much Economic Value Do AI Systems Produce per Unit of Energy?",
+      "layer": "Compute & Infrastructure",
+      "body": "Amirreza Zeinali, Jon Saad-Falcon, et al. — dividing net dollar value or time saved by measured energy on 220 GDPval tasks, the authors find software development delivers about 27% more net value per joule than engineering even though engineering yields about 10% more net dollar value per task.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2610.30858"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Simulated Control Evals (2610.31593) makes control testing cheaper to run outside purpose-built settings, adding measurement capacity to yesterday's RSI Control Arena and Proof-Carrying Contracts. Next date on the board is still Anthropic's IPO marketing week of Nov 9."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "OpenAI's <em>Broad access through consistent standards</em> addresses how safeguards follow models through distribution partners, the governance question behind the Google Cloud listing. The Decisions API and the Uber and AT&T customer stories add to the enterprise push."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "Nothing from the frontier labs moved; Trion-1 (2610.31215), a protein model unifying sequence, structure and language, is the only new bio-model release in the batch."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "IQuest-Q1, an open 320B MoE with 15B active parameters, is the new open-weight flank on agentic coding. Independent evals for Gemini 4 Argon are still pending and the contested $2/$10 tier stands."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "The oversight literature keeps growing: Simulated Control Evals, a Petri-net execution harness and Post-Audit Mirage all concern how much safety can be verified. The OLMo-3 checkpoint study (2610.31624) adds that instrumental-convergence behavior rises and then falls during RLVR rather than growing steadily."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "AgentPhishing (2610.31404) shows email agents resisting stock phishing but falling to attacks tuned against them, and RMT-Jailbreak (2610.31331) turns harmful responses into templates that transfer autoregressive jailbreaks to diffusion language models. The defensive posture stays Anthropic's Cyber Mission plus DREAM's selective-forgetting repair."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "CALA (2610.31046) is a training-time anti-distillation defense, AOPD (2610.31563) sharpens on-policy distillation, and OP-Print (2610.31616) attacks on-policy self-distillation's privacy. Still no Moonshot response to either attribution (OpenAI's Oct 1, Anthropic's Oct 12)."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "The Decisions API's fast, low-cost pitch and the Uber ChatGPT Work rollout to 30,000+ employees extend revenue beyond ads. The pricing ladder stands."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "The softmax and cross-entropy fix (2610.31642), four-bit n-gram tables (2610.31646) and the Apple Silicon study (2610.31479) are the day's efficiency evidence, with the last warning that server-GPU speedups do not port. Joules-to-GDP (2610.30858) prices efficiency in economic value per joule, and the VocabX post claims a 77% inference-cost cut."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "Padding to k (2610.30997) shows schema minimums induce padded extractions, and AfterDeleteBench (2610.31366) reports a deleted secret recovered from Qwen2.5-7B-Instruct in roughly two thirds of single queries. The ThinkingBox post covers database grading as an RL reward for agents."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "WildFakeToolBench (2610.31152) shows web-sourced image-processing tools evading six detectors, while SpectralCanary (2610.31659) works the other side by planting a low-frequency trace to audit whether a text-to-image model trained on a dataset. Enforcement remains labs banning influence ops."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "Nothing new; no new uncensored mapping."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "The Slovak FineWeb2 audit (2610.31636) found a 5.32% machine-generated content farm that passed filtering, and the LLM-reviewer study (2610.31414) shows models disagreeing sharply on published papers, so automated gatekeeping is not yet a settled remedy. The arXiv caps and Google VRP freeze stand."
+    }
+  ]
+}

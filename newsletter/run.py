@@ -62,6 +62,26 @@ def thread_context(threads, editions):
     return out
 
 
+UNENFORCED = {"minItems", "maxItems", "minLength", "maxLength", "pattern", "minimum", "maximum", "uniqueItems"}
+
+
+def api_schema(s):
+    """Structured-output form of a schema: drop constraints the API can't enforce (jsonschema checks them after)."""
+    if isinstance(s, list):
+        return [api_schema(x) for x in s]
+    if not isinstance(s, dict):
+        return s
+    out = {k: api_schema(v) for k, v in s.items() if k not in UNENFORCED}
+    if isinstance(out.get("type"), list):
+        rest = {k: v for k, v in out.items() if k != "type"}
+        if "enum" in rest:
+            rest["enum"] = [v for v in rest["enum"] if v is not None]
+        return {"anyOf": [{"type": t, **(rest if t != "null" else {})} for t in out["type"]]}
+    if out.get("type") == "object":
+        out["additionalProperties"] = False
+    return out
+
+
 def ask_model(date, items, threads, editions, feedback=None):
     import anthropic
 
@@ -75,11 +95,14 @@ def ask_model(date, items, threads, editions, feedback=None):
     messages = [{"role": "user", "content": "Today's input:\n" + json.dumps(payload, ensure_ascii=False)}]
     if feedback:
         messages[0]["content"] += "\n\nYour previous submission was rejected. Fix exactly these problems:\n- " + "\n- ".join(feedback)
-    resp = anthropic.Anthropic().messages.create(
-        model=MODEL, max_tokens=16000, system=system, messages=messages,
-        tools=[TOOL], tool_choice={"type": "tool", "name": "submit_edition"},
-    )
-    return next(b.input for b in resp.content if b.type == "tool_use")
+    with anthropic.Anthropic().messages.stream(
+        model=MODEL, max_tokens=64000, system=system, messages=messages,
+        output_config={"format": {"type": "json_schema", "schema": api_schema(TOOL["input_schema"])}},
+    ) as stream:
+        resp = stream.get_final_message()
+    if resp.stop_reason != "end_turn":
+        raise RuntimeError(f"model stopped with {resp.stop_reason} (request {resp._request_id})")
+    return json.loads(next(b.text for b in resp.content if b.type == "text"))
 
 
 def check(result, date, items, threads):
