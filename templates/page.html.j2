@@ -31,22 +31,22 @@
 {%- for s in ed.top_stories %}<li class="searchable-item story{% if s.lead %} lead{% endif %}"><div class="story-ribbons">{% for t in s.threads %}<button type="button" class="story-ribbon" data-thread="{{ t }}" style="--ribbon:{{ threads[t].color }}">{{ t }}</button>{% endfor %}{{ layer_chip(s.layer) }}</div><h3>{{ s.title }}</h3><div class="story-copy">— {{ s.summary|inline }}</div>{% if s.why or s.links %}<blockquote><span>Why it matters</span>{{ s.why|inline }}{{ links(s.links) }}</blockquote>{% endif %}</li>{% endfor -%}
 </ul></section>
 {%- if ed.blogs %}
-<section class="content-section" data-section="blogs" id="edition-{{ ed.date }}-blogs"><details class="section-shell"><summary class="section-heading"><h2>Blog highlights</h2><b aria-hidden="true"></b></summary><ul class="content-list">
+<section class="content-section" data-section="blogs" id="edition-{{ ed.date }}-blogs"><details class="section-shell" open><summary class="section-heading"><h2>Blog highlights</h2><b aria-hidden="true"></b></summary><ul class="content-list">
 {%- for b in ed.blogs %}<li class="searchable-item">{{ b.body|inline }}{{ links(b.links) }}</li>{% endfor -%}
 </ul></details></section>
 {%- endif %}
 {%- if ed.videos %}
-<section class="content-section" data-section="videos" id="edition-{{ ed.date }}-videos"><details class="section-shell"><summary class="section-heading"><h2>Video highlights</h2><b aria-hidden="true"></b></summary><ul class="video-grid">
+<section class="content-section" data-section="videos" id="edition-{{ ed.date }}-videos"><details class="section-shell" open><summary class="section-heading"><h2>Video highlights</h2><b aria-hidden="true"></b></summary><ul class="video-grid">
 {%- for v in ed.videos %}<li class="searchable-item video-card">
 {%- if v.url %}<a class="video-watch" href="{{ v.url }}" target="_blank" rel="noopener" aria-label="Watch {{ v.title or v.channel }} on YouTube"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"></circle><path d="M19 15l15 9-15 9z"></path></svg><span>Watch on YouTube</span></a>
 {%- else %}<div class="video-watch unavailable"><span>Text brief</span></div>{% endif -%}
 <div class="video-copy"><strong>{{ v.channel }}{% if v.channel and v.title %} — {% endif %}{% if v.title %}“{{ v.title }}”{% endif %}</strong>{% if v.when %} ({{ v.when }}){% endif %} — {{ v.summary|inline }}{{ links(v.links) }}</div></li>{% endfor -%}
 </ul></details></section>
 {%- endif %}
-<section class="content-section" data-section="papers" id="edition-{{ ed.date }}-papers"><details class="section-shell"><summary class="section-heading"><h2>arXiv papers</h2><b aria-hidden="true"></b></summary><ul class="papers">
+<section class="content-section" data-section="papers" id="edition-{{ ed.date }}-papers"><details class="section-shell" open><summary class="section-heading"><h2>arXiv papers</h2><b aria-hidden="true"></b></summary><ul class="papers">
 {%- for p in ed.papers %}<li class="searchable-item"><details class="paper"><summary><span>{{ p.title }}</span>{{ layer_chip(p.layer, false) }}<b aria-hidden="true">+</b></summary><div>{{ p.body|inline }}{{ links(p.links) }}</div></details></li>{% endfor -%}
 </ul></details></section>
-<section class="content-section" data-section="threads" id="edition-{{ ed.date }}-threads"><details class="section-shell"><summary class="section-heading"><h2>Thread updates</h2><b aria-hidden="true"></b></summary><ul class="thread-list">
+<section class="content-section" data-section="threads" id="edition-{{ ed.date }}-threads"><details class="section-shell" open><summary class="section-heading"><h2>Thread updates</h2><b aria-hidden="true"></b></summary><ul class="thread-list">
 {%- for t in ed.threads %}<li class="searchable-item thread-card" style="--thread:{{ threads[t.name].color }}" data-thread-name="{{ t.name }}"><strong>{{ t.name }}</strong><span class="thread-start">Started {{ threads[t.name].started }}</span><p>— {{ t["update"]|inline }}</p></li>{% endfor -%}
 </ul></details></section>
 </article>
