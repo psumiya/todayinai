@@ -7,7 +7,7 @@ SP's daily AI newsletter, served at https://sumiya.page/ainews.html. See README.
 - Live runs work: `python -m newsletter.run` fetches, calls Claude (`claude-sonnet-5-5`, env `NEWSLETTER_MODEL` overrides) with structured outputs bound to `newsletter/schema.py`, validates, writes data, builds `dist/ainews.html`.
 - Local setup: `.venv` with `requirements.txt`; `ANTHROPIC_API_KEY` in `.env` (gitignored). Load with `set -a; . ./.env; set +a`.
 - Deploy: `S3_BUCKET=... CLOUDFRONT_DISTRIBUTION_ID=... ./deploy.sh`. That distribution serves sumiya.page and ... from the `...` bucket (the `sumiya.page` buckets are not the origin). The blog repo `~/dev/repos/...` deploys to the same bucket with `aws s3 sync`; its `deploy.sh` must exclude `ainews.html` or it overwrites the newsletter.
-- `.github/workflows/daily.yml` is manual-trigger only; the cron line stays commented out until SP says otherwise. Repo secrets `ANTHROPIC_API_KEY`, `AWS_DEPLOY_ROLE_ARN` and variables `S3_BUCKET`, `CLOUDFRONT_DISTRIBUTION_ID` are set; AWS role `todayinai-deploy` (OIDC, `main` branch only) can write `ainews.html` and invalidate the distribution. The workflow has never run: the first manual run (`gh workflow run daily.yml`) is planned for the 2026-10-23 Pacific edition.
+- `.github/workflows/daily.yml` runs daily on cron at 14:43 UTC (turned on by SP 2026-11-10) and can still be triggered with `gh workflow run daily.yml`. Repo secrets `ANTHROPIC_API_KEY`, `AWS_DEPLOY_ROLE_ARN` and variables `S3_BUCKET`, `CLOUDFRONT_DISTRIBUTION_ID` are set; AWS role `todayinai-deploy` (OIDC, `main` branch only) can write `ainews.html` and invalidate the distribution. First successful end-to-end run was 2026-11-10; the 10-23 run failed at deploy because the `AWS_DEPLOY_ROLE_ARN` secret held a wrong value.
 - psumiya/brief (the older profile-based generator) is retired and archived. Its AWS stack was deleted. The only piece worth porting is its Gemini video transcription.
 
 ## Known issues
@@ -18,7 +18,7 @@ SP's daily AI newsletter, served at https://sumiya.page/ainews.html. See README.
 
 ## Rules SP set
 
-- Nothing runs on a schedule until SP explicitly says to turn it on.
+- Don't add or change schedules without SP's say-so. The daily newsletter cron is on.
 - Ask before any deploy, AWS change, or push.
 - Newsletter rules: third-party sources only; reader-facing text never mentions how it was made, source gaps, or publishing; no numbered labels; summaries attribute claims to the source and analysis is clearly the newsletter's read.
 - Talking to SP: direct and committed, recommend one path, prose over bullets, no em dashes, no "X, not Y" constructions, no filler or flattery.

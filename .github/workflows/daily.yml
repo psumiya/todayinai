@@ -2,9 +2,9 @@ name: Daily edition
 
 on:
   workflow_dispatch: {}
-  # Off until you turn it on. Uncomment to run daily at 07:43 Pacific (14:43 UTC during PDT).
-  # schedule:
-  #   - cron: "43 14 * * *"
+  # Daily at 14:43 UTC (07:43 PDT, 06:43 PST).
+  schedule:
+    - cron: "43 14 * * *"
 
 permissions:
   contents: write   # commit the new edition back to the repo
