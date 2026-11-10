@@ -44,7 +44,7 @@
 </ul></details></section>
 {%- endif %}
 <section class="content-section" data-section="papers" id="edition-{{ ed.date }}-papers"><details class="section-shell" open><summary class="section-heading"><h2>arXiv papers</h2><b aria-hidden="true"></b></summary><ul class="papers">
-{%- for p in ed.papers %}<li class="searchable-item"><details class="paper"><summary><span>{{ p.title }}</span>{{ layer_chip(p.layer, false) }}<b aria-hidden="true">+</b></summary><div>{{ p.body|inline }}{{ links(p.links) }}</div></details></li>{% endfor -%}
+{%- for p in ed.papers %}<li class="searchable-item"><details class="paper" open><summary><span>{{ p.title }}</span>{{ layer_chip(p.layer, false) }}<b aria-hidden="true">+</b></summary><div>{{ p.body|inline }}{{ links(p.links) }}</div></details></li>{% endfor -%}
 </ul></details></section>
 <section class="content-section" data-section="threads" id="edition-{{ ed.date }}-threads"><details class="section-shell" open><summary class="section-heading"><h2>Thread updates</h2><b aria-hidden="true"></b></summary><ul class="thread-list">
 {%- for t in ed.threads %}<li class="searchable-item thread-card" style="--thread:{{ threads[t.name].color }}" data-thread-name="{{ t.name }}"><strong>{{ t.name }}</strong><span class="thread-start">Started {{ threads[t.name].started }}</span><p>— {{ t["update"]|inline }}</p></li>{% endfor -%}
