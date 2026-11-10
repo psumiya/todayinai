@@ -102,7 +102,11 @@ def ask_model(date, items, threads, editions, feedback=None):
         resp = stream.get_final_message()
     if resp.stop_reason != "end_turn":
         raise RuntimeError(f"model stopped with {resp.stop_reason} (request {resp._request_id})")
-    return json.loads(next(b.text for b in resp.content if b.type == "text"))
+    u = resp.usage
+    usage = {"request_id": resp._request_id, "input_tokens": u.input_tokens, "output_tokens": u.output_tokens,
+             "cache_read_input_tokens": u.cache_read_input_tokens or 0,
+             "cache_creation_input_tokens": u.cache_creation_input_tokens or 0}
+    return json.loads(next(b.text for b in resp.content if b.type == "text")), usage
 
 
 def check(result, date, items, threads):
@@ -157,7 +161,7 @@ def main():
     editions = sorted((json.loads(f.read_text()) for f in (DATA / "editions").glob("*.json")),
                       key=lambda e: e["date"], reverse=True)
     state = load_state()
-    log = {"date": date, "model": MODEL, "gaps": [], "attempts": []}
+    log = {"date": date, "model": MODEL, "gaps": [], "attempts": [], "usage": []}
 
     if args.fixture:
         fx = Path(args.fixture)
@@ -175,7 +179,11 @@ def main():
 
     feedback, result = None, None
     for attempt in range(3):
-        result = responses.pop(0) if responses else ask_model(date, items, threads, editions, feedback)
+        if responses:
+            result = responses.pop(0)
+        else:
+            result, usage = ask_model(date, items, threads, editions, feedback)
+            log["usage"].append(usage)
         feedback = check(result, date, items, threads)
         log["attempts"].append(feedback)
         if not feedback:

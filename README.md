@@ -38,14 +38,13 @@ python -m newsletter.run              # full daily run (needs ANTHROPIC_API_KEY)
 S3_BUCKET=... ./deploy.sh             # upload; set CLOUDFRONT_DISTRIBUTION_ID to invalidate
 ```
 
-## Turning on the daily run
+## Daily run
 
-`.github/workflows/daily.yml` ships with the schedule commented out; it runs only when triggered by hand.
+`.github/workflows/daily.yml` runs every day at 14:43 UTC (07:43 PDT, 06:43 PST) and can also be started by hand with `gh workflow run daily.yml`. It generates the edition, commits `data/` and `logs/` back to `main`, builds, and deploys to S3 with CloudFront invalidation. Pull before editing locally, since the bot pushes daily.
 
-1. Repo secrets: `ANTHROPIC_API_KEY`, `AWS_DEPLOY_ROLE_ARN` (an IAM role trusting GitHub OIDC for this repo, allowed `s3:PutObject` on the key and `cloudfront:CreateInvalidation`).
-2. Repo variables: `S3_BUCKET`, optionally `CLOUDFRONT_DISTRIBUTION_ID`, `AWS_REGION`.
-3. Run **Check sources** once, pin any resolved channel ids, set `verified: true`.
-4. Uncomment the `schedule` block.
+It needs repo secrets `ANTHROPIC_API_KEY` and `AWS_DEPLOY_ROLE_ARN` (an IAM role trusting GitHub OIDC for this repo's `main` branch, allowed `s3:PutObject` on the key and `cloudfront:CreateInvalidation`), and repo variables `S3_BUCKET`, `CLOUDFRONT_DISTRIBUTION_ID`, and optionally `AWS_REGION`.
+
+Each `logs/run-YYYY-MM-DD.json` records the model's token usage per attempt under `usage`.
 
 A failed run leaves yesterday's page up and shows as a red run in Actions. Nothing is published half-built.
 
