@@ -1,0 +1,273 @@
+{
+  "date": "2026-11-10",
+  "dek": "Anthropic takes its IPO on the road with a price range and a ticker, Google ships Gemini 4 Carbon, and OpenAI opens a new business-facing surface inside ChatGPT.",
+  "brief": [
+    "Anthropic launched the roadshow for its proposed IPO, which puts numbers on the Nov 9 filing: 825 million Class A shares at an expected $70 to $78, listed under \"ANT\" on Nasdaq. Google DeepMind followed with the availability of Gemini 4 Carbon, the model reported yesterday to lead the Artificial Analysis index, so the supremacy race now has a shipped product behind its latest data point. DeepMind also published AlphaProof Code, which it says wrote three million lines of Lean proofs to verify Signal's core encryption.",
+    "OpenAI's day was about distribution. Businesses in ChatGPT gives companies a place to manage their information and see how they show up, and OpenAI also published research with Upwork on freelance work plus education and caregiver programs. In the papers, a double-blind evaluation pilot tackles the problem of auditing a proprietary model without exposing either the weights or the test prompts, and a quantization study finds that bf16 arithmetic in the backward pass can quietly distort a cheap screening method."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Anthropic launches its IPO roadshow at $70 to $78 a share",
+      "summary": "Anthropic says it launched the roadshow for its proposed initial public offering of 825,000,000 shares of Class A common stock. Of these, 801,351,354 are offered by Anthropic and 23,648,646 by existing stockholders. The expected price is $70.00 to $78.00 per share, underwriters get a 30-day option on up to 123,750,000 more shares, and Anthropic has applied to list on the Nasdaq Global Select Market as \"ANT.\" It notes that the registration statement has not yet become effective.",
+      "why": "At the stated range, the primary shares alone imply roughly $56 billion to $62 billion by simple arithmetic, so this is the first hard price signal on how public markets will value a frontier lab.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/roadshow-launch"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Lab supremacy race"
+      ],
+      "layer": "Models & Research",
+      "title": "Google DeepMind makes Gemini 4 Carbon available",
+      "summary": "Google DeepMind announces that Gemini 4 Carbon is now available. Yesterday The Batch reported the model leading Artificial Analysis' Intelligence Index over Claude Opus 5.5 at lower cost per task.",
+      "why": "Availability turns an index result into something customers and rivals can test directly, which sharpens the comparison with Claude Opus 5.5 just as Anthropic goes to market.",
+      "links": [
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Vertical platform plays (labs)",
+        "OpenAI monetization"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "OpenAI introduces Businesses in ChatGPT",
+      "summary": "OpenAI says businesses can manage their information, get insights about how they show up in ChatGPT, and turn interest into action there.",
+      "why": "It makes ChatGPT a place businesses must manage as well as a tool they buy, and it adds a commercial surface without touching the pricing ladder.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/introducing-businesses-chatgpt"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agentic reliability"
+      ],
+      "layer": "Models & Research",
+      "title": "AlphaProof Code agents write three million lines of Lean to verify Signal's encryption",
+      "summary": "Google DeepMind says AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal's core encryption, and describes it as a breakthrough in verifying complex software at depth.",
+      "why": "Machine-checked proof is the strongest form of reliability evidence for software, and a result at this scale suggests verification could become a practical counterweight to AI-written code.",
+      "links": [
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google/blog/introducing-alphaproof-code/"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>OpenAI</strong> — “Work at the Frontier: AI’s effect on freelance work”: new research with Upwork that OpenAI says finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/ai-effect-on-freelance-work"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Google DeepMind</strong> — “Gemini Robotics 2.5 accelerates real-world general dexterity”: DeepMind presents its most capable vision-language-action model and says it improves robot dexterity, reliability and safety.",
+      "links": [
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “Closing the AI guidance gap in education”: presents new ThinkYoung research and lessons from OpenAI's EMEA education partnerships on supporting teachers, AI literacy and independent learning.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/closing-ai-guidance-gap-education"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “Helping caregivers use AI in everyday life”: OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — “Pay for Hugging Face Hub with your Google Cloud Account”: announces that Hub billing can run through a Google Cloud account.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/hub-gcp-marketplace"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "Two Minute Papers",
+      "title": "Is Software Over?",
+      "when": "Nov 10",
+      "url": "https://www.youtube.com/watch?v=vug73goPJaM",
+      "summary": "The video looks at AI reverse-engineering existing software, covering the legal landscape, scientific research, visual reconstruction and how AI learns software, and asks what restrictions can realistically accomplish.",
+      "links": []
+    },
+    {
+      "channel": "Matthew Berman",
+      "title": "Fable 5.2 is ridiculous",
+      "when": "Nov 9",
+      "url": "https://www.youtube.com/watch?v=0vNyVMDFdkg",
+      "summary": "Berman puts a model called Fable 5.2 through a long series of build tests, including a Gears of War clone, an Excel-style spreadsheet, Fall Guys, water-balloon physics, a Blender house design and a Tokyo scene in Unreal Engine, then reviews benchmarks and pricing.",
+      "links": []
+    },
+    {
+      "channel": "bycloud",
+      "title": "The Next Scaling Axis of LLM Is… Sleeping?",
+      "when": "Nov 10",
+      "url": "https://www.youtube.com/watch?v=rAxTxqIHh9E",
+      "summary": "bycloud walks through new research on memory consolidation, sleep-time compute and dreaming that could let language models keep absorbing knowledge after deployment, drawing on work on plasticity loss, in-place test-time training and offline recurrence.",
+      "links": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "Double Blind Evals: Resolving the Dual Confidentiality Dilemma in AI Safety Auditing",
+      "layer": "Applications & Policy",
+      "body": "Andrew Trask, Sol Messing, et al. — the paper reports a pilot using an NVIDIA H100 secure enclave on Google Cloud and OpenMined's PySyft to evaluate Gemini 2.5 Flash Lite on private AILuminate prompts while keeping both the prompts and the model weights confidential.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12604"
+        }
+      ]
+    },
+    {
+      "title": "How Far Does Second-Order Linear Response Predict Quantization Mismatch? Pre-Registered Measurements on Five Language Models",
+      "layer": "Compute & Infrastructure",
+      "body": "Dezhen Lu, Zixiang Ni — the authors report that a Fisher-based screen predicts quantization KL well in relative terms across five models, but computing per-sequence gradients in bf16 can cause fourfold errors that fp32 in the lower backward pass removes.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12634"
+        }
+      ]
+    },
+    {
+      "title": "AgentOPSD: Turn-Level Credit Assignment via Recursive Belief Revision",
+      "layer": "Models & Research",
+      "body": "Yizhuo Li — the paper proposes a critic-free scheme that turns skill-conditioned self-teacher gaps into turn-level credit, reporting gains over GRPO and self-distillation baselines and 89.1% success on ALFWorld with a 7B policy.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12587"
+        }
+      ]
+    },
+    {
+      "title": "Evaluating Cross-Signal Coherence in Mammography Vision-Language Models",
+      "layer": "Applications & Policy",
+      "body": "Rebeca Nam, Chase M. Fensore, et al. — the study finds that stated confidence does not drop when mammography images are altered, that shuffled options change most models' answers, and that some models' written reasoning contradicts their final answer.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12574"
+        }
+      ]
+    },
+    {
+      "title": "Fairness in Explainable AI Narratives: Decomposing Social Disparities in LLM-Generated Explanations",
+      "layer": "Applications & Policy",
+      "body": "Wannes Van den Bulck, Sofie Goethals, et al. — the authors introduce a framework for testing whether LLM-written explanations of adverse decisions differ by social group, and report significant disparities across all four datasets, metric families and five models.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12592"
+        }
+      ]
+    },
+    {
+      "title": "Unmasking Four Knapsack Problems in the Traveling Thief Benchmark",
+      "layer": "Data",
+      "body": "Mohammed Mizan Alanazi, Mahdi Khemakhem — the paper shows that file rounding turned four benchmark instances into plain knapsack problems, says the same rounding may distort 949 others by more than 1%, and publishes corrected rates.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12597"
+        }
+      ]
+    },
+    {
+      "title": "Adapting Small Language Models to Romanized Nepali: Tokenizer Fertility, Reference Likelihood, and Generation Metrics",
+      "layer": "Models & Research",
+      "body": "Pujan Pant, Sagar Newpane, et al. — QLoRA on 9,000 transliterated examples lifts chrF++ from 10-14 to roughly 29-31 on three 2-3B models, while likelihood and overlap metrics disagree on how far apart the models are.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12628"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "The roadshow is the next step on the board: Anthropic's launch sets a $70 to $78 range for 825 million shares and names the ANT ticker, with the registration statement still not effective. Nothing new on OpenAI's \"speed limits\" push."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "Businesses in ChatGPT moves OpenAI from selling seats to enterprises toward hosting businesses inside the product, while the freelance, education and caregiver posts add programmatic outreach. Hugging Face's Google Cloud billing option shows marketplace procurement spreading beyond the labs."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Gemini 4 Carbon's availability gives yesterday's Intelligence Index report a product to test. Berman's Fable 5.2 videos add another model name to watch, though his tests do not settle a ranking."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "No lab disclosure today. The Double Blind Evals pilot is the relevant item, showing a way to run third-party safety audits without exposing prompts or weights."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "Nothing new; the attribution and supply-chain evidence stands."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "AgentOPSD adds a self-distillation method for turn-level credit, extending the toolkit; still no Moonshot response to either attribution."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Businesses in ChatGPT opens a business-facing surface inside the product, a possible future revenue line, but the pricing ladder is unchanged."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "The quantization-mismatch paper reinforces the hidden-cost theme: a cheap Fisher screen predicts relative KL well, but bf16 backward arithmetic can distort it fourfold and the MoE model responds non-quadratically."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "AlphaProof Code's Lean proofs for Signal's encryption offer a formal-verification route to reliability, while the mammography study shows models whose stated reasoning contradicts their answers. AgentOPSD adds a training-side method for long multi-turn tasks."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Nothing new; detection evidence stands as left."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "Nothing new; the planted-error peer-review numbers stand. The traveling-thief benchmark correction is a reminder that benchmark files themselves need auditing."
+    }
+  ]
+}
