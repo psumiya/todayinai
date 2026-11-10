@@ -6,7 +6,7 @@ SP's daily AI newsletter, served at https://sumiya.page/ainews.html. See README.
 
 - Live runs work: `python -m newsletter.run` fetches, calls Claude (`claude-sonnet-5-5`, env `NEWSLETTER_MODEL` overrides) with structured outputs bound to `newsletter/schema.py`, validates, writes data, builds `dist/ainews.html`.
 - Local setup: `.venv` with `requirements.txt`; `ANTHROPIC_API_KEY` in `.env` (gitignored). Load with `set -a; . ./.env; set +a`.
-- Deploy: `S3_BUCKET=... CLOUDFRONT_DISTRIBUTION_ID=... ./deploy.sh`. That distribution serves sumiya.page and ... from the `...` bucket (the `sumiya.page` buckets are not the origin). The blog repo `~/dev/repos/...` deploys to the same bucket with `aws s3 sync`; its `deploy.sh` must exclude `ainews.html` or it overwrites the newsletter.
+- Deploy: `S3_BUCKET=... CLOUDFRONT_DISTRIBUTION_ID=... ./deploy.sh`. The real bucket, distribution, and the blog-repo deploy caveat live in `CLAUDE.local.md` (gitignored).
 - `.github/workflows/daily.yml` runs daily on cron at 14:43 UTC (turned on by SP 2026-11-10) and can still be triggered with `gh workflow run daily.yml`. Repo secrets `ANTHROPIC_API_KEY`, `AWS_DEPLOY_ROLE_ARN` and variables `S3_BUCKET`, `CLOUDFRONT_DISTRIBUTION_ID` are set; AWS role `todayinai-deploy` (OIDC, `main` branch only) can write `ainews.html` and invalidate the distribution. First successful end-to-end run was 2026-11-10; the 10-23 run failed at deploy because the `AWS_DEPLOY_ROLE_ARN` secret held a wrong value.
 - psumiya/brief (the older profile-based generator) is retired and archived. Its AWS stack was deleted. The only piece worth porting is its Gemini video transcription.
 
