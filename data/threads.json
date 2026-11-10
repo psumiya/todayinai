@@ -2,66 +2,68 @@
   "Coordinated frontier pacing": {
     "started": "2026-09-17",
     "color": "#ff6748",
-    "last_update": "2026-10-22"
+    "last_update": "2026-11-09"
   },
   "Vertical platform plays (labs)": {
     "started": "2026-09-19",
     "color": "#b07a2d",
-    "last_update": "2026-10-23"
+    "last_update": "2026-11-09"
   },
   "Tiered bio-capability access": {
     "started": "2026-09-18",
     "color": "#86c84a",
-    "last_update": "2026-10-22"
+    "last_update": "2026-10-22",
+    "active": false
   },
   "Lab supremacy race": {
     "started": "2026-09-16",
     "color": "#2aa8c7",
-    "last_update": "2026-10-23"
+    "last_update": "2026-11-09"
   },
   "Agent misalignment goes public": {
     "started": "2026-09-16",
     "color": "#e6aa22",
-    "last_update": "2026-10-22"
+    "last_update": "2026-11-09"
   },
   "AI misuse: autonomous attack chains": {
     "started": "2026-09-16",
     "color": "#e95375",
-    "last_update": "2026-10-23"
+    "last_update": "2026-11-09"
   },
   "Distillation warfare": {
     "started": "2026-09-20",
     "color": "#c45d3c",
-    "last_update": "2026-10-22"
+    "last_update": "2026-11-09"
   },
   "OpenAI monetization": {
     "started": "2026-09-16",
     "color": "#27a97b",
-    "last_update": "2026-10-22"
+    "last_update": "2026-11-09"
   },
   "Efficiency race": {
     "started": "2026-09-16",
     "color": "#438fe5",
-    "last_update": "2026-10-23"
+    "last_update": "2026-11-09"
   },
   "Agentic reliability": {
     "started": "2026-09-16",
     "color": "#9079d4",
-    "last_update": "2026-10-22"
+    "last_update": "2026-11-09"
   },
   "Provenance & synthetic media": {
     "started": "2026-09-16",
     "color": "#ec7b41",
-    "last_update": "2026-10-22"
+    "last_update": "2026-11-09"
   },
   "Uncensored open-weight ecosystem": {
     "started": "2026-09-22",
     "color": "#b58fd6",
-    "last_update": "2026-10-20"
+    "last_update": "2026-10-20",
+    "active": false
   },
   "Institutional defenses against AI slop": {
     "started": "2026-10-06",
     "color": "#6f7f3a",
-    "last_update": "2026-10-22"
+    "last_update": "2026-11-09"
   }
 }

@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-09",
+  "model": "claude-sonnet-5-5",
+  "gaps": [
+    "Yannic Kilcher: HTTPError: HTTP Error 404: Not Found",
+    "Two Minute Papers: HTTPError: HTTP Error 404: Not Found",
+    "AI Explained: HTTPError: HTTP Error 404: Not Found",
+    "Matthew Berman: HTTPError: HTTP Error 404: Not Found",
+    "AI Jason: HTTPError: HTTP Error 404: Not Found"
+  ],
+  "attempts": [
+    []
+  ],
+  "item_counts": {
+    "blog": 21,
+    "video": 0,
+    "paper": 300
+  },
+  "outcome": "published"
+}

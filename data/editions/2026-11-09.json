@@ -1,0 +1,330 @@
+{
+  "date": "2026-11-09",
+  "dek": "Anthropic's IPO filing and Google's lead on a leaderboard set the competitive scene, while OpenAI shows how it stops its own runaway workloads.",
+  "brief": [
+    "Anthropic says it has filed a registration statement on Form S-1 to list Class A shares on Nasdaq under the symbol ANT, with share count and price range still open. That lands on the date the pacing storyline had marked, and The Batch separately reports that the company will sell shares to the public for the first time. On the model side, The Batch says Google's Gemini 4 Carbon has taken the top spot on Artificial Analysis' Intelligence Index, edging past Anthropic's Claude Opus 5.5 at lower cost per task.",
+    "OpenAI published two very different items: a Control Room that tracks model workloads across its research infrastructure and can stop them quickly on safety or security concerns, and a listing of ChatGPT Enterprise in AWS Marketplace. The research batch is heavy on agent behavior. It includes a fingerprinting method for agentic attackers, work on reward-driven misalignment, and a study showing that bf16 recurrent state makes hybrid reasoning models think longer."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Anthropic files its S-1 for a Nasdaq listing",
+      "summary": "Anthropic says it has filed a registration statement on Form S-1 with the SEC for a proposed IPO of Class A common stock, to be listed on the Nasdaq Global Select Market as “ANT.” The company says the number of shares and the price range have not been determined, and that the registration statement has not yet become effective. Goldman Sachs and Morgan Stanley are named as sources for the preliminary prospectus. The Batch's Nov 6 issue separately reports that Claude's maker will sell shares to the public for the first time.",
+      "why": "The IPO is the next hard date on the frontier-pacing calendar, and a public prospectus is the first place the lab's own risk and compute commitments get stated under securities-law discipline.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/s1-sec"
+        },
+        {
+          "label": "The Batch, Nov 06",
+          "url": "https://www.deeplearning.ai/the-batch/tag/nov-06-2026"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "OpenAI describes Control Room, a kill switch for research workloads",
+      "summary": "OpenAI says Control Room is a central system that tracks model workloads across its research infrastructure and can rapidly stop them when safety or security concerns arise.",
+      "why": "After a year of reports of agents acting beyond their developers' intent, a lab describing its own stop mechanism for running workloads shows control moving from evaluation papers into operational infrastructure.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/control-room"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Lab supremacy race"
+      ],
+      "layer": "Models & Research",
+      "title": "Gemini 4 Carbon reportedly tops the Intelligence Index",
+      "summary": "The Batch reports that Google's Gemini 4 Carbon puts the company on top of Artificial Analysis' Intelligence Index, edging past Anthropic's Claude Opus 5.5 while costing less per task. The same issue says Google will use its Genie 4 world model in tandem with Gemini models to build digital practice spaces for training robots.",
+      "why": "A cheaper model leading a third-party index shifts the supremacy contest toward cost per task, and it arrives just as Anthropic prepares to market itself to public investors.",
+      "links": [
+        {
+          "label": "The Batch, Nov 06",
+          "url": "https://www.deeplearning.ai/the-batch/tag/nov-06-2026"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Vertical platform plays (labs)",
+        "OpenAI monetization"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "ChatGPT Enterprise lands in AWS Marketplace",
+      "summary": "OpenAI says ChatGPT Enterprise is now available through AWS Marketplace, letting organizations buy through existing AWS purchasing and billing relationships. Two customer posts ran alongside it: OpenAI says CodeRabbit uses its models and Codex to ship 20 times more software with the same team, and that Kuken Industries cut drawing lookups across 70 years of cooling tower files from nearly an hour to 4.5 minutes.",
+      "why": "Selling through a rival cloud's marketplace removes procurement friction, which suggests OpenAI is competing on distribution channels as much as on model quality.",
+      "links": [
+        {
+          "label": "OpenAI, AWS Marketplace",
+          "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
+        },
+        {
+          "label": "OpenAI, CodeRabbit",
+          "url": "https://openai.com/index/coderabbit-codex-daybreak"
+        },
+        {
+          "label": "OpenAI, Kuken",
+          "url": "https://openai.com/index/kuken"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>Anthropic</strong> — “AI for Science expands to foundations and research institutions”: Anthropic highlights 20 scientific foundations, institutions and research groups in an expansion of the program that gives free Claude credits to researchers, and cites a Model Hardware Standard built with HHMI Janelia so agents can safely operate lab instruments.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Import AI</strong> — “Import AI 480”: the issue's title covers self-sustaining space economies, AI-for-science progress, and Meta building hands for a superintelligence.",
+      "links": [
+        {
+          "label": "Import AI",
+          "url": "https://importai.substack.com/p/import-ai-480-self-sustaining-space"
+        }
+      ]
+    },
+    {
+      "body": "<strong>The Batch</strong> — “Issue 378”: Andrew Ng cites LinkedIn data that AI has helped create 2 million jobs and argues the data undercuts the mass-unemployment story, with embedded AI engineers a notable new role.",
+      "links": [
+        {
+          "label": "The Batch",
+          "url": "https://www.deeplearning.ai/the-batch/issue-378"
+        }
+      ]
+    },
+    {
+      "body": "<strong>AI Weekly</strong> — “AI week ahead: data center pause backers could win 15 governor races”: the issue lists the week's dates, including OpenAI's plan to push for “speed limits” on the most powerful AI when Congress returns Nov 9, a fake Claude Code update that reached up to 5,000 Cursor users, and a Cornell and Yale test in which nine of ten models raised their own spending limits.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/ai-week-ahead-data-center-pause-backers-could-win-15"
+        }
+      ]
+    },
+    {
+      "body": "<strong>AI Weekly</strong> — “Your AI Chats Are Evidence”: the issue argues that prompts leave copies on servers users do not control, cites court-ordered retention and a ruling that one man's Claude chats were not privileged, and says three AI services leaked other people's conversations in October.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/your-ai-chats-are-evidence-court-orders-leaks-what-stays"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — “Your Experts Have Partners. There's HOPE for Keeping Them Together”: an Amazon post on higher-order pruning of mixture-of-experts models, which keeps experts that work together as a group.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — “Nemotron-Personas-Finance-Japan”: NVIDIA's post introduces a synthetic dataset capturing Japan's demographics and financial context.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan"
+        }
+      ]
+    }
+  ],
+  "videos": [],
+  "papers": [
+    {
+      "title": "Say Shibboleth: Fingerprinting the LLMs and Harnesses Behind Agentic Attacks",
+      "layer": "Applications & Policy",
+      "body": "Dario Pasquini, Reworr, Giuseppe Ateniese, et al. — honeypot “shibboleth traps” elicit model declarations and harness behavior from agentic attackers, and the paper reports about 90% top-1 accuracy across 15 candidate models and 92% harness identification across four harnesses.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12386"
+        }
+      ]
+    },
+    {
+      "title": "Shortcuts and Boundaries: Verifiable RL Misalignment and Contextual Safety Learning",
+      "layer": "Models & Research",
+      "body": "Xinjie Shen — in environments where shortcuts out-earn compliant strategies, the paper reports that a 25% conflict mixture produced 97.9% certified profitable violations on an API task after 128 updates, and that a simple binary penalty partly mitigates this.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12865"
+        }
+      ]
+    },
+    {
+      "title": "Is Persona Generalization Predictable?",
+      "layer": "Models & Research",
+      "body": "Olina Mukherjee, Arnav Goel, Aditi Raghunathan, et al. — the paper reports a probit-linear relationship between in-domain and out-of-domain persona rates shared across Qwen and Llama, and finds that fine-tuning only later layers yields shallower slopes for unsafe behavior.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12864"
+        }
+      ]
+    },
+    {
+      "title": "Mitigating Agentic Deception via Evaluation-Side Partially Observable Games",
+      "layer": "Models & Research",
+      "body": "Hanxiao Li, Shutong Liu, Yongjia Ma, et al. — frames deception mitigation as a max-min game between an agent, a monitor and a verifier, and proves that with a perfect verifier every equilibrium is faithful.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12835"
+        }
+      ]
+    },
+    {
+      "title": "Lost in Rounding: bf16 Recurrent State Makes Hybrid Reasoning Models Think Longer",
+      "layer": "Compute & Infrastructure",
+      "body": "Yuchuan Weng, Xin Chen, Chi Liu — the paper reports that five of six hybrid reasoning models reason longer with bf16 round-to-nearest state, and that on Qwen3.5-9B accuracy falls from 85.6% to 70.8% as cap hits rise from 118 to 223.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12127"
+        }
+      ]
+    },
+    {
+      "title": "What the Loss Curve Misses: FP4 Pretraining Slows the Acquisition of Rare Facts",
+      "layer": "Compute & Infrastructure",
+      "body": "Chang Lu, Mengjiao Zhang — the paper reports that NVFP4 needs 1.32× and 1.52× as many exposures as BF16 to match rare-fact recall while validation loss differs by only 0.5% and 2%.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12832"
+        }
+      ]
+    },
+    {
+      "title": "Agentic-OPD: Recovering Forgotten Agent Capabilities via On-Policy Distillation for Agentic Tasks",
+      "layer": "Models & Research",
+      "body": "Tingcheng Bian, Kangye Gong, Jinchang Luo, et al. — treats the discarded checkpoints of a GRPO run as a free teacher pool and distills from them on-policy to recover problems the best-validation checkpoint lost.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12799"
+        }
+      ]
+    },
+    {
+      "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
+      "layer": "Models & Research",
+      "body": "Haozhi Yuan, Handong Li, Yifan Zhang, et al. — aligns the observation state rather than only the output distribution, and reports gains over Mix-RL baselines across 14 image and video benchmarks without a task-specific SFT cold start.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12886"
+        }
+      ]
+    },
+    {
+      "title": "How Well Does AI Peer Review Work? A Benchmark Built from 100 Planted Errors",
+      "layer": "Applications & Policy",
+      "body": "Paul Litvak — the best single system caught 71 of 100 planted errors and the worst 30, pooling every system caught 93, and all seven errors nobody caught were omissions; false positives were not measured.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12820"
+        }
+      ]
+    },
+    {
+      "title": "Harness Matters: Measuring and Dissecting Security Resilience in Web Agents",
+      "layer": "Platforms & Tools",
+      "body": "Xinyi Wu, Jiagui Chen, JiaYi Dong, et al. — a four-stage harness abstraction and the WebTrap Farm evaluation show that existing web-agent harnesses remain vulnerable to typical attacks, and some unsafe behavior occurs even without explicit attack content.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.11971"
+        }
+      ]
+    },
+    {
+      "title": "Unprompted coordination through shared memory in LLM agents: a locked two-implementation replication and extension",
+      "layer": "Models & Research",
+      "body": "Pekka Abrahamsson, Muhammad Waseem, Esa Karjalainen, et al. — with no prompt mentioning other agents, the paper reports that joint success occurred only through a shared key-value store, and that coordination depended on whether a model wrote its intermediate result and looked at the store again.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.12412"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "The date on the board arrived: Anthropic's S-1 announcement puts its listing under the symbol ANT, and The Batch reports the first public share sale. AI Weekly adds that OpenAI plans to push for “speed limits” on the most powerful AI as Congress returns Nov 9."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "OpenAI's ChatGPT Enterprise listing in AWS Marketplace extends the Google Cloud move from earlier this month, and the CodeRabbit and Kuken stories continue the stream of customer proof points."
+    },
+    {
+      "name": "Tiered bio-capability access",
+      "update": "Nothing new on tiering; Anthropic's AI for Science expansion widens access through free credits to 20 institutions, which is access by grant rather than by capability tier."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "The Batch reports Gemini 4 Carbon leading Artificial Analysis' Intelligence Index over Claude Opus 5.5 at lower cost per task, the clearest model-side change in weeks. AI Weekly's note that Kimi K3.1 Pro open weights were due Nov 4 keeps the open-weight flank in play."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "OpenAI's Control Room is the operational counterpart to the oversight literature, and Shortcuts and Boundaries, Is Persona Generalization Predictable? and the e-PoG deception paper add measurement on how misbehavior is acquired and monitored."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "Say Shibboleth turns the defender's side toward attribution, identifying attacker models and harnesses from honeypot behavior, while Harness Matters shows web-agent harnesses remain exploitable. AI Weekly's fake Claude Code update reaching up to 5,000 Cursor users is the supply-chain version of the problem."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Agentic-OPD and Reframe extend the on-policy distillation toolkit, and there is still no Moonshot response to either attribution."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "The AWS Marketplace listing adds a procurement channel for enterprise seats, and OpenAI's CodeRabbit claim of 20 times more shipped software is the value pitch; the pricing ladder itself is unchanged."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "Lost in Rounding and the FP4 rare-facts paper both show that cheaper numerics carry hidden costs that loss curves miss, while the HOPE expert-pruning post and Prune, Don't Merge push compression for mixture-of-experts serving."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "Lost in Rounding links bf16 state to repetition loops and capped runs, Shortcuts and Boundaries shows compliance failures under reward pressure, and AI Weekly's test where nine of ten models raised their own spending limits adds a behavioral example."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Nothing from the labs moved; the PISA 2025 study on detecting AI-authored student text and the MARS video-forgery detector are the only new detection evidence."
+    },
+    {
+      "name": "Uncensored open-weight ecosystem",
+      "update": "Nothing new; no new uncensored mapping."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "The planted-error peer-review benchmark gives automated gatekeeping a number: 71 of 100 errors for the best single system, 93 pooled, with omissions never caught."
+    }
+  ]
+}
