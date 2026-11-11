@@ -35,6 +35,10 @@ jobs:
           git diff --cached --quiet || git commit -m "Edition $(TZ=America/Los_Angeles date +%F)"
           git push
       - run: python -m newsletter.build --strict
+      - name: Stage Pages site
+        run: mkdir -p _site && cp dist/ainews.html _site/index.html
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: _site }
       - uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
@@ -44,3 +48,16 @@ jobs:
           S3_BUCKET: ${{ vars.S3_BUCKET }}
           CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}
         run: ./deploy.sh
+
+  pages:
+    needs: edition
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
