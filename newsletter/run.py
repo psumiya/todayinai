@@ -100,10 +100,11 @@ def ask_model(date, items, threads, editions, feedback=None):
         output_config={"format": {"type": "json_schema", "schema": api_schema(TOOL["input_schema"])}},
     ) as stream:
         resp = stream.get_final_message()
+        request_id = stream.response.headers.get("request-id")
     if resp.stop_reason != "end_turn":
-        raise RuntimeError(f"model stopped with {resp.stop_reason} (request {resp._request_id})")
+        raise RuntimeError(f"model stopped with {resp.stop_reason} (request {request_id})")
     u = resp.usage
-    usage = {"request_id": resp._request_id, "input_tokens": u.input_tokens, "output_tokens": u.output_tokens,
+    usage = {"request_id": request_id, "input_tokens": u.input_tokens, "output_tokens": u.output_tokens,
              "cache_read_input_tokens": u.cache_read_input_tokens or 0,
              "cache_creation_input_tokens": u.cache_creation_input_tokens or 0}
     return json.loads(next(b.text for b in resp.content if b.type == "text")), usage
