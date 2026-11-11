@@ -7,7 +7,7 @@
   "Vertical platform plays (labs)": {
     "started": "2026-09-19",
     "color": "#b07a2d",
-    "last_update": "2026-11-10"
+    "last_update": "2026-11-11"
   },
   "Tiered bio-capability access": {
     "started": "2026-09-18",
@@ -18,12 +18,12 @@
   "Lab supremacy race": {
     "started": "2026-09-16",
     "color": "#2aa8c7",
-    "last_update": "2026-11-10"
+    "last_update": "2026-11-11"
   },
   "Agent misalignment goes public": {
     "started": "2026-09-16",
     "color": "#e6aa22",
-    "last_update": "2026-11-10"
+    "last_update": "2026-11-11"
   },
   "AI misuse: autonomous attack chains": {
     "started": "2026-09-16",
@@ -33,27 +33,27 @@
   "Distillation warfare": {
     "started": "2026-09-20",
     "color": "#c45d3c",
-    "last_update": "2026-11-10"
+    "last_update": "2026-11-11"
   },
   "OpenAI monetization": {
     "started": "2026-09-16",
     "color": "#27a97b",
-    "last_update": "2026-11-10"
+    "last_update": "2026-11-11"
   },
   "Efficiency race": {
     "started": "2026-09-16",
     "color": "#438fe5",
-    "last_update": "2026-11-10"
+    "last_update": "2026-11-11"
   },
   "Agentic reliability": {
     "started": "2026-09-16",
     "color": "#9079d4",
-    "last_update": "2026-11-10"
+    "last_update": "2026-11-11"
   },
   "Provenance & synthetic media": {
     "started": "2026-09-16",
     "color": "#ec7b41",
-    "last_update": "2026-11-09"
+    "last_update": "2026-11-11"
   },
   "Uncensored open-weight ecosystem": {
     "started": "2026-09-22",
@@ -65,5 +65,11 @@
     "started": "2026-10-06",
     "color": "#6f7f3a",
     "last_update": "2026-11-09"
+  },
+  "Weight-space programming": {
+    "started": "2026-11-11",
+    "color": "#d2563b",
+    "active": true,
+    "last_update": "2026-11-11"
   }
 }

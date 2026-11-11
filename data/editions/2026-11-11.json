@@ -1,0 +1,316 @@
+{
+  "date": "2026-11-11",
+  "dek": "A new Anthropic model, Fable 5.2, arrives beside Gemini Carbon, and the freshest research asks what post-training and weight editing really cost.",
+  "brief": [
+    "The model race got another entrant. AI Explained says it read the full 264-page Fable 5.2 report and METR's 30-page report on recursive self-improvement, and tested Fable 5.2 and Gemini Carbon hundreds of times. Matthew Berman's news roundup puts Fable 5.2 and Gemini 4 Carbon next to a dozen other releases, from Meta Muse Ember to GPT Image 2.6. Neither video settles a ranking, but together they show the frontier crowding on a single day.",
+    "The research feed is about hidden costs and a new editing idea. Two papers extend weight-space programming, in which a language model reads a network's weights and rewrites them, to a cheaper discrete-optimization form and to EEG and ECG models. Post-training papers ask what dense rewards, low-precision arithmetic and on-policy distillation cost when compute is held fixed. OpenAI's customer posts, a veterans offer and a Singapore Airlines case study, continue the push into verticals."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Lab supremacy race",
+        "Coordinated frontier pacing",
+        "Agent misalignment goes public"
+      ],
+      "layer": "Models & Research",
+      "title": "AI Explained works through Anthropic's Fable 5.2 report and METR's self-improvement assessment",
+      "summary": "AI Explained says it read the full 264-page Fable 5.2 report and METR's 30-page RSI report, and tested Fable 5.2 and Gemini Carbon hundreds of times. The video's description lists how fast AI is accelerating AI, five benchmarks few others discuss, why Simple Bench got saturated, Internal model 4, and remote labour automation. It closes with a chapter titled “it knows when you're watching.” The description points to Anthropic's announcement of Claude Fable 5.2 and Mythos 5.2.",
+      "why": "A new Anthropic model, a third-party assessment of AI-driven AI research and a chapter on models noticing observation all landed together, which sharpens the supremacy race, the pacing debate and the misalignment thread at once.",
+      "links": [
+        {
+          "label": "AI Explained",
+          "url": "https://www.youtube.com/watch?v=583ThJIqQ7k"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Lab supremacy race"
+      ],
+      "layer": "Models & Research",
+      "title": "Berman's news roundup stacks Fable 5.2, Gemini Carbon and a dozen other releases",
+      "summary": "Matthew Berman's video covers Fable 5.2 and Gemini 4 Carbon, then LongCat 2.5, Ripple 65B, Inkling 2 Small, Meta Muse Ember, GPT Image 2.6, Gemini Omni 1.2, Seedream 5.5, SWE-2 Flash and MiniMax H3 Image. Its first chapter is titled “NVIDIA CEO Affair.” The description supplies chapter titles and source links rather than test results.",
+      "why": "The breadth of the list, with frontier text models, image models and a coding model all shipping at once, shows how little room any single launch has to dominate attention.",
+      "links": [
+        {
+          "label": "Matthew Berman",
+          "url": "https://www.youtube.com/watch?v=FCmLuTENOp0"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agentic reliability",
+        "Weight-space programming"
+      ],
+      "layer": "Models & Research",
+      "title": "Weight-space programming gets a discrete-optimization rival and a biosignal test",
+      "summary": "Tree-Ising, by Hadi Salloum and Ammar Ali, recasts a frontier agent's weight repair as sparse QUBO problems over BF16 weights. It reports 54.6% on MATH-500, against 51.7% for the agent's own edit and 7.9% for the base model as reported. The paper says the agent behind the original MIT work used 158 turns and 89.7 million tokens. Separately, Dara Varam, Taraneh Aminosharieh Najafi and David Atienza apply weight-space programming to EEG and ECG models. They report that a language model matched gradient-descent training with 6 times fewer training subjects in one set of experiments.",
+      "why": "Two independent follow-ups within a day suggest letting an agent edit weights directly is becoming a method worth comparing against fine-tuning, with cost and verification as the open questions.",
+      "links": [
+        {
+          "label": "arXiv: Tree-Ising",
+          "url": "https://arxiv.org/abs/2611.14210"
+        },
+        {
+          "label": "arXiv: Mixed Signals",
+          "url": "https://arxiv.org/abs/2611.13758"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Vertical platform plays (labs)",
+        "OpenAI monetization"
+      ],
+      "layer": "Applications & Policy",
+      "title": "OpenAI publishes a veterans offer and a Singapore Airlines case study",
+      "summary": "OpenAI says more than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus and use it to prepare for civilian careers. A separate post says Singapore Airlines uses OpenAI models and the API for customer support, travel discovery and employee productivity, and that its Kris chatbot doubled CSAT.",
+      "why": "A free-year offer for one group and a named enterprise result for another fit the pattern of programmatic outreach and customer proof points, with no change to the pricing ladder.",
+      "links": [
+        {
+          "label": "OpenAI: veterans",
+          "url": "https://openai.com/index/chatgpt-plus-for-veterans"
+        },
+        {
+          "label": "OpenAI: Singapore Airlines",
+          "url": "https://openai.com/index/singapore-airlines-travel-work"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Efficiency race",
+        "Distillation warfare"
+      ],
+      "layer": "Models & Research",
+      "title": "Three post-training papers recount cost, numerics and distillation drift",
+      "summary": "Vikash Singh and colleagues report across 1,668 runs on six models that matching compute reverses the ranking of dense rewards against GRPO. On Qwen2.5-1.5B, a Monte-Carlo reward that leads per update ends 14.3 points lower at equal tokens. Mahdi Nazemi and colleagues report that standard BF16 mixed-precision RL converges more slowly than FP16 because of weight sticking, and that stochastic rounding closes the gap. Yue Wu and colleagues report that on-policy self-distillation degrades under continued training and propose a bootstrapped variant.",
+      "why": "All three show that headline gains in RL post-training depend on what is held constant, whether compute, rounding or the teacher's alignment with the student.",
+      "links": [
+        {
+          "label": "arXiv: Dense Rewards in GRPO",
+          "url": "https://arxiv.org/abs/2611.13560"
+        },
+        {
+          "label": "arXiv: BF16-FP16 gap",
+          "url": "https://arxiv.org/abs/2611.13545"
+        },
+        {
+          "label": "arXiv: Bootstrapped OPD",
+          "url": "https://arxiv.org/abs/2611.13680"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>OpenAI</strong> — “Singapore Airlines elevates travel & work with OpenAI technology”: says the airline uses OpenAI models and API for customer support, travel discovery and employee productivity, doubling CSAT for its Kris chatbot.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/singapore-airlines-travel-work"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “ChatGPT Plus for veterans and servicemembers”: reports more than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus and describes how they use it for civilian career preparation.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/chatgpt-plus-for-veterans"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — “BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model”: a post on running a personal assistant on-device with a sub-billion-parameter agentic model.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/qvac/botpsy"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "AI Explained",
+      "title": "Fable 5.2: The Self-Improvement Loop Keeps Loopin’ … (plus Gemini Carbon)",
+      "when": "2026-11-10",
+      "url": "https://www.youtube.com/watch?v=583ThJIqQ7k",
+      "summary": "The host says he read the 264-page Fable 5.2 report and the 30-page METR RSI report and tested Fable 5.2 and Gemini Carbon hundreds of times. Chapters cover how good the models are, remaining common-sense gaps, how fast AI is improving itself, small gains with big consequences, and “it knows when you're watching.”",
+      "links": []
+    },
+    {
+      "channel": "Matthew Berman",
+      "title": "Gemini Carbon, NVIDIA CEO AFFAIR, Fable 5.2, Meta Muse Ember, GPT Image 2.6, Minimax H3: AI NEWS",
+      "when": "2026-11-11",
+      "url": "https://www.youtube.com/watch?v=FCmLuTENOp0",
+      "summary": "A roundup that moves from an NVIDIA CEO item to Fable 5.2 and Gemini 4 Carbon, then through LongCat 2.5, Ripple 65B, Inkling 2 Small, Meta Muse Ember, GPT Image 2.6, Gemini Omni 1.2, Seedream 5.5, SWE-2 Flash and MiniMax H3 Image.",
+      "links": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
+      "layer": "Models & Research",
+      "body": "Hadi Salloum, Ammar Ali, et al. — casts weight-space repair as per-row QUBO problems over BF16 weights and reports 54.6% on MATH-500 versus 51.7% for the agent's edit, with the base model at 7.9% as reported.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.14210"
+        }
+      ]
+    },
+    {
+      "title": "Mixed Signals: Weight-Space Programming for EEG and ECG",
+      "layer": "Models & Research",
+      "body": "Dara Varam, Taraneh Aminosharieh Najafi, David Atienza — reports that frontier models can debug planted faults and write network weights from scratch for biosignal tasks, matching gradient-descent training with 6 times fewer subjects in one experiment.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.13758"
+        }
+      ]
+    },
+    {
+      "title": "Are Dense Rewards Worth Their Tokens in GRPO?",
+      "layer": "Models & Research",
+      "body": "Vikash Singh, Weicong Chen, et al. — finds across 1,668 runs that matched-compute comparison reverses the ranking, with Monte-Carlo continuations taking 91% of generated tokens in their setting.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.13560"
+        }
+      ]
+    },
+    {
+      "title": "Closing the BF16-FP16 Convergence Speed Gap in RL Post-Training with Stochastic Rounding",
+      "layer": "Compute & Infrastructure",
+      "body": "Mahdi Nazemi, Oleg Rybakov, et al. — attributes BF16's slower RL convergence to weight sticking and reports that stochastic rounding matches FP16 speed with lower KL than a raised learning rate.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.13545"
+        }
+      ]
+    },
+    {
+      "title": "Bootstrapped On-Policy Distillation",
+      "layer": "Models & Research",
+      "body": "Yue Wu, Xueyu Zhou, et al. — reports that on-policy self-distillation degrades under continued training as student and privileged teacher drift apart, and proposes transferring privileged knowledge to a fresh student.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.13680"
+        }
+      ]
+    },
+    {
+      "title": "Coding Agent Memory Post-Training II: Unlocking the Memory Potential of Pre-trained File Operations for Long-Horizon Tasks via On-Policy Distillation",
+      "layer": "Models & Research",
+      "body": "Lirui Luo, Kelong Mao, et al. — argues that distilling memory control through tools outside pre-training weakens guidance, and builds a five-environment gym where plain Bash and a persistent workspace serve as memory.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.14009"
+        }
+      ]
+    },
+    {
+      "title": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
+      "layer": "Platforms & Tools",
+      "body": "Yukyeong Lee, Yumin Choi, Jinheon Baek, Sung Ju Hwang — introduces WikiTrace, which links each stored lesson to its source trajectory so agents can check it before acting.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.14320"
+        }
+      ]
+    },
+    {
+      "title": "Transparency Disclosures for Chain-of-Thought Monitorability",
+      "layer": "Applications & Policy",
+      "body": "Jacob Davies, Theo Bearman — proposes five disclosure indicators for CoT monitorability and reports that no developer among Anthropic, OpenAI and Google DeepMind covers all five, though each indicator has been reported by at least one.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.13873"
+        }
+      ]
+    },
+    {
+      "title": "Sable: A Small-Field Sumcheck Argument for Bit-Exact Inference of Large Language Models",
+      "layer": "Compute & Infrastructure",
+      "body": "Tomer Solberg — reports proving all 64 layers of Qwen2.5-32B in 92.5 s for 4,096 tokens on one GPU, at 41 to 50 times serving time or 6.4 cents per request.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.14083"
+        }
+      ]
+    },
+    {
+      "title": "A Theory of Policy Optimization in Post-Training: Coverage Collapse and Reference Resets",
+      "layer": "Models & Research",
+      "body": "Audrey Huang, Nan Jiang, Sham M. Kakade, et al. — shows REINFORCE can drive the probability of optimal responses toward zero even as reward improves, and that resetting the KL reference mitigates this.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.14467"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Nothing new on the Anthropic listing or OpenAI's speed-limits push. AI Explained's coverage of METR's RSI report and the Davies and Bearman disclosure proposal supply the evidence side of the pacing argument."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "OpenAI's veterans offer and Singapore Airlines case study add another audience-specific outreach and customer proof point to the stream."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Fable 5.2 and Mythos 5.2 join Gemini 4 Carbon as models to compare; AI Explained's and Berman's videos cover both, but neither settles a ranking."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "AI Explained's “it knows when you're watching” chapter is the only direct item, and the CoT-monitorability disclosure paper shows no lab yet reports the full set of indicators."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "Nothing new from attackers; the paper on compositional security for agentic coding harnesses argues the harness itself is the attack surface, which matches the existing supply-chain evidence."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Bootstrapped On-Policy Distillation and the CAMP-II memory paper extend the on-policy toolkit and flag drift as a limit; still no Moonshot response."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "The veterans free-year offer is a funnel into Plus rather than a price change; the pricing ladder stands."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "The stochastic-rounding fix, the matched-compute result on dense rewards and Sable's 41 to 50 times proving overhead all say cheap-looking methods carry costs that headline metrics hide."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "WikiTrace targets memory-induced degradation by letting agents check lessons against raw trajectories, and Tree-Ising shows weights edited to remove reasoning loops."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "The “Pulse or Provenance?” paper reports that rPPG deepfake detectors key on a non-physiological signal that is equally discriminative in background regions, which weakens the pulse-based detection premise."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "Nothing new on peer review; the Agent Benchmarks Stop Ranking paper adds that pass/fail scoring can hide differences between top agents."
+    }
+  ]
+}
