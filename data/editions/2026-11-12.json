@@ -1,0 +1,172 @@
+{
+  "date": "2026-11-12",
+  "dek": "Earnings filings put numbers on AI's effect on headcount and output, while Google DeepMind introduces Gemini 4 Hydrogen and OpenAI keeps publishing customer proof points.",
+  "brief": [
+    "AI Weekly's read of more than 100 earnings filings is the day's most concrete evidence. It reports that Snap's engineers merged more than twice as many code changes with 71% fewer defects per change, that a bank credits agents with 76,000 saved hours, and that Robinhood customers have handed $1.6 billion of trading to AI agents. More companies, it says, now state plainly that AI lets them grow without hiring.",
+    "On the model side, Google DeepMind published \"Introducing Gemini 4 Hydrogen\", adding another name after Gemini 4 Carbon. OpenAI posted customer stories from Amplitude and Holiday Extras and committed $2 million to research on AI and children's safety. DeepMind also released AlphaGenome 2, which targets how DNA sequences affect specific human cell types."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [],
+      "layer": "Applications & Policy",
+      "title": "Earnings filings turn AI claims into numbers on code, hours and hiring",
+      "summary": "AI Weekly says it read more than 100 SEC earnings filings from the past three weeks. It reports that Snap's engineers merged more than twice as many code changes with 71% fewer defects per change, a bank said agents saved 76,000 hours, and ZipRecruiter spends less on R&D with a smaller team. It also reports that Robinhood customers have handed $1.6 billion of trading to AI agents, that some companies now count agents as a sales channel, and that Reddit's shareholder letter argued AI search can't replace it. Customer support and software teams produced the biggest numbers, and not every filer is winning.",
+      "why": "Filings carry legal risk, so statements about hiring and productivity there are better evidence than conference talk, though this is a newsletter's reading of them rather than an audit.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/snap-ships-2x-the-code-pennymac-plans-fewer-hires-both"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Lab supremacy race"
+      ],
+      "layer": "Models & Research",
+      "title": "Google DeepMind introduces Gemini 4 Hydrogen",
+      "summary": "Google DeepMind published a post titled \"Introducing Gemini 4 Hydrogen\". The item as received carries no description, so its capabilities and positioning are not yet clear.",
+      "why": "A second Gemini 4 variant arriving days after Carbon means the comparison set keeps growing before any ranking has settled.",
+      "links": [
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Vertical platform plays (labs)"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "OpenAI adds Amplitude and Holiday Extras to its customer-story stream",
+      "summary": "OpenAI says Amplitude's proactive product agent, Wave, built primarily on OpenAI models, identifies what to build, helps teams ship changes with coding agents and measures the impact, with improvements shipping in one to two days. A separate post says Holiday Extras is using Codex to turn customer expertise into better apps, higher booking conversion and new growth possibilities.",
+      "why": "Both stories pair a product (agents, Codex) with a named customer outcome, continuing OpenAI's push to be seen as an industry platform rather than a model vendor.",
+      "links": [
+        {
+          "label": "OpenAI: Amplitude",
+          "url": "https://openai.com/index/amplitude"
+        },
+        {
+          "label": "OpenAI: Holiday Extras",
+          "url": "https://openai.com/business/customer-stories/holidays-extras-codex"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [],
+      "layer": "Applications & Policy",
+      "title": "OpenAI commits $2 million to research on AI and children's safety",
+      "summary": "OpenAI says it is committing $2 million to research on AI and children's safety, and that the work supports shared tools to measure risks and opportunities for young people.",
+      "why": "The emphasis on shared measurement tools, not a lab-specific program, is the part to watch, since comparable metrics are what outside evaluators need.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/children-first-declaration"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>Google DeepMind</strong> — “AlphaGenome 2: Deciphering how cells read DNA to better understand disease”: describes a model that predicts how DNA sequences and their variations affect specific human cell types and disease.",
+      "links": [
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face (IBM Granite)</strong> — “LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B”: introduces a markup language designed for LLMs and says it is now supported in the Granite 4.1 3B and 8B models.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — “The Definitive Fine-Tuning Guide for 3D Generation Models”: a guide to LoRA fine-tuning of 3D generation models.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/3d-lora-finetuning"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "Two Minute Papers",
+      "title": "DeepMind’s AI Just Did The Impossible",
+      "when": "2026-11-12",
+      "url": "https://www.youtube.com/watch?v=gPNiuyYirfw",
+      "summary": "Covers DeepMind's AlphaProof Code work on formal verification of Signal, the Lean-proof result that surfaced earlier this week.",
+      "links": []
+    },
+    {
+      "channel": "Matthew Berman",
+      "title": "Cheaper AI can lead to more spending",
+      "when": "2026-11-12",
+      "url": "https://www.youtube.com/shorts/G11-Vmw7-PQ",
+      "summary": "A short whose title argues that cheaper AI can lead to more spending.",
+      "links": []
+    }
+  ],
+  "papers": [],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Nothing new on the Anthropic listing or OpenAI's speed-limits push; the roadshow remains the next step."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "OpenAI's Amplitude and Holiday Extras stories add two more named-customer proof points, one built on agents and one on Codex."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Gemini 4 Hydrogen joins Gemini 4 Carbon, Fable 5.2 and Mythos 5.2 as models to compare; nothing yet settles a ranking."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "Nothing new from labs; OpenAI's $2 million children's-safety research commitment is adjacent, focused on shared measurement tools."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "Nothing new; the attribution and supply-chain evidence stands."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Nothing new; still no Moonshot response."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Nothing new on pricing; the customer stories are demand-side proof, and the pricing ladder stands."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "AI Weekly's filings read gives the demand side a first look in company numbers, with Berman's short on cheaper AI driving more spending pointing the same way."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "Two Minute Papers' coverage of AlphaProof Code keeps formal verification in view as a route to reliability."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Nothing new; detection evidence stands as left."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "Nothing new; the planted-error peer-review numbers and benchmark-audit concerns stand."
+    },
+    {
+      "name": "Weight-space programming",
+      "update": "Nothing new today."
+    }
+  ]
+}
