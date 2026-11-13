@@ -1,0 +1,303 @@
+{
+  "date": "2026-11-13",
+  "dek": "Decision models, the cheap answer-picking models that now come from Google, OpenAI and Microsoft, become a category with numbers, while OpenAI gives its agents a wallet.",
+  "brief": [
+    "The biggest shift today is a quiet one: AI Weekly reports that decision models, which return a probability over a fixed list of answers instead of writing text, now come from TypeSafe AI, OpenAI, Microsoft and, as of Wednesday, Google. Vercel's gateway data, as AI Weekly relays it, shows them taking 26% of requests in October while accounting for 0.53% of spend. A cluster of papers today treats these models as actors, judges, teachers and attack targets, which suggests the research side is moving as fast as the product side.",
+    "OpenAI introduced ChatGPT Wallet, which lets agents in ChatGPT Work, Codex and dots complete purchases with user approval. On the research side, Singularity-Bench asks whether agents can build agents, and a peer-review audit and a weight-space programming test add evidence to two running storylines."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Decision models",
+        "Efficiency race"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "Google joins OpenAI and Microsoft in shipping decision models, and they already carry a quarter of gateway requests",
+      "summary": "AI Weekly's issue describes decision models as models that do not write text: given an input and a fixed list of answers, they return the best answer with a probability in milliseconds. It says TypeSafe AI released the first, Jev, on September 15, Google released its own on Wednesday after OpenAI and Microsoft did in October, and all three charge $0.10 or less per million input tokens and nothing for output. Citing Vercel's November report, it says 15 decision models from eight vendors took 26% of AI Gateway requests in October while accounting for 0.53% of spend, and that for every $1 teams spent on Jev they spent $64 on Anthropic. It adds that Shanghai AI Lab says its 4B model beat Jev, and that chatbots still score a little higher on the hardest decisions at 15 times the cost.",
+      "why": "If judgment calls move to near-free models while generation keeps the revenue, the competition shifts from who has the best chatbot to who owns the cheap routing layer underneath it.",
+      "links": [
+        {
+          "label": "AI Weekly, Issue 543",
+          "url": "https://aiweekly.co/issues/google-is-the-latest-tech-giant-to-chase-typesafes-8-week"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Vertical platform plays (labs)",
+        "OpenAI monetization"
+      ],
+      "layer": "Applications & Policy",
+      "title": "OpenAI introduces ChatGPT Wallet for agent purchases",
+      "summary": "OpenAI describes ChatGPT Wallet as a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+      "why": "Letting agents spend money moves OpenAI from answering questions toward taking a position in transactions, which is a new place for revenue and a new place for trust to break.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Decision models",
+        "Agentic reliability",
+        "AI misuse: autonomous attack chains"
+      ],
+      "layer": "Models & Research",
+      "title": "Papers test decision models as actors, judges, teachers and attack targets",
+      "summary": "One paper reports that a decision model that acts poorly can still teach well: using JEV as a teacher raised a Qwen2.5-1.5B policy over GRPO from 72.8% to 82.9% success on ALFWorld and from 56.8% to 71.4% on WebShop. Another proposes a hybrid decision model that either answers from one forward pass or reasons at a cost of T tokens, with a routing block estimating the value of thinking. A third, S1-Evo, reports 71.99% mean attack success and 57.47% high-confidence success against typed System-1 models on jev-1.14, with up to 24.00% end-to-end agent violations. A fourth reports that Intern-Decision-4B ranks vulnerability candidates on commodity GPUs, putting the fixed function in the top 25 in 21% of cases on 75 public CVEs.",
+      "why": "The same cheap judge that makes agents more reliable and cheaper to train also becomes a new surface for manipulation, so defense and offense are being published together.",
+      "links": [
+        {
+          "label": "Actor, Judge, or Teacher?",
+          "url": "https://arxiv.org/abs/2611.17167"
+        },
+        {
+          "label": "The Value of Thinking",
+          "url": "https://arxiv.org/abs/2611.16961"
+        },
+        {
+          "label": "S1-Evo",
+          "url": "https://arxiv.org/abs/2611.16937"
+        },
+        {
+          "label": "Look Here, Then Decide",
+          "url": "https://arxiv.org/abs/2611.16565"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Coordinated frontier pacing",
+        "Lab supremacy race"
+      ],
+      "layer": "Models & Research",
+      "title": "Singularity-Bench asks whether agents can build agents",
+      "summary": "The paper introduces an open-ended benchmark with six end-to-end tasks spanning pre-training, mid-training, post-training, inference, the agent harness and cluster orchestration, each judged against mature human-engineered baselines on identical hardware. It reports that Opus 5.5 with Claude Code matches or outperforms the human baseline on all six tasks across 11 agents built from 7 frontier models and 2 harnesses. The authors also report reward-hacking vulnerabilities in the conventional Harbor framework and an extension, Breakwater, that blocks all attacks they tested.",
+      "why": "A benchmark that measures agents building the systems that train and serve models gives the pacing debate a concrete yardstick, though one paper's baselines are not a settled measure.",
+      "links": [
+        {
+          "label": "Singularity-Bench",
+          "url": "https://arxiv.org/abs/2611.16591"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>AI Weekly</strong> — “Issue 543: Google is the latest tech giant to chase TypeSafe's 8-week-old Jev”: argues that production AI is splitting into generation and judgment, citing Vercel's report that nearly a third of paid teams used a decision model in October, with adoption rising from just over one in five teams under 10 million monthly tokens to seven in ten above 10 billion.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/google-is-the-latest-tech-giant-to-chase-typesafes-8-week"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “Gondola doubles revenue as its team builds more with Codex”: says Gondola helps creatives get credit and get hired, with Codex raising its lead engineer's output by 50% and ChatGPT simplifying daily work.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/business/customer-stories/gondola"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face (ggml-org)</strong> — “llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem”: frames the 1.0 release as a firmer base for running models locally.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "Matthew Berman",
+      "title": "Anthropic Researcher explains how to train LLMs",
+      "when": "Nov 12",
+      "url": "https://www.youtube.com/watch?v=Sjdvu4nHfDk",
+      "summary": "Berman hosts Jeremy Berman, presented as an Anthropic researcher, in a conversation on how to train LLMs.",
+      "links": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+      "layer": "Models & Research",
+      "body": "Haochen Liu, Qianhao Zhu, et al. — a decision model that acts poorly can still teach well, with JEV lifting a Qwen2.5-1.5B policy over GRPO from 72.8% to 82.9% on ALFWorld and from 56.8% to 71.4% on WebShop.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.17167"
+        }
+      ]
+    },
+    {
+      "title": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
+      "layer": "Models & Research",
+      "body": "Zhengxu Yu, Ke Xu, et al. — a frozen backbone with a lightweight routing block answers in one forward pass or reasons for T tokens, depending on the estimated value of thinking against a per-request price.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.16961"
+        }
+      ]
+    },
+    {
+      "title": "S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models",
+      "layer": "Applications & Policy",
+      "body": "Kaixiang Wang, Junjie Li, et al. — a self-evolving attack reaches 71.99% mean success on jev-1.14 and causes up to 24.00% end-to-end agent violations.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.16937"
+        }
+      ]
+    },
+    {
+      "title": "Look It Up: Look Here, Then Decide — small decision models in a harness find memory-safety vulnerabilities",
+      "layer": "Applications & Policy",
+      "body": "Tim De Wachter, Kyryl Volkov, et al. — Intern-Decision-4B separates vulnerable from benign functions with AUC 0.73 but only 0.56 against a function's own patch, and is more useful for ordering candidates than for verdicts.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.16565"
+        }
+      ]
+    },
+    {
+      "title": "Singularity-Bench: Can Agents Build Agents?",
+      "layer": "Models & Research",
+      "body": "Yang Zhou, Krish Agarwal, et al. — an open-ended benchmark across six AI-development tasks reports Opus 5.5 with Claude Code matching or beating the human baseline on all six.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.16591"
+        }
+      ]
+    },
+    {
+      "title": "Compiling Known Rules into Compact Neural Agents: Weight-Space Programming on Unseen Games",
+      "layer": "Models & Research",
+      "body": "Jens Lehmann — the strongest writer reaches 56% held-out-level success with feedback in a fixed 57k-parameter recurrent network, while training the same architectures from scratch yields about 1% within the budget.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.16981"
+        }
+      ]
+    },
+    {
+      "title": "Auditing AI peer reviewers: a benchmark on real scientific papers",
+      "layer": "Applications & Policy",
+      "body": "Íñigo Zubeldia, Boris Bolliet, et al. — injecting 357 errors into 30 real preprints and testing twelve reviewer systems, the paper reports that model choice matters most, with three frontier LLMs differing by about 50 percentage points in detection.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.17052"
+        }
+      ]
+    },
+    {
+      "title": "Cited but Unused: Parametric Provenance in Retrieval-Augmented Generation",
+      "layer": "Models & Research",
+      "body": "Tanzeel Abbas, Tehseen Zia, et al. — counterfactual substitution shows 1.2% to 15.7% of citable claims come from parametric memory rather than retrieved context, and NLI verification performs at chance.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.17161"
+        }
+      ]
+    },
+    {
+      "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+      "layer": "Models & Research",
+      "body": "Benjamin Hoover, Hugh Blayney, et al. — a learned Hopfield-and-Tank energy called CRAM solves 99.996% of Sudoku-Extreme and 100% of Maze-Unique, at least 1,000x faster to train than looped models, while the authors caution that such puzzles are too easy to test scalability.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.17309"
+        }
+      ]
+    },
+    {
+      "title": "Two mathematical models of knowledge distillation",
+      "layer": "Models & Research",
+      "body": "Audrey Xie, Ludwig Schmidt, et al. — the theory suggests distillation helps through easier optimization landscapes and faster fitting, not through better generalization.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.17230"
+        }
+      ]
+    },
+    {
+      "title": "Human or Synthetic? What a Fixed Budget Buys for Post-Training",
+      "layer": "Data",
+      "body": "Shourik Banerjee, Ethan Mendes, et al. — at dollar-matched budgets, synthetic preference data is far more cost-efficient at low-to-moderate budgets, and on summarization human data does not close the gap at any tested budget.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.16895"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Nothing new on the Anthropic listing or OpenAI's speed-limits push. Singularity-Bench gives the pacing argument a measurement of agents building AI systems, though it is a single benchmark."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "ChatGPT Wallet extends OpenAI's agents into purchasing across ChatGPT Work, Codex and dots, and the Gondola story adds another Codex customer proof point."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Nothing settles a ranking. Google joining OpenAI and Microsoft with a decision model opens a new axis to compare, and Singularity-Bench's Opus 5.5 result is one data point on agent capability."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "Nothing new from labs; the sycophancy user study “Mind the Accuracy-Approval Gap” is the only adjacent item."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "No new attacker incident. S1-Evo shows decision models can be steered by injected evidence, while Look Here, Then Decide shows small models ordering vulnerability candidates on the defensive side."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Still no Moonshot response. The knowledge-distillation theory paper locates the benefit in optimization speed, and the actor-judge-teacher paper uses a decision model as an RL teacher."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "ChatGPT Wallet opens a commerce surface for agents, but the pricing ladder stands. OpenAI's decision model, priced at $0.10 or less per million input tokens per AI Weekly, sits at the cheap end."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "Decision models are the clearest efficiency story yet: 26% of Vercel gateway requests for 0.53% of spend. CRAM's energy-based reasoning and the fixed-budget synthetic-data result point the same way."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "The value-of-thinking router and the actor-judge-teacher result suggest cheap judges can make agents more reliable. Cited but Unused adds a caution that citations can misstate where a claim came from."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Nothing new on deepfake detection. Cited but Unused extends the provenance problem to text citations in retrieval systems."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "Auditing AI peer reviewers adds a planted-error benchmark for AI reviewers, with large spreads between models, alongside the earlier benchmark-audit concerns."
+    },
+    {
+      "name": "Weight-space programming",
+      "update": "Lehmann's paper tests compiling known game rules into fixed-architecture weights: 56% held-out-level success for the best writer, but fragile under PPO and near 1% when trained from scratch."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-13",
+  "model": "claude-sonnet-5-5",
+  "gaps": [
+    "BAIR: URLError: <urlopen error [Errno 111] Connection refused>",
+    "Import AI: HTTPError: HTTP Error 403: Forbidden",
+    "The Batch: HTTPError: HTTP Error 403: Forbidden"
+  ],
+  "attempts": [
+    []
+  ],
+  "usage": [
+    {
+      "request_id": "req_011Ch1bhU4Kahr4hc4GSfMGp",
+      "input_tokens": 121584,
+      "output_tokens": 10629,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0
+    }
+  ],
+  "item_counts": {
+    "blog": 7,
+    "video": 2,
+    "paper": 210
+  },
+  "outcome": "published"
+}
