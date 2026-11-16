@@ -2,12 +2,12 @@
   "Coordinated frontier pacing": {
     "started": "2026-09-17",
     "color": "#ff6748",
-    "last_update": "2026-11-10"
+    "last_update": "2026-11-16"
   },
   "Vertical platform plays (labs)": {
     "started": "2026-09-19",
     "color": "#b07a2d",
-    "last_update": "2026-11-13"
+    "last_update": "2026-11-16"
   },
   "Tiered bio-capability access": {
     "started": "2026-09-18",
@@ -18,17 +18,17 @@
   "Lab supremacy race": {
     "started": "2026-09-16",
     "color": "#2aa8c7",
-    "last_update": "2026-11-13"
+    "last_update": "2026-11-16"
   },
   "Agent misalignment goes public": {
     "started": "2026-09-16",
     "color": "#e6aa22",
-    "last_update": "2026-11-11"
+    "last_update": "2026-11-16"
   },
   "AI misuse: autonomous attack chains": {
     "started": "2026-09-16",
     "color": "#e95375",
-    "last_update": "2026-11-13"
+    "last_update": "2026-11-16"
   },
   "Distillation warfare": {
     "started": "2026-09-20",
@@ -38,17 +38,17 @@
   "OpenAI monetization": {
     "started": "2026-09-16",
     "color": "#27a97b",
-    "last_update": "2026-11-13"
+    "last_update": "2026-11-16"
   },
   "Efficiency race": {
     "started": "2026-09-16",
     "color": "#438fe5",
-    "last_update": "2026-11-13"
+    "last_update": "2026-11-16"
   },
   "Agentic reliability": {
     "started": "2026-09-16",
     "color": "#9079d4",
-    "last_update": "2026-11-13"
+    "last_update": "2026-11-16"
   },
   "Provenance & synthetic media": {
     "started": "2026-09-16",
@@ -77,5 +77,11 @@
     "color": "#3a8fb7",
     "active": true,
     "last_update": "2026-11-13"
+  },
+  "AI capital and systemic risk": {
+    "started": "2026-11-16",
+    "color": "#8a6fd1",
+    "active": true,
+    "last_update": "2026-11-16"
   }
 }

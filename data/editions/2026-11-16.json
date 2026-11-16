@@ -1,0 +1,239 @@
+{
+  "date": "2026-11-16",
+  "dek": "Anthropic is set to price its IPO on Wednesday with $900.9 billion in compute commitments on the books, while OpenAI spends the day on science, healthcare and outside safety evaluators.",
+  "brief": [
+    "Per AI Weekly, Anthropic is due to price its IPO on Wednesday and start trading on Nasdaq on Thursday under the ticker ANT. The filing lists $900.9 billion in compute commitments through 2045, and Dario Amodei called compute the company's deepest business dilemma. The same issue reports that 87% of the Fed's market contacts named AI as a risk to the financial system, up from 50% in the spring.",
+    "OpenAI's output is large and mostly vertical. It opened a science push with free access for 200,000 academic researchers, a survey of 1,800 scientists, and a lattice-physics proof it says GPT-6 Astra helped produce. It also added computer-use agents to ChatGPT for Healthcare and began embedded assessments of model alignment, safeguards and monitoring with Apollo Research, METR, Transluce and Goodfire."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Coordinated frontier pacing",
+        "Efficiency race",
+        "AI capital and systemic risk"
+      ],
+      "layer": "Compute & Infrastructure",
+      "title": "Anthropic prices its IPO Wednesday carrying $900.9 billion in compute commitments",
+      "summary": "AI Weekly reports that Anthropic is due to price its IPO on Wednesday and begin trading on Nasdaq on Thursday as ANT. Anthropic's filing, as AI Weekly describes it, lists $900.9 billion in compute commitments running through 2045, and says its models may be controlled under US arms-export rules. Bloomberg, via AI Weekly, reports that syndicate banks are refusing or discouraging orders from mainland China and Hong Kong investors. AI Weekly quotes Amodei telling Jamie Dimon that compute is \"the deepest business dilemma that the company faces\"; his answer is to buy \"on the low side\" ahead of time and top up on the spot market. AI Weekly adds that JPMorgan expects a record $2.1 trillion of US investment-grade bond sales in 2027, with AI as the biggest driver.",
+      "why": "The listing turns the compute-commitment bet into something public investors price, and Amodei's buy-low-and-top-up strategy only works if the spot market stays available, which depends on the borrowed money behind it.",
+      "links": [
+        {
+          "label": "AI Weekly, Issue 544",
+          "url": "https://aiweekly.co/issues/ai-is-now-the-most-cited-risk-in-the-feds-survey-87-up-from"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public",
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Applications & Policy",
+      "title": "OpenAI starts embedded assessments with Apollo Research, METR, Transluce and Goodfire",
+      "summary": "OpenAI says it is beginning embedded assessments with Apollo Research, METR, Transluce and Goodfire to independently evaluate model alignment, safeguards and monitoring systems.",
+      "why": "Outside groups working inside a lab's evaluation process is a concrete form of the public accountability that the misalignment and pacing debates have lacked, though the listing gives no detail yet on what the groups can see or publish.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/our-first-phase-of-embedded-assessments"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Vertical platform plays (labs)",
+        "OpenAI monetization",
+        "Lab supremacy race"
+      ],
+      "layer": "Applications & Policy",
+      "title": "OpenAI makes science a product line: free researcher access, a survey and a physics proof",
+      "summary": "OpenAI says it is expanding its ChatGPT for Academic Researchers program to give 200,000 researchers worldwide free access to its frontier models. It also published “Science at the Frontier,” which it says covers how more than 1,800 scientists use ChatGPT, including daily workflows, reported productivity and expectations for discovery. A third post explores a candidate nonperturbative lattice definition of the Standard Model and says GPT-6 Astra helped turn the idea into a detailed proof. OpenAI also launched a dedicated science blog.",
+      "why": "Free access plus self-reported usage data and a showcase result is a vertical playbook aimed at one profession, with the physics claim as the capability proof point that outside experts will need to check.",
+      "links": [
+        {
+          "label": "OpenAI, academic researchers",
+          "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers"
+        },
+        {
+          "label": "OpenAI, Science at the Frontier",
+          "url": "https://openai.com/index/science-at-the-frontier"
+        },
+        {
+          "label": "OpenAI, Standard Model on a lattice",
+          "url": "https://openai.com/index/step-toward-defining-the-standard-model"
+        },
+        {
+          "label": "OpenAI, science blog",
+          "url": "https://openai.com/index/our-new-blog-for-science"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Vertical platform plays (labs)",
+        "Agentic reliability"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "ChatGPT for Healthcare adds computer-use agents, clinical answers and plugins",
+      "summary": "OpenAI introduces computer-use agents, improved clinical answers and new healthcare plugins for ChatGPT for Healthcare, which it says work across healthcare software to get real work done. A companion post covers advancing computer-use agents for healthcare teams.",
+      "why": "Computer-use agents operating inside existing clinical software are a high-stakes reliability test for agents, and the vertical push now runs through science and healthcare in the same day.",
+      "links": [
+        {
+          "label": "OpenAI, ChatGPT for Healthcare",
+          "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare"
+        },
+        {
+          "label": "OpenAI, computer-use for healthcare teams",
+          "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "AI capital and systemic risk",
+        "AI misuse: autonomous attack chains"
+      ],
+      "layer": "Applications & Policy",
+      "title": "The Fed's survey now ranks AI as the most-cited risk, at 87%",
+      "summary": "AI Weekly reports that the Federal Reserve asked its market contacts what could shake the financial system and 87% named AI, up from 50% in the spring. The same issue says the FAA halted flights nationwide days after putting an AI tool in every regional control center and that the agency is still looking at what happened. It also reports that Russian pranksters got three OpenAI national security staff on a video call.",
+      "why": "A jump from 50% to 87% shows finance regulators now treating AI as a systemic exposure, and the FAA episode, with its cause unresolved, shows how fast that worry attaches to real incidents.",
+      "links": [
+        {
+          "label": "AI Weekly, Issue 544",
+          "url": "https://aiweekly.co/issues/ai-is-now-the-most-cited-risk-in-the-feds-survey-87-up-from"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>OpenAI</strong> — “Strengthening the fight against online child sexual abuse with new tools and support”: OpenAI says new tools, practical guidance and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/strengthening-online-child-safety"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “LVMH’s Media Division announces strategic partnership with OpenAI”: OpenAI says the partnership will support journalism with AI and make LVMH's publications more accessible through ChatGPT.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/lvmh-media-division-partnership"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “The King’s Trust and OpenAI launch £1m partnership”: OpenAI says the partnership will help up to 25,000 young people across the UK build practical AI skills for work.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/the-kings-trust-and-openai"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “At Holiday Extras, dots get to work before anyone asks”: a customer story saying dots deliver launch reports unprompted, flag issues people might miss, and talk through upcoming meetings on the commute.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/business/customer-stories/holiday-extras-dots"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — “Hugging Face and OpenRouter join forces to make open-weight models easy to run”: the title announces a collaboration aimed at making open-weight models easier to run.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/openrouter"
+        }
+      ]
+    },
+    {
+      "body": "<strong>AI Weekly</strong> — “Issue 544: AI is now the most-cited risk in the Fed's survey”: the issue pairs the Fed survey and FAA flight halt with Anthropic's IPO pricing, its $900.9 billion in compute commitments, and JPMorgan's forecast of $2.1 trillion in US investment-grade bond sales in 2027.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/ai-is-now-the-most-cited-risk-in-the-feds-survey-87-up-from"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "Matthew Berman",
+      "title": "Box CEO Explains How AI Is Changing Software",
+      "when": "2026-11-16",
+      "url": "https://www.youtube.com/watch?v=kMdHCyAnNHA",
+      "summary": "Berman posts a conversation with Box's CEO on how AI is changing software, per the title.",
+      "links": [
+        {
+          "label": "Matthew Berman on YouTube",
+          "url": "https://www.youtube.com/watch?v=kMdHCyAnNHA"
+        }
+      ]
+    }
+  ],
+  "papers": [],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Anthropic's IPO pricing on Wednesday is now dated, and OpenAI's embedded assessments with Apollo Research, METR, Transluce and Goodfire add a form of outside oversight to the pacing debate. Nothing new on OpenAI's speed-limits push."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "OpenAI broadens into science with free access for 200,000 researchers, the “Science at the Frontier” survey and a science blog, and into healthcare with computer-use agents. LVMH's media partnership, the King's Trust skills program and the Holiday Extras dots story add more named partners."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Nothing settles a ranking. OpenAI's lattice-physics post, which credits GPT-6 Astra with helping produce a detailed proof, is a capability claim that awaits outside scrutiny."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "OpenAI's embedded assessments bring Apollo Research, METR, Transluce and Goodfire in to evaluate alignment, safeguards and monitoring, the first lab-side move on this thread in days."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "No new attack chain. AI Weekly's report of pranksters reaching three OpenAI national security staff on a video call is a social-engineering lapse, and OpenAI's new child-safety detection tools are adjacent defensive work."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Nothing new; still no Moonshot response."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Free frontier access for 200,000 researchers and the King's Trust and LVMH partnerships are reach plays, not price moves; the pricing ladder stands."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "Anthropic's $900.9 billion in compute commitments and Amodei's plan to buy low and top up on the spot market show the cost side of scale. Hugging Face's OpenRouter tie-up aims to make open-weight models easier to run."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "Computer-use agents with improved clinical answers in ChatGPT for Healthcare put agent reliability into a regulated, high-stakes setting. OpenAI's embedded assessments add outside testing of safeguards and monitoring."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Nothing new; detection evidence stands as left."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "Nothing new on peer review or benchmark audits; the planted-error numbers stand."
+    },
+    {
+      "name": "Weight-space programming",
+      "update": "Nothing new; Lehmann's fixed-architecture compilation result stands as the latest data point."
+    },
+    {
+      "name": "Decision models",
+      "update": "Nothing new today; the Google, OpenAI and Microsoft launches and the gateway-share numbers stand."
+    }
+  ]
+}
