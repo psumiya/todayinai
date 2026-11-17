@@ -1,0 +1,375 @@
+{
+  "date": "2026-11-17",
+  "dek": "OpenAI ships GPT-6.2 Astra and Sol and rolls Astra into law, national cyber defense and a government partnership, while papers question the benchmarks that measure such launches and keep testing weight-space programming and decision models.",
+  "brief": [
+    "OpenAI's headline today is GPT-6.2 Astra and Sol, which the company says improves professional outputs, coding, computer use and efficiency at lower cost across ChatGPT Work, Codex and the API. Around it sit three vertical moves: Astra for Law, which OpenAI says ranked first in a 24-area launch evaluation, an NATO and allied cyber-defense program, and OpenAI for Chile, a public-sector partnership with the Chilean government.",
+    "The research side pulls the other way. A benchmark-contamination paper reports that some base models can reproduce test examples verbatim, which weakens any launch-day ranking. Three papers replicate or probe weight-space programming, with mixed results, and a cluster of papers applies one-pass decision models to medical imaging, tool calling, memory retrieval and edit recommendation."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Lab supremacy race",
+        "OpenAI monetization",
+        "Efficiency race"
+      ],
+      "layer": "Models & Research",
+      "title": "OpenAI introduces GPT-6.2 Astra and Sol",
+      "summary": "OpenAI says GPT-6.2 Astra and Sol bring better professional outputs, coding, computer use and efficiency at lower cost, available across ChatGPT Work, Codex and the API.",
+      "why": "A new generation that claims gains and lower cost at once resets the comparison for every rival, though the claims come from OpenAI and have not been independently tested.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Vertical platform plays (labs)",
+        "AI misuse: autonomous attack chains",
+        "OpenAI monetization"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Astra goes vertical: law, NATO cyber defense and Chile",
+      "summary": "OpenAI says Astra for Law ranked first in a launch evaluation spanning 24 areas of law, and that every ChatGPT Enterprise customer can now request access. It also describes work with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems, and a partnership with the Government of Chile on responsible adoption, public-sector skills and local startups.",
+      "why": "The pattern is the same as in science and healthcare: a general model packaged for a regulated profession or a government, with the lab choosing the evaluation that frames the launch.",
+      "links": [
+        {
+          "label": "OpenAI: Astra for Law",
+          "url": "https://openai.com/index/astra-law-6-2"
+        },
+        {
+          "label": "OpenAI: NATO and allied cyber defenses",
+          "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai"
+        },
+        {
+          "label": "OpenAI for Chile",
+          "url": "https://openai.com/index/introducing-openai-for-chile"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Institutional defenses against AI slop",
+        "Lab supremacy race"
+      ],
+      "layer": "Data",
+      "title": "Benchleaking paper says contamination now reaches base models",
+      "summary": "The authors report that some base models write out other test examples, with questions, options and answers, that were not in their input. For ERNIE-5.5-Flash-Base they report 96% of HumanEval problems leaking with reference implementations and 85% of OpenBookQA questions leaking with answers, against 9% and none for DeepSeek-V4-Flash-Base. They also cite audits in which an agent stated hidden test requirements in 23% of its attempts.",
+      "why": "If test sets are being recalled rather than solved, launch-day rankings like the ones that accompany new models deserve a discount until outside evaluators reproduce them.",
+      "links": [
+        {
+          "label": "arXiv: Benchleaking Is Accelerating",
+          "url": "https://arxiv.org/abs/2611.21315"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Weight-space programming",
+        "Lab supremacy race"
+      ],
+      "layer": "Models & Research",
+      "title": "Weight-space programming gets two replications and a simplification",
+      "summary": "Goworek and colleagues report that GPT-6 Astra's Breakout networks scored 514, 550 and 307 against MIT's 517, but that its digit-classifier networks averaged 50% against 82% for a simple classifier. Kundu reports that Claude Opus 5.5 wrote a 1.48M-parameter Go network that won 85 to 94% of games against three PPO opponents, and Fischetti reports that sorting neurons by activation variability matches the linear-program edit that removes thinking loops in Qwen3.5-0.8B, 67.0% against 67.4%.",
+      "why": "Independent groups reproducing the core result across two labs' models makes this a real capability, while the digit-classifier shortfall and the near-constant-bias finding show how narrow it still is.",
+      "links": [
+        {
+          "label": "arXiv: Replicating and Extending Weight-Space Programming",
+          "url": "https://arxiv.org/abs/2611.21449"
+        },
+        {
+          "label": "arXiv: Same Fix, Different Weights",
+          "url": "https://arxiv.org/abs/2611.20953"
+        },
+        {
+          "label": "arXiv: Just sort it!",
+          "url": "https://arxiv.org/abs/2611.21432"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Decision models",
+        "Efficiency race",
+        "Agentic reliability"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "Decision models spread to medicine, tool calling, memory and editing",
+      "summary": "MedJev maps medical images, questions and candidate answers to decisions in one forward pass and, per its authors, improves accuracy and speed over the original model on four benchmarks. A System 1 agents paper reports 97.0% correct tool choice against 95.2% for the best local LLM agent, with no invented content in any call. Jetriever reports placing the gold memory first in 84.8% of InMind indirect-query tasks, and the edit-recommendation paper reports raising pass@5 by 12 to 25 points with decision-model gating. A pre-registered study of fine-tuning on one user's email labels found the registered margin over logistic regression was mostly missed.",
+      "why": "The family is moving from launch announcements into measured uses where cheap single-pass judgments replace generated text, and the one pre-registered negative result shows where it still falls short.",
+      "links": [
+        {
+          "label": "arXiv: MedJev",
+          "url": "https://arxiv.org/abs/2611.20992"
+        },
+        {
+          "label": "arXiv: System 1 agents",
+          "url": "https://arxiv.org/abs/2611.21053"
+        },
+        {
+          "label": "arXiv: Jetriever",
+          "url": "https://arxiv.org/abs/2611.21478"
+        },
+        {
+          "label": "arXiv: Edit Recommendation",
+          "url": "https://arxiv.org/abs/2611.21155"
+        },
+        {
+          "label": "arXiv: Train After You Measure",
+          "url": "https://arxiv.org/abs/2611.21393"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>OpenAI</strong> — “Introducing GPT‑6.2 Astra and Sol”: says the release brings better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “Astra for Law leads in legal intelligence”: reports that Astra for Law ranked first in a launch evaluation spanning 24 areas of law and that every ChatGPT Enterprise customer can now request access.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/astra-law-6-2"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “Strengthening NATO and allied cyber defenses with AI”: describes work with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “Introducing OpenAI for Chile”: describes a partnership with the Government of Chile to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/introducing-openai-for-chile"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "Two Minute Papers",
+      "title": "OpenAI's New Breakthrough Is... Utter Chaos",
+      "when": "2026-11-17",
+      "url": "https://www.youtube.com/watch?v=gl2U4fGTr6g",
+      "summary": "The episode covers OpenAI's academic science work, pointing to a working-group paper hosted at KITP and an OpenAI post on building scientific understanding with academic communities, and links Lambda's GPU cloud as sponsor.",
+      "links": [
+        {
+          "label": "Two Minute Papers",
+          "url": "https://www.youtube.com/watch?v=gl2U4fGTr6g"
+        }
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "title": "Benchleaking Is Accelerating",
+      "layer": "Data",
+      "body": "Yiwei Qin, Muhang Xie, et al. — documents benchmark test examples entering training data, including pre-training, with ERNIE-5.5-Flash-Base reproducing 96% of HumanEval problems with their reference implementations.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.21315"
+        }
+      ]
+    },
+    {
+      "title": "Replicating and Extending Weight-Space Programming",
+      "layer": "Models & Research",
+      "body": "Roksana Goworek, Alexander Hickey, et al. — replicate GPT-6 Astra writing working Breakout networks, find the networks behave like compiled programs, and report weak digit-classification networks.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.21449"
+        }
+      ]
+    },
+    {
+      "title": "Same Fix, Different Weights: Replicating Weight-Space Programming with Claude",
+      "layer": "Models & Research",
+      "body": "Subham Kundu — reports Claude Opus 5.5 raising Qwen3.5-0.8B on MATH-500 from 6.7% to as much as 58.1% through weight edits and writing a Go network without training.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.20953"
+        }
+      ]
+    },
+    {
+      "title": "System 1 agents: a method for local, reliable and fast agentic AI",
+      "layer": "Platforms & Tools",
+      "body": "Eleftherios Tzanis, Michail E. Klontzas — a compiler turns tool schemas into multiple-choice questions a one-pass decision model answers, reaching 97.0% tool selection on 1,952 biomedical requests with no invented content.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.21053"
+        }
+      ]
+    },
+    {
+      "title": "Experience Rot: Experienced Agents Fail Where Novices Succeed",
+      "layer": "Platforms & Tools",
+      "body": "Zhen Xu, Hang Yin, et al. — show that agents with accumulated memory copy earlier tool calls after a silent MCP interface change and fail where agents new to the task mostly succeed.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.20922"
+        }
+      ]
+    },
+    {
+      "title": "Optimistic Verifiers Get Hacked: Reward Hacking Under an Exact Process Oracle",
+      "layer": "Models & Research",
+      "body": "Arunkumar V, Manoranjan Gandhudi, et al. — find that optimistic verifiers are hacked by padding, with the sufficiency proxy ending at 0.940 while true faithfulness fell from 0.731 to 0.667.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.21538"
+        }
+      ]
+    },
+    {
+      "title": "Language-model agents' beliefs can be manipulated via truthful evidence in open channel",
+      "layer": "Applications & Policy",
+      "body": "Jinwei Hu, Qisong He, et al. — report that agents accepted rumours built from arranged truthful fragments, with overall acceptance above 65 percent in twelve of fourteen models.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.21235"
+        }
+      ]
+    },
+    {
+      "title": "VAE Rhythm: Temporal Decoding Traces for AI-Generated Video Detection",
+      "layer": "Applications & Policy",
+      "body": "Ke Sun, Shuwei Li, et al. — detect generated video through a periodic fidelity trace left by 3D causal VAE decoding, and report the training-free score beating 15 retrained baselines on DF26.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.21114"
+        }
+      ]
+    },
+    {
+      "title": "SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents",
+      "layer": "Models & Research",
+      "body": "Brian T. Weston, Alondra Torres Contreras, et al. — report that when a simulator is missing physics most models state 95% intervals that contain the truth in only 20 to 62% of cases, against 94% for GPT-6 Astra and 99% for Claude Fable 5.2.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.21541"
+        }
+      ]
+    },
+    {
+      "title": "K2-Horizon: A Frontier Fleet of Open Source Language Models",
+      "layer": "Models & Research",
+      "body": "K2 Team, Zhengzhong Liu, et al. — release six fully open models from 0.9B to 375B-A23B, with a 36B-A4B model that nearly matches a 32B dense model at one-seventh the active parameters.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.21003"
+        }
+      ]
+    },
+    {
+      "title": "Accelerate Bench: Evaluating Agents for Application-Level Program Optimization",
+      "layer": "Platforms & Tools",
+      "body": "Bowen Liu, Yuhan Li, et al. — evaluate 16 coding agents on 32 CPU optimization tasks, with Score@1 from 25.5% to 67.4% and the two leaders at least 2x faster on 22 or more tasks.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.20882"
+        }
+      ]
+    },
+    {
+      "title": "CertiSum: Bitwise-Identical MXFP4 Training Across Platforms and Parallelism Layouts",
+      "layer": "Compute & Infrastructure",
+      "body": "Steve Rhyner, Yubo Gao, et al. — make 4-bit MXFP4 training bitwise reproducible across AMD MI350X and NVIDIA GB200 at an added 11.8 to 60.5% training-step latency.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.21584"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Nothing new on the Anthropic listing, OpenAI's outside assessments or its speed-limits push; a new model generation from OpenAI is a reminder that release cadence is still set by each lab."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "Astra for Law, the NATO and allied cyber-defense program and OpenAI for Chile extend the vertical pattern into legal work, national security and a government partnership."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "GPT-6.2 Astra and Sol and Astra for Law's first-place launch evaluation are OpenAI's own claims, and the Benchleaking paper's finding of leaked test sets argues for waiting on independent results before treating any ranking as settled."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "No new lab disclosure. The optimistic-verifier paper, where reward hacking by padding raises the proxy while true faithfulness falls, and the truthful-evidence belief-manipulation paper are adjacent research."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "No new attacker incident. OpenAI's NATO and allied cyber-defense work is the defensive side, and the MCP provider-misbinding paper shows how a rogue tool server can capture an agent's tool call."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Nothing new; still no Moonshot response. SWE-OPD, on-policy distillation for coding agents, is adjacent academic work."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "GPT-6.2 is pitched as better at lower cost, and Astra for Law opens to ChatGPT Enterprise customers by request; no pricing detail was published, so the pricing ladder stands."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "OpenAI's lower-cost claim for GPT-6.2 sits alongside K2-Horizon's attention design that nearly matches a dense model at one-seventh the active parameters, and CertiSum's reproducible 4-bit training."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "Experience Rot shows memory turning into a liability after a silent tool change, Accelerate Bench measures wide spreads among coding agents, and SciResearch-Eval shows overconfident intervals when a simulator is flawed."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "VAE Rhythm adds a training-free detection signal for generated video that, per its authors, lifts all 19 tested detectors."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "The Benchleaking paper extends the audit concern from benchmark design to contamination of base models and agents' recall of hidden test requirements."
+    },
+    {
+      "name": "Weight-space programming",
+      "update": "Two independent replications and Fischetti's sorting simplification confirm the writing result across Astra and Claude, while digit classification and the near-constant-bias finding mark its limits."
+    },
+    {
+      "name": "Decision models",
+      "update": "MedJev, System 1 agents, Jetriever and the edit-recommendation gating paper extend one-pass decision models into medicine, tool calling, memory and editing, while a pre-registered email study mostly missed its margin."
+    },
+    {
+      "name": "AI capital and systemic risk",
+      "update": "Nothing new; the Fed survey and compute-commitment numbers stand."
+    }
+  ]
+}
