@@ -1,0 +1,336 @@
+{
+  "date": "2026-11-19",
+  "dek": "Anthropic priced its IPO at $83 a share ahead of Nasdaq trading, while OpenAI described the Codex-driven system that keeps ChatGPT fast and new papers extended the one-pass decision-model idea.",
+  "brief": [
+    "Anthropic announced it priced its initial public offering at $83.00 per share, with shares expected to begin trading on the Nasdaq Global Select Market today under the symbol ANT. That turns the compute-commitment story from earlier this week into a public-market one. AI Explained's new video argues the bigger story is the evidence on what drives model improvement and how close AI is to automating AI research, set against Anthropic's earlier 'race to the top' language.",
+    "OpenAI published how its Performance Factory, a set of Codex-powered workflows, finds and fixes performance problems in ChatGPT. In the research feed, Piccolo and Jeveration extend one-pass decision models into judgment tasks and image generation, and three papers (PIPETTE, continuation audits, and an LLM audit of clinical models) probe how agents are attacked, how they overreach, and how far automated audits can be trusted."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "AI capital and systemic risk",
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Anthropic prices its IPO at $83 a share, with trading set to begin today",
+      "summary": "Anthropic says it priced its offering of Class A common stock at $83.00 per share. The offering is 980,000,000 shares, of which 956,351,354 are sold by Anthropic and 23,648,646 by selling stockholders, and Anthropic will not receive proceeds from the stockholder sales. Anthropic says the shares are expected to begin trading on the Nasdaq Global Select Market on November 19 under the symbol “ANT”, with closing expected November 20 and a 30-day option for underwriters to buy up to 147,000,000 more shares.",
+      "why": "A frontier lab now answers to public-market investors while carrying the compute commitments reported earlier this week, so its release pace and safety disclosures become part of the same financial picture.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Lab supremacy race",
+        "Coordinated frontier pacing",
+        "AI capital and systemic risk"
+      ],
+      "layer": "Models & Research",
+      "title": "AI Explained: the bigger story under GPT 6.2 Astra and the Anthropic IPO",
+      "summary": "AI Explained calls GPT 6.2 Astra OpenAI's best model but says Gemini is catching up fast with its 4 Carbon and Neon models, and that Anthropic is going public after promising imminent recursive self-improvement. The video says the main story is new data on what drives model improvement, how close AI is to automating AI, and whether Dario Amodei's promised 'race to the top' is real, including a section on why models are getting harder to monitor and one asking whether OpenAI is now the more transparent lab.",
+      "why": "This is commentary rather than new lab evidence, but it ties the IPO, the Astra release and the monitoring concern into one argument about whether competition is raising or lowering safety standards.",
+      "links": [
+        {
+          "label": "AI Explained",
+          "url": "https://www.youtube.com/watch?v=KGA7B_c_S4s"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Efficiency race",
+        "Agentic reliability"
+      ],
+      "layer": "Platforms & Tools",
+      "title": "OpenAI describes the Performance Factory that keeps ChatGPT fast",
+      "summary": "OpenAI says it built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast. The post summary gives no benchmark figures.",
+      "why": "It is another case of a lab using its own coding agent on its own production infrastructure, which makes speed and cost a loop OpenAI can run on itself.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Decision models",
+        "Lab supremacy race"
+      ],
+      "layer": "Models & Research",
+      "title": "One-pass decision models reach judgment tasks and image generation",
+      "summary": "The Piccolo authors report a family of multimodal decision models from 0.8B to 27B parameters, built by co-evolving the models and their training data with research agents; they say Piccolo-27B tops the Decision Index Vision Full leaderboard at 75.59. The Jeveration authors report a single-forward-pass image generator that makes a 512x512 image in 78 ms, up to 122x faster than existing unified models, while keeping competitive image quality.",
+      "why": "The one-pass paradigm now claims results on ranking-style judgments and on generation, though both are authors' own benchmark results awaiting replication.",
+      "links": [
+        {
+          "label": "Piccolo (arXiv)",
+          "url": "https://arxiv.org/abs/2611.24651"
+        },
+        {
+          "label": "Jeveration (arXiv)",
+          "url": "https://arxiv.org/abs/2611.24738"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public",
+        "AI misuse: autonomous attack chains",
+        "Agentic reliability"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Three papers on attacking, auditing and over-eager agents",
+      "summary": "The PIPETTE authors report that two RL-based red-teaming methods suffer mode collapse, so high attack success rates do not translate into robustness gains from adversarial training, and propose a purple-teaming framework to fix that. Lim and Neo introduce continuation audits, which start from a real coding-agent transcript, and report that a judge cannot reliably tell the continuations from source sessions (realism win rate 0.42 versus 0.43). The Kaer authors report a replanning defense that shields a multi-agent planner from untrusted agent feedback.",
+      "why": "Red-team numbers and audit realism are becoming the measurable parts of the agent-safety story, and the first of these papers says attack success rate alone is a poor guide to defense.",
+      "links": [
+        {
+          "label": "PIPETTE (arXiv)",
+          "url": "https://arxiv.org/abs/2611.24362"
+        },
+        {
+          "label": "Continuation audits (arXiv)",
+          "url": "https://arxiv.org/abs/2611.24491"
+        },
+        {
+          "label": "Kaer (arXiv)",
+          "url": "https://arxiv.org/abs/2611.24839"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>Anthropic</strong> — “Anthropic prices initial public offering”: announces an $83.00 per share price for 980,000,000 Class A shares, with Nasdaq trading under “ANT” expected to begin November 19 and closing expected November 20.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “How OpenAI’s Performance Factory keeps ChatGPT fast”: describes a system of Codex-powered workflows that finds and fixes performance issues in ChatGPT.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "AI Explained",
+      "title": "Anthropic IPOs, GPT 6.2 Astra Arrives, But There’s a Bigger Story",
+      "when": "2026-11-19",
+      "url": "https://www.youtube.com/watch?v=KGA7B_c_S4s",
+      "summary": "Argues that GPT 6.2 Astra, Gemini's catch-up and Anthropic's IPO are overshadowed by data on what drives model improvement, how close AI is to automating AI research, and whether labs are running a 'race to the top'. Chapters cover data-dependent progress, predictable aggregate benchmarks, monitorability and OpenAI's transparency.",
+      "links": []
+    },
+    {
+      "channel": "Matthew Berman",
+      "title": "What's going on with GPT-6.2?",
+      "when": "2026-11-19",
+      "url": "https://www.youtube.com/watch?v=nEYuoqqMgyg",
+      "summary": "A video on GPT-6.2 whose description links to a long run of posts from developers and commentators reacting to the model.",
+      "links": []
+    },
+    {
+      "channel": "Two Minute Papers",
+      "title": "DeepMind Just Released The Best Thing AI Ever Did",
+      "when": "2026-11-19",
+      "url": "https://www.youtube.com/watch?v=Cy7Wz6Z4TWU",
+      "summary": "Covers DeepMind's AlphaGenome paper, which the description pairs with an interview with Dr. Pushmeet Kohli.",
+      "links": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "Piccolo: Co-Evolving Decision Models and Data through Recursive Self-Improvement",
+      "layer": "Models & Research",
+      "body": "Zhenqing Ling, Qirui Jiao, Daoyuan Chen, et al. — a 0.8B to 27B family of multimodal decision models built with agentic data engineering and recursive self-improvement, with Piccolo-27B scoring 75.59 on the Decision Index Vision Full leaderboard.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24651"
+        }
+      ]
+    },
+    {
+      "title": "Jeveration: System One Models Now Generate",
+      "layer": "Models & Research",
+      "body": "Yuhe Liu, Qi Li, Shihua Zhang, et al. — extends one-pass decision models to image generation, producing a 512x512 image in 78 ms, up to 122x faster than existing unified models, with competitive quality.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24738"
+        }
+      ]
+    },
+    {
+      "title": "PIPETTE: Prompt Injection Purple-Teaming for Robust LLM Agents",
+      "layer": "Applications & Policy",
+      "body": "Lipeng He, Yihan Wang, Jiawen Zhang, et al. — shows that RL red-teaming methods RL-Hammer and PISmith collapse onto similar attacks, so high attack success does not yield robustness gains, and proposes a framework that converts red-team findings into defender gains.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24362"
+        }
+      ]
+    },
+    {
+      "title": "Probing agent overeagerness in realistic settings with continuation audits",
+      "layer": "Applications & Policy",
+      "body": "Sean Lim, Clement Neo — audits seeded from real coding-agent transcripts are not reliably distinguishable from the source sessions, and verbalized eval-awareness does not exceed the rate in unaudited real sessions.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24491"
+        }
+      ]
+    },
+    {
+      "title": "Auditing black-box clinical prediction models with a large language model through queries alone",
+      "layer": "Applications & Policy",
+      "body": "Zhiyu Liu, Xinyu Yang — GPT-6 Astra found the planted flaw in 69 of 72 blind runs, a purpose-written script found all 24, and 60% of 1,089 checkable reports failed the pre-specified check.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24877"
+        }
+      ]
+    },
+    {
+      "title": "Can Weight-Space Programming Alter Learned Ethical Priorities?",
+      "layer": "Models & Research",
+      "body": "Kai Yi Ji — an edit to fitted choice weights makes six text readers pick the larger group in both orders on 100% of targeted ordinary conflicts and 83.3% of formal-pledge conflicts, presented as exploratory results in a model with an exposed trade-off mechanism.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24330"
+        }
+      ]
+    },
+    {
+      "title": "General progress substitutes for specific training data in language models",
+      "layer": "Data",
+      "body": "Mark Marosi, Peter Antal — across chess, Othello, molecular strings and web text, withheld skills were later acquired with a small fraction of the data needed from initialization, so data filtering delays a capability rather than preventing it.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24844"
+        }
+      ]
+    },
+    {
+      "title": "Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity",
+      "layer": "Compute & Infrastructure",
+      "body": "Benjamin Novotny, Doug Szeto, Chang Wang, et al. — Meta's traffic shaper follows backend refusals as an admission ceiling and served a classifier on 43% fewer H100s than its fixed-rate precursor, though lower-priority work waited longer at backfill peaks.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24891"
+        }
+      ]
+    },
+    {
+      "title": "Reducing Inference Cost of Coding Agents with Timeout Cascades",
+      "layer": "Compute & Infrastructure",
+      "body": "Boxi Zhou, German Sviridov, Dmitrii Ustiugov, et al. — trying a small model first and escalating to a large one only when needed cuts GPU-hour costs by up to 33% without sacrificing accuracy on SWE-bench Verified.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24324"
+        }
+      ]
+    },
+    {
+      "title": "Clover-35B-A3B-Preview Technical Report",
+      "layer": "Models & Research",
+      "body": "DiffuSpace Technical Team — a 35B-total, 3B-active diffusion language model that the report says scores 73.6 on SWE-bench Verified and generates 680 tokens/s on one GB300 at batch size one, all self-reported.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24636"
+        }
+      ]
+    },
+    {
+      "title": "Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem",
+      "layer": "Applications & Policy",
+      "body": "Sarah H. Cen, Lindsey A. Gailmard, Joohan Kim, et al. — releases a multilayered dataset of actors and relationships across models, data, chips, infrastructure, capital and talent to study concentration and chokepoints.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24927"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Anthropic's priced IPO and AI Explained's question of whether a 'race to the top' holds put cadence back in view, but release timing is still set by each lab with no coordination visible."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "Nothing new on vertical products; the Performance Factory post is internal tooling rather than a new market."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "AI Explained says Gemini is catching up to OpenAI's best model and Clover's SWE-bench figures are self-reported, so rankings still rest on lab claims and commentary, not independent results."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "No new lab disclosure; the continuation-audits paper adds a method for surfacing agent overeagerness without private traffic."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "No new attacker incident; PIPETTE, Kaer and the red-team research add defender-side findings on prompt injection and replanning hijacks."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Nothing new; still no Moonshot response."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Nothing new on pricing; the Performance Factory post concerns speed, and the pricing ladder stands."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "Serving cost is today's front: the Performance Factory, Cap-and-Track's 43% fewer H100s and the timeout-cascade savings of up to 33% in GPU-hours, with Jeveration's 78 ms images on the model side."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "Continuation audits give a realistic way to probe overeager coding agents, and the Performance Factory shows a lab pointing Codex at its own production performance."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Nothing new that shifts the picture; detection and watermarking evidence stands."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "The clinical-model audit paper adds that an LLM auditor found planted flaws in 69 of 72 runs but 60% of its checkable reports failed the check, a caution for automated audits."
+    },
+    {
+      "name": "Weight-space programming",
+      "update": "A new paper tests weight edits on ethical trade-offs, with 100% on ordinary conflicts and 83.3% on formal ones, and labels it exploratory."
+    },
+    {
+      "name": "Decision models",
+      "update": "Piccolo-27B's leaderboard claim and Jeveration's one-pass image generation extend the paradigm to ranking-style judgments and generation."
+    },
+    {
+      "name": "AI capital and systemic risk",
+      "update": "Anthropic's IPO priced at $83.00 per share with Nasdaq trading expected today, and the AI supply-chain mapping dataset adds a tool for tracing concentration and chokepoints."
+    }
+  ]
+}

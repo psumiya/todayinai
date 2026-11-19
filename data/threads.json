@@ -2,7 +2,7 @@
   "Coordinated frontier pacing": {
     "started": "2026-09-17",
     "color": "#ff6748",
-    "last_update": "2026-11-18"
+    "last_update": "2026-11-19"
   },
   "Vertical platform plays (labs)": {
     "started": "2026-09-19",
@@ -18,17 +18,17 @@
   "Lab supremacy race": {
     "started": "2026-09-16",
     "color": "#2aa8c7",
-    "last_update": "2026-11-18"
+    "last_update": "2026-11-19"
   },
   "Agent misalignment goes public": {
     "started": "2026-09-16",
     "color": "#e6aa22",
-    "last_update": "2026-11-18"
+    "last_update": "2026-11-19"
   },
   "AI misuse: autonomous attack chains": {
     "started": "2026-09-16",
     "color": "#e95375",
-    "last_update": "2026-11-18"
+    "last_update": "2026-11-19"
   },
   "Distillation warfare": {
     "started": "2026-09-20",
@@ -43,12 +43,12 @@
   "Efficiency race": {
     "started": "2026-09-16",
     "color": "#438fe5",
-    "last_update": "2026-11-18"
+    "last_update": "2026-11-19"
   },
   "Agentic reliability": {
     "started": "2026-09-16",
     "color": "#9079d4",
-    "last_update": "2026-11-18"
+    "last_update": "2026-11-19"
   },
   "Provenance & synthetic media": {
     "started": "2026-09-16",
@@ -64,24 +64,24 @@
   "Institutional defenses against AI slop": {
     "started": "2026-10-06",
     "color": "#6f7f3a",
-    "last_update": "2026-11-18"
+    "last_update": "2026-11-19"
   },
   "Weight-space programming": {
     "started": "2026-11-11",
     "color": "#d2563b",
     "active": true,
-    "last_update": "2026-11-17"
+    "last_update": "2026-11-19"
   },
   "Decision models": {
     "started": "2026-11-13",
     "color": "#3a8fb7",
     "active": true,
-    "last_update": "2026-11-18"
+    "last_update": "2026-11-19"
   },
   "AI capital and systemic risk": {
     "started": "2026-11-16",
     "color": "#8a6fd1",
     "active": true,
-    "last_update": "2026-11-18"
+    "last_update": "2026-11-19"
   }
 }
