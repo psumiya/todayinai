@@ -1,0 +1,336 @@
+{
+  "date": "2026-11-20",
+  "dek": "Anthropic's IPO closed at roughly $93.5 billion with its chip and cloud suppliers buying in, and OpenAI laid out how it fights adversarial distillation.",
+  "brief": [
+    "Anthropic says its IPO closed at $83.00 a share for about $93.5 billion in gross proceeds, with a further $26.0 billion private placement bought by AMD, Broadcom, Google, Micron, Microsoft, NVIDIA and TSMC Partners. The same day, The Batch reports that Jensen Huang has resigned as Nvidia's CEO, with CFO Colette Kress named interim chief. Capital, suppliers and leadership at the center of the compute stack all moved at once.",
+    "OpenAI published its first detailed account of defending against adversarial distillation, a layered approach spanning training, safeguards, detection and enforcement. Reflection's Beam report puts an open lab's 501B-parameter sparse model and a very large RL run on the table. On the research side, two papers test how agents actually cause harm: one reproduces reported incidents, and one maps how fast vulnerability research has changed."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "AI capital and systemic risk",
+        "Coordinated frontier pacing"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Anthropic closes its IPO at about $93.5 billion, with its suppliers buying $26 billion alongside",
+      "summary": "Anthropic says it closed the offering of 1,127,000,000 Class A shares at $83.00, including the full 147,000,000-share underwriters' option. It reports gross proceeds of about $93.5 billion, of which about $91.6 billion went to Anthropic, and says trading began on Nasdaq on November 19 under the symbol ANT. In a concurrent private placement, Anthropic says it sold 313,253,007 Class N shares to AMD, Broadcom, Google, Micron, Microsoft, NVIDIA and TSMC Partners for about $26.0 billion at the same price.",
+      "why": "The placement makes chip, memory, foundry and cloud suppliers shareholders in one of their largest customers, which tightens the compute-capital loop that the systemic-risk thread tracks.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/ipo-close"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Distillation warfare",
+        "Lab supremacy race"
+      ],
+      "layer": "Models & Research",
+      "title": "OpenAI describes a layered defense against adversarial distillation",
+      "summary": "OpenAI says its approach to adversarial distillation combines model training, safeguards, detection and enforcement to protect against capability extraction.",
+      "why": "Distillation has been a charge made by labs against rivals for two months, and this is the first time a lab has laid out the defensive stack it says it runs, which also shows how much of the capability race now depends on keeping outputs from being copied.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/combatting-adversarial-distillation"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "AI capital and systemic risk",
+        "Nvidia leadership shake-up"
+      ],
+      "layer": "Compute & Infrastructure",
+      "title": "The Batch: Jensen Huang resigns from Nvidia, Kress named interim CEO",
+      "summary": "The Batch reports that Huang's relationship with a possible asset for China's intelligence agency threw Nvidia into turmoil, leading to his apologetic resignation and the board's appointment of CFO Colette Kress as interim CEO. In his letter, Andrew Ng writes that Huang made serious mistakes but built the AI compute ecosystem, and notes the board may yet reinstate him. The same issue reports that Anthropic updated its most capable public model and removed safeguards for its private twin, opening Claude Mythos to more organizations that apply for access.",
+      "why": "Nvidia is both the GPU supplier to the frontier labs and a buyer in Anthropic's placement, so a leadership vacuum there is a supply-side risk that the lab-focused threads do not usually price.",
+      "links": [
+        {
+          "label": "The Batch, issue 380",
+          "url": "https://www.deeplearning.ai/the-batch/issue-380"
+        },
+        {
+          "label": "The Batch, Nov 20",
+          "url": "https://www.deeplearning.ai/the-batch/tag/nov-20-2026"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Efficiency race",
+        "Lab supremacy race"
+      ],
+      "layer": "Models & Research",
+      "title": "Reflection's Beam: a 501B-parameter sparse model built for coding and agents",
+      "summary": "The Reflection team reports Beam, a sparse mixture-of-experts model with 501.3B total and 23.4B active parameters, pretrained on 23.8T tokens with a 1M-token context window. It says post-training used a fully asynchronous RL campaign on 10.5K GB300 GPUs, generating over 100M rollouts across four weeks, and that capabilities kept improving with more RL compute. The report claims frontier-level reasoning at 3-4x less inference compute than many models of its class.",
+      "why": "These are the lab's own claims, but a large open-lab RL run with no reported plateau is a data point for how much of the frontier is now reachable outside the three biggest labs.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.26358"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public",
+        "AI misuse: autonomous attack chains",
+        "Agentic reliability"
+      ],
+      "layer": "Applications & Policy",
+      "title": "Two papers measure how agents cause harm and how fast vulnerability research is moving",
+      "summary": "ROGUE-AI rebuilds reported agent incidents offline with a matched control lacking the blamed cause; the authors report reproducing the harm in 89% of 108 attempted replications, with agents making the reported mistake in 18% to 33% of runs against at most 1% without the cause. Of 72 incidents with real-world harm, they say 62 had no underlying attacker. A separate systematization of knowledge reports that agents discovered, validated and patched real-world vulnerabilities without human intervention before the restricted frontier models of 2026, that open-weight models later reached comparable autonomy for discovery and validation, and that disclosed vulnerabilities more than doubled in 2026.",
+      "why": "Together they point the same way: most agent harm in the record comes from ordinary task behavior rather than attackers, while offensive capability has diffused to open weights.",
+      "links": [
+        {
+          "label": "ROGUE-AI (arXiv)",
+          "url": "https://arxiv.org/abs/2611.26553"
+        },
+        {
+          "label": "SoK on vulnerability research (arXiv)",
+          "url": "https://arxiv.org/abs/2611.26601"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>OpenAI</strong> — “Hebbia sees improvements in financial research with GPT-6 Astra”: Hebbia says its prerelease evaluations of GPT-6 Astra found gains in source coverage, citation relevance and presentation quality.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/business/customer-stories/hebbia"
+        }
+      ]
+    },
+    {
+      "body": "<strong>OpenAI</strong> — “Can AI help scientists identify promising drug candidates?”: introduces MedChemBench, which evaluates how well models interpret molecular structures, reason from experimental evidence and select compounds in early drug discovery.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/introducing-medchembench"
+        }
+      ]
+    },
+    {
+      "body": "<strong>The Batch</strong> — “Nov 20, 2026”: besides the Nvidia and Claude Mythos items, reports that World Labs has opened Atlas, its latest world model, through a self-serve API that turns text prompts into exportable 3D scenes and camera-controllable video.",
+      "links": [
+        {
+          "label": "The Batch",
+          "url": "https://www.deeplearning.ai/the-batch/tag/nov-20-2026"
+        }
+      ]
+    },
+    {
+      "body": "<strong>The Batch</strong> — Andrew Ng's letter in issue 379: argues that building an agent harness, the code that gives an LLM context, tools and guardrails, is a skill worth learning, and describes steering coding agents to build one with the OpenWorker Agent Harness SDK.",
+      "links": [
+        {
+          "label": "The Batch, issue 379",
+          "url": "https://www.deeplearning.ai/the-batch/issue-379"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — “Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost”: a new post on adapting a chosen model to an agent harness, aimed at better performance and lower cost.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/harness-adapters-at-scale"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "Matthew Berman",
+      "title": "Gemini 4 Neon is ridiculous...",
+      "when": "2026-11-20",
+      "url": "https://www.youtube.com/watch?v=5eON_8rgKzk",
+      "summary": "Berman reacts to Gemini 4 Neon; the description gathers posts from accounts including sundarpichai and OfficialLoganK as source material and promotes his Scarlet repository.",
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=5eON_8rgKzk"
+        }
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "title": "Frontier models need only one text to unmask its human or AI author",
+      "layer": "Applications & Policy",
+      "body": "Atrey Desai, Deniz Böloni-Turgut, et al. — with a zero-shot prompt, frontier models name the correct lab for 98% of Anthropic, OpenAI and Google generations (Opus 5.5), name the author of 39% of public peer reviews (Fable 5.2), and identify the username behind 69% of active Redditors' comments.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.26216"
+        }
+      ]
+    },
+    {
+      "title": "Twice-Told Critiques: Claim-Level Homogenization of Peer Review in the LLM Era",
+      "layer": "Applications & Policy",
+      "body": "Ilya Gusev — measured critique overlap at ICLR rose from 12.0% to 21.3% between the two years compared, and reviews flagged as LLM-generated overlap more within a paper than unflagged ones.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.26286"
+        }
+      ]
+    },
+    {
+      "title": "Training Vision Models for LLM-Driven Weight-Space Programming",
+      "layer": "Models & Research",
+      "body": "Timo Ropinski, Sebastian Kranz — across more than 2,600 LLM edit processes on vision models, Edit-Ready Training raises edit success where standard networks are hard to edit and gives the highest mean score for GPT-6 Astra and Claude Opus 5.5.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.26408"
+        }
+      ]
+    },
+    {
+      "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
+      "layer": "Models & Research",
+      "body": "Tuna Han Salih Meral, Kaan Oktay, et al. — fixed steering vectors with 65x fewer parameters than the RL-tuned LoRA recover 90.0-96.3% of the reward gains of six RL-tuned image models.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.26627"
+        }
+      ]
+    },
+    {
+      "title": "GLiDE: A Fast, Calibrated Decision Model Distilled from Reasoning Teachers",
+      "layer": "Models & Research",
+      "body": "Sahibzada Allahyar, Julia White, et al. — a 0.4B to 27B family of one-pass decision models distilled from multiple teachers, including a reasoning model, with the 27B reporting a hidden-set score of 71.52.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.26509"
+        }
+      ]
+    },
+    {
+      "title": "Sirius-Tiamat: How Small Can a One-Pass Decision Encoder Get Before Its Decisions Change?",
+      "layer": "Models & Research",
+      "body": "Mohammed Nayeem Khan, Vrishank Tiwari — deleting 6 layers from the 421M Laya encoder changes 0.9% of in-family and 9.1% of out-of-family decisions and raises calibration error from 5.9% to 39.2%, which one fitted temperature brings back to 3.6%.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.26339"
+        }
+      ]
+    },
+    {
+      "title": "NariQ: Sub-3-Bit Quantization for Long-Horizon Agentic Tasks",
+      "layer": "Compute & Infrastructure",
+      "body": "Doyeob Kim — calibrating on agent-session tokens lets 3.0 and 2.5 bits-per-weight quantizations of Qwen3.8-27B stay level with BF16 on DeepSWE and Terminal Bench, where the paper says existing quantizations at or below 3 bits solve at most 72% as many DeepSWE tasks.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.26157"
+        }
+      ]
+    },
+    {
+      "title": "HiSA: Sparsifying the Hidden Dimension of RoPE Attention in LLMs",
+      "layer": "Compute & Infrastructure",
+      "body": "Ambroise Borbely, Mathieu Salzmann, et al. — training with a partial query-key dot product that computes about a third of the products does not hurt and improves performance, while speeding decoding and shrinking memory footprint.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.26363"
+        }
+      ]
+    },
+    {
+      "title": "Visual Attribution Limits and Graded Provenance Auditing in Commercial Video-Generation APIs",
+      "layer": "Applications & Policy",
+      "body": "Haocheng Mei, Yuchuan Tian, et al. — six-model container and bitstream attribution accuracy falls from 83.9% on raw files to 45.3% after re-encoding, and only BytePlus authenticates tier claims under the paper's pinned policy.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.26508"
+        }
+      ]
+    },
+    {
+      "title": "Text-Aware, Vision-Blind: How Multimodal Image Editing Systems Handle Unsafe Inputs",
+      "layer": "Applications & Policy",
+      "body": "Ziqing Yang, Yixin Wu, et al. — Gemini and GPT refuse 87.1% and 81.6% of unsafe-intent editing prompts but only 24.2% and 22.4% of cases with unsafe images and neutral instructions.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.26569"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Nothing coordinated: Matthew Berman's Gemini 4 Neon video and The Batch's note that Anthropic updated its public model and widened Claude Mythos access show labs still releasing on their own schedules."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "The Hebbia story on GPT-6 Astra for financial research and the MedChemBench post on early drug discovery add finance and pharma to the law, defense and media verticals."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Rankings still rest on claims: Beam's frontier-level reasoning at lower inference cost and Hebbia's prerelease evaluations are self-reported, and the Gemini 4 Neon video is commentary, not an independent result."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "ROGUE-AI adds independent evidence: agents repeated the reported mistake in 18% to 33% of replicated runs, and 62 of 72 real-harm incidents had no attacker behind them."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "No new attacker incident; the vulnerability-research survey reports disclosed vulnerabilities more than doubled in 2026 and that open-weight models reached comparable discovery autonomy."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "OpenAI's post on combatting adversarial distillation is the first detailed lab-side defense stack, spanning training, safeguards, detection and enforcement; still no Moonshot response."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Nothing on pricing; the Hebbia customer story and MedChemBench are product and evaluation news, so the pricing ladder stands."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "The front is quantization and sparsity: NariQ holds BF16-level agentic results at 3.0 and 2.5 bits per weight, HiSA computes about a third of query-key products, and Beam claims 3-4x less inference compute than comparable models."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "ROGUE-AI shows replicated agent mistakes arise without an attacker, while Hugging Face's harness-adapters post and Ng's harness letter put the surrounding scaffolding at the center of reliability work."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Evidence cuts both ways: re-encoding drops video-generation attribution accuracy from 83.9% to 45.3%, while frontier models now name authors of text from a single sample."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "The Twice-Told Critiques paper adds that critique overlap among reviews of the same paper rose from 12.0% to 21.3% at ICLR, with LLM-flagged reviews overlapping more."
+    },
+    {
+      "name": "Weight-space programming",
+      "update": "Edit-Ready Training shows that preparing vision networks for LLM edits raises success where standard networks resist, extending the idea beyond small models."
+    },
+    {
+      "name": "Decision models",
+      "update": "GLiDE distills reasoning teachers into one-pass models up to 27B, and the Sirius-Tiamat study shows layer deletion shifts decisions and calibration far more out of family than in family."
+    },
+    {
+      "name": "AI capital and systemic risk",
+      "update": "Anthropic's close put gross proceeds near $93.5 billion, with suppliers including NVIDIA, Google, Microsoft and TSMC Partners buying about $26.0 billion in a private placement, while The Batch reports Nvidia's CEO has resigned."
+    }
+  ]
+}
