@@ -8,14 +8,15 @@ ask()  { [ -t 0 ] || return 1; read -r -p "$1 [Y/n] " a; [[ -z "$a" || "$a" =~ ^
 
 command -v python3 >/dev/null || die "python3 not found. Install Python 3.12+ first."
 
-if [ ! -x .venv/bin/python ]; then
+if ! .venv/bin/python -m pip --version >/dev/null 2>&1; then
+  [ -d .venv ] && say "Existing .venv is broken (moved or stale), rebuilding it" && rm -rf .venv
   say "Creating .venv"
   python3 -m venv .venv
 fi
 req_hash=$(shasum requirements.txt | cut -d' ' -f1)
 if [ "$(cat .venv/.requirements.sha 2>/dev/null)" != "$req_hash" ]; then
   say "Installing requirements"
-  .venv/bin/pip install -q --disable-pip-version-check -r requirements.txt
+  .venv/bin/python -m pip install -q --disable-pip-version-check -r requirements.txt
   echo "$req_hash" > .venv/.requirements.sha
 fi
 
