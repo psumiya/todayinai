@@ -28,13 +28,6 @@ if ! command -v ant >/dev/null; then
   fi
 fi
 
-if [ -f .env ] && grep -q '^ANTHROPIC_API_KEY=' .env; then
-  if ask ".env still holds ANTHROPIC_API_KEY, which would override your ant login. Remove that line?"; then
-    sed -i.bak '/^ANTHROPIC_API_KEY=/d' .env && rm -f .env.bak
-  else
-    die "Remove ANTHROPIC_API_KEY from .env, then rerun."
-  fi
-fi
 if [ -f .env ]; then set -a; . ./.env; set +a; fi
 if [ -n "${ANTHROPIC_API_KEY+x}" ] || [ -n "${ANTHROPIC_AUTH_TOKEN+x}" ]; then
   say "Ignoring ANTHROPIC_API_KEY/ANTHROPIC_AUTH_TOKEN from your shell so the ant login is used"
