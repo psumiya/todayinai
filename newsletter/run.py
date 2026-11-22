@@ -2,7 +2,7 @@
 
 Idempotent per date: if today's edition file exists, it exits without calling the model.
 Usage:
-  python -m newsletter.run                      # live (needs ANTHROPIC_API_KEY and internet)
+  python -m newsletter.run                      # live (needs Anthropic credentials and internet; locally use ./run_local.sh)
   python -m newsletter.run --fixture tests/fixture --date 2026-10-22   # offline dry run
 """
 import argparse
