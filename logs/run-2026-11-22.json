@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-22",
+  "model": "claude-sonnet-5-5",
+  "gaps": [],
+  "attempts": [],
+  "usage": [],
+  "item_counts": {
+    "blog": 0,
+    "video": 1,
+    "paper": 0
+  },
+  "outcome": "skipped: fewer than 3 new items"
+}
