@@ -1,6 +1,6 @@
 # Today in AI
 
-Daily AI newsletter served as one static page at `https://sumiya.page/ainews.html`.
+Daily AI newsletter served as one static page on GitHub Pages at `https://psumiya.github.io/todayinai/`.
 
 ```
 sources.yaml ──► fetch ──► items (every allowed URL)
@@ -10,7 +10,7 @@ threads.json + last editions ─┼─► Claude (submit_edition tool, schema-bo
                          validate: schema · thread names · link provenance · leak lint
                               │  (rejected → retry with the exact problems, max 3)
                               ▼
-               data/editions/YYYY-MM-DD.json  ──► build (Jinja, deterministic) ──► dist/ainews.html ──► S3
+               data/editions/YYYY-MM-DD.json  ──► build (Jinja, deterministic) ──► dist/ainews.html ──► GitHub Pages
 ```
 
 The model writes data. It never touches HTML, so the design cannot drift and production chatter has no field to land in.
@@ -35,14 +35,13 @@ python -m newsletter.build            # rebuild dist/ainews.html from data
 python -m newsletter.check_sources    # probe feeds, resolve missing YouTube ids (needs internet)
 ./run_local.sh                        # full daily run: checks prereqs, signs in with ant, runs newsletter.run
 ./tests/run_checks.sh                 # offline: build + reject a bad edition + accept a good one
-S3_BUCKET=... ./deploy.sh             # upload; set CLOUDFRONT_DISTRIBUTION_ID to invalidate
 ```
 
 ## Daily run
 
-`.github/workflows/daily.yml` runs every day at 14:43 UTC (07:43 PDT, 06:43 PST) and can also be started by hand with `gh workflow run daily.yml`. It generates the edition, commits `data/` and `logs/` back to `main`, builds, and deploys to S3 with CloudFront invalidation. Pull before editing locally, since the bot pushes daily.
+`.github/workflows/daily.yml` runs every day at 14:43 UTC (07:43 PDT, 06:43 PST) and can also be started by hand with `gh workflow run daily.yml`. It generates the edition, commits `data/` and `logs/` back to `main`, builds, and publishes the page to GitHub Pages as `index.html`. Pull before editing locally, since the bot pushes daily.
 
-It reaches Claude through Anthropic Workload Identity Federation, with no API key: repo variables `ANTHROPIC_FEDERATION_RULE_ID`, `ANTHROPIC_ORGANIZATION_ID`, `ANTHROPIC_SERVICE_ACCOUNT_ID` and `ANTHROPIC_WORKSPACE_ID` name a federation rule that trusts this repo's `main` branch. It also needs repo secret `AWS_DEPLOY_ROLE_ARN` (an IAM role trusting GitHub OIDC for this repo's `main` branch, allowed `s3:PutObject` on the key and `cloudfront:CreateInvalidation`), and repo variables `S3_BUCKET`, `CLOUDFRONT_DISTRIBUTION_ID`, and optionally `AWS_REGION`.
+It reaches Claude through Anthropic Workload Identity Federation, with no API key: repo variables `ANTHROPIC_FEDERATION_RULE_ID`, `ANTHROPIC_ORGANIZATION_ID`, `ANTHROPIC_SERVICE_ACCOUNT_ID` and `ANTHROPIC_WORKSPACE_ID` name a federation rule that trusts this repo's `main` branch. Pages must be enabled with GitHub Actions as its source.
 
 Each `logs/run-YYYY-MM-DD.json` records the model's token usage per attempt under `usage`.
 
