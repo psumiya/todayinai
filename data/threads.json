@@ -2,12 +2,12 @@
   "Coordinated frontier pacing": {
     "started": "2026-09-17",
     "color": "#ff6748",
-    "last_update": "2026-11-24"
+    "last_update": "2026-11-25"
   },
   "Vertical platform plays (labs)": {
     "started": "2026-09-19",
     "color": "#b07a2d",
-    "last_update": "2026-11-24"
+    "last_update": "2026-11-25"
   },
   "Tiered bio-capability access": {
     "started": "2026-09-18",
@@ -18,17 +18,17 @@
   "Lab supremacy race": {
     "started": "2026-09-16",
     "color": "#2aa8c7",
-    "last_update": "2026-11-24"
+    "last_update": "2026-11-25"
   },
   "Agent misalignment goes public": {
     "started": "2026-09-16",
     "color": "#e6aa22",
-    "last_update": "2026-11-24"
+    "last_update": "2026-11-25"
   },
   "AI misuse: autonomous attack chains": {
     "started": "2026-09-16",
     "color": "#e95375",
-    "last_update": "2026-11-24"
+    "last_update": "2026-11-25"
   },
   "Distillation warfare": {
     "started": "2026-09-20",
@@ -38,22 +38,22 @@
   "OpenAI monetization": {
     "started": "2026-09-16",
     "color": "#27a97b",
-    "last_update": "2026-11-24"
+    "last_update": "2026-11-25"
   },
   "Efficiency race": {
     "started": "2026-09-16",
     "color": "#438fe5",
-    "last_update": "2026-11-24"
+    "last_update": "2026-11-25"
   },
   "Agentic reliability": {
     "started": "2026-09-16",
     "color": "#9079d4",
-    "last_update": "2026-11-24"
+    "last_update": "2026-11-25"
   },
   "Provenance & synthetic media": {
     "started": "2026-09-16",
     "color": "#ec7b41",
-    "last_update": "2026-11-24"
+    "last_update": "2026-11-25"
   },
   "Uncensored open-weight ecosystem": {
     "started": "2026-09-22",
@@ -70,13 +70,13 @@
     "started": "2026-11-11",
     "color": "#d2563b",
     "active": true,
-    "last_update": "2026-11-24"
+    "last_update": "2026-11-25"
   },
   "Decision models": {
     "started": "2026-11-13",
     "color": "#3a8fb7",
     "active": true,
-    "last_update": "2026-11-24"
+    "last_update": "2026-11-25"
   },
   "AI capital and systemic risk": {
     "started": "2026-11-16",
@@ -94,6 +94,6 @@
     "started": "2026-11-24",
     "color": "#c98a1b",
     "active": true,
-    "last_update": "2026-11-24"
+    "last_update": "2026-11-25"
   }
 }

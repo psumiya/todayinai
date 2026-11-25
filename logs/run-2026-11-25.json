@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-25",
+  "model": "claude-sonnet-5-5",
+  "gaps": [],
+  "attempts": [
+    []
+  ],
+  "usage": [
+    {
+      "request_id": "req_011ChQW7FSrcfwWfPykKyXGe",
+      "input_tokens": 152542,
+      "output_tokens": 11152,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0
+    }
+  ],
+  "item_counts": {
+    "blog": 4,
+    "video": 4,
+    "paper": 266
+  },
+  "outcome": "published"
+}
