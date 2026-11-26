@@ -1,0 +1,300 @@
+{
+  "date": "2026-11-26",
+  "dek": "A claimed AI-assisted proof of the Riemann hypothesis dominates the day, while new papers show frontier agents beating expert baselines in research tasks and the tests used to vouch for AI safety looking less firm than their headline numbers.",
+  "brief": [
+    "AI Weekly reports that Levent Alpöge, a mathematician at Anthropic, said on Nov. 20 that he had proved the Riemann hypothesis with Claude and posted the proof as 17 million lines of Lean. The newsletter says MIT's Andrew Sutherland told Scientific American the Lean kernel had compiled and rechecked it, and that the Clay Mathematics Institute has moved the problem to \"active\" status but does not yet count it as solved. No person has read the proof in full. The same issue sorts proved, claimed and rumored results, including a rumor that labs have secretly solved P vs NP.",
+    "Elsewhere, the REE benchmark reports that two frontier agents beat expert solutions on most open research problems. A pair of papers questions how much to trust safety and efficiency evidence: a monitor evaluation swings from 0.5% to 20.8% false negatives depending on how attacks were made, and a looped mixture-of-experts study finds that parameter revisit by itself buys almost nothing. A deterministic alternative to LLM-driven weight editing also arrives."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "AI-driven science results",
+        "Lab supremacy race",
+        "Institutional defenses against AI slop"
+      ],
+      "layer": "Models & Research",
+      "title": "A Claude-assisted proof of the Riemann hypothesis is machine-checked but not yet read by anyone",
+      "summary": "AI Weekly reports that Anthropic mathematician Levent Alpöge said he proved the Riemann hypothesis with Claude and posted 17 million lines of Lean. It says Andrew Sutherland of MIT told Scientific American the proof compiled and was rechecked by the Lean kernel with only the three standard axioms, and that the Lean Focused Research Organization and the Mathlib Initiative say they have \"full confidence\" in it. The Clay Mathematics Institute has moved the problem to \"active\" status without counting it as solved, and AI Weekly notes that no person has read the proof in full. The issue also says the result gives no new way to factor the large numbers behind RSA, and treats the P vs NP rumor as unverified.",
+      "why": "If the Lean check holds, the open question shifts from whether the proof is correct to whether anyone can read and absorb a 17-million-line artifact, which is a new kind of review bottleneck for institutions like Clay.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/ai-labs-hold-unpublished-crypto-bombshells-a-top-theorist"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "AI-driven science results",
+        "Lab supremacy race",
+        "Agentic reliability"
+      ],
+      "layer": "Models & Research",
+      "title": "REE: two frontier agents beat expert solutions on most open research problems",
+      "summary": "The REE authors introduce 100 open-ended research problems across five scientific areas and 23 domains, each reviewed by domain experts. Agents get up to 12 hours to improve a working starter solution, scored against an established expert solution. The paper reports that Claude Opus 5.5 and GPT-6.1 Sol outperform the expert solutions on 86% and 81% of problems, across all five areas, and that both pass the expert solutions within the early part of their runs.",
+      "why": "This is a lab-versus-lab comparison on research work, but it is a single benchmark whose expert baselines were evaluated under comparable rather than identical conditions, so it narrows the ranking question without settling it.",
+      "links": [
+        {
+          "label": "arXiv: REE",
+          "url": "https://arxiv.org/abs/2611.34646"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Agent misalignment goes public",
+        "AI misuse: autonomous attack chains"
+      ],
+      "layer": "Applications & Policy",
+      "title": "How attacks are generated can swing a safety monitor's measured miss rate from under 1% to over 20%",
+      "summary": "Griffin, Makins, Cooper Stickland, et al. evaluate an ex-production OpenAI monitor and report that its measured false negative rate ranged from 0.5% to 20.8% across optimisation levels of one method (reinforcement learning), and from 6.4% to 23.0% across methods at their best level (optimised prompting versus transcript editing). Every attack policy was developed against proxy monitors only, and all reported results transfer to the held-out GPT-5.4 target monitor. The authors conclude that an evaluation using only basic attack methods may give false confidence.",
+      "why": "Monitor scores are only as strong as the attacker behind them, so published false-negative rates need the attack method and optimisation level stated before they mean anything.",
+      "links": [
+        {
+          "label": "arXiv: Attack Policy Selection",
+          "url": "https://arxiv.org/abs/2611.34934"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Efficiency race"
+      ],
+      "layer": "Models & Research",
+      "title": "Looped mixture-of-experts: parameter revisit alone buys almost nothing, and loop-memory designs push the frontier",
+      "summary": "Tian, Lu, Wu, et al. report that, against matched non-revisit controls, parameter revisit itself buys almost nothing in looped MoE models. A non-revisit control retains all of the gain, most of which they trace to network shape and the rest to residual scale. Separately, Zhu, Wang, Wang, et al. introduce Mixture-of-Loops Transformer, which reuses keys and values as memory across loops, and report that in 400B-token pretraining its U-shaped variant outperforms OLMo3 across 700M and 1.5B dense and 3B MoE models.",
+      "why": "The two papers pull in different directions on looping, and the useful result is the control: efficiency claims for loops now have to show gains beyond what simply reshaping depth and experts would give.",
+      "links": [
+        {
+          "label": "arXiv: LoopTitan",
+          "url": "https://arxiv.org/abs/2611.34821"
+        },
+        {
+          "label": "arXiv: Mixture-of-Loops Transformer",
+          "url": "https://arxiv.org/abs/2611.34923"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>AI Weekly</strong> — “AI labs hold unpublished crypto 'bombshells,' a top theorist says”: separates what has been proved, what is claimed and still being checked, and what is rumor after six weeks of AI-assisted results in mathematics and computer science, and explains what each would mean for encryption. It says the Riemann hypothesis result has little direct security impact.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/issues/ai-labs-hold-unpublished-crypto-bombshells-a-top-theorist"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — “Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon”: introduces a benchmark dashboard for running llama.cpp on AMD Ryzen and Radeon hardware.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — “Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference”: a post from NVIDIA on open data, fine-tuning and faster inference for its Nemotron 3.5 Parse model.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin"
+        }
+      ]
+    },
+    {
+      "body": "<strong>Hugging Face</strong> — “Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems”: a guide to building, training and evaluating multi-agent systems.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/training-swarms"
+        }
+      ]
+    }
+  ],
+  "videos": [],
+  "papers": [
+    {
+      "title": "REE: A Scientific Research Entrance Exam for AI Agents",
+      "layer": "Models & Research",
+      "body": "Zeqi Zhou, Minghao Liu, Jiarui Liu, et al. — a 100-problem benchmark of open research tasks reports that Claude Opus 5.5 and GPT-6.1 Sol beat expert solutions on 86% and 81% of problems.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.34646"
+        }
+      ]
+    },
+    {
+      "title": "Attack Policy Selection can Mislead Monitor Evaluators",
+      "layer": "Applications & Policy",
+      "body": "Charlie Griffin, Oliver Makins, Asa Cooper Stickland, et al. — a monitor's measured false negative rate ranges from 0.5% to 23.0% depending on how attacks are generated and optimised.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.34934"
+        }
+      ]
+    },
+    {
+      "title": "Latent-in-the-Middle: On the Security of Cross-Model Latent Communication in Multi-Agent Systems",
+      "layer": "Platforms & Tools",
+      "body": "Manit Baser, Vyoman Jain, Rachel Yeo Hui Min, et al. — handing off KV caches between models through a learned mapper undermines safety alignment, with a target that natively follows 0.4% of benchmark prompt injections following up to 44.2% after a handoff.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.34278"
+        }
+      ]
+    },
+    {
+      "title": "PROVE: Mitigating Long-Horizon LLM Collusion with Reinforcement Learning from Verified Evidence",
+      "layer": "Models & Research",
+      "body": "Haochen Luo, Jie Fu, Mukai Li, et al. — rewarding verdicts by the evidence behind them takes collusion among verifying agents on Qwen3.6-27B from 65.0% to 1.0% on held-out sequences with no detectable change in task success.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.34215"
+        }
+      ]
+    },
+    {
+      "title": "Do We Really Need an LLM for Weight-Space Programming?",
+      "layer": "Models & Research",
+      "body": "Lin Yao — a deterministic forward-only pipeline called FWSP matches LLM-driven weight editing in core structured regimes, with a single frozen patch reaching 84.2% HumanEval pass@1 on DeepSeek-R1-0528-8B.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.34612"
+        }
+      ]
+    },
+    {
+      "title": "Solve Vision with Code: Coding Agents Are Stronger Visual Reasoners Than Video Models",
+      "layer": "Models & Research",
+      "body": "Dezhi Luo, Fengyuan Yu, Haotian Zhang, et al. — on VBVR-Pro-Bench, coding agents that write programs to render answer videos score 0.923, 0.894 and 0.893 (Codex with gpt-6-astra, Claude Code with Fable 5.1, Gemini CLI with Gemini 3.1 Pro).",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.34813"
+        }
+      ]
+    },
+    {
+      "title": "Tune for Retention, Not Just Gain: SFT Forgets Far Less than You Think",
+      "layer": "Models & Research",
+      "body": "Nirmit Joshi, Nathan Srebro, Eran Malach — with lower learning rate and batch size, vanilla SFT retains prior capabilities far better than assumed and can be competitive with an on-policy self-distillation method.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.34579"
+        }
+      ]
+    },
+    {
+      "title": "Can image generation help visual reasoning? An empirical study",
+      "layer": "Models & Research",
+      "body": "Xueyang Yu, Yifan Jing, Taiming Lu, et al. — across 13 model and generator pairs, adding a generated helper image lowers mean accuracy by 3.7 percentage points, with declines on nine of ten tasks.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.34935"
+        }
+      ]
+    },
+    {
+      "title": "DecisionReplay: A Corpus and Offline Simulator for Ensembling Decision Models",
+      "layer": "Data",
+      "body": "Dean Ariel, Seffi Cohen — a released corpus of probability vectors from 17 commercial decision models on 35 benchmarks finds that pooling all models loses 2.7 accuracy points to one well-chosen model, and that two models that are both wrong pick the same wrong option 72% of the time.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.34627"
+        }
+      ]
+    },
+    {
+      "title": "AliceAI-Foundation-80B-A3B-Base",
+      "layer": "Models & Research",
+      "body": "Nikolay Skachkov, Ekaterina Redina, Maksim Konoplev, et al. — Yandex releases under Apache 2.0 an 80B-parameter mixture-of-experts base model with about 3B active parameters, trained from scratch on 17.5 trillion tokens.",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2611.34529"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Nothing coordinated; the Riemann claim comes from an Anthropic-employed mathematician and the other items arrive on their own schedules."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "No new lab product; the Riemann hypothesis claim, posted by an Anthropic mathematician working with Claude, puts pure mathematics alongside the verticals labs are courting, though as a research result rather than a launch."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Still benchmark claims: REE has Claude Opus 5.5 and GPT-6.1 Sol both beating expert solutions, and the Solve Vision with Code scores for three closed agents sit within about 0.03 of each other, so no clear ranking moved."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "No new lab disclosure; the monitor-evaluation paper shows measured false negative rates depend heavily on attack method, and PROVE shows verifier collusion can be trained down from 65.0% to 1.0%."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "No new attacker incident; the Latent-in-the-Middle paper adds a multi-agent route, since cross-model KV handoffs raise prompt-injection compliance from 0.4% to as much as 44.2%."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Nothing new from labs or Moonshot; still no Moonshot response."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Nothing on pricing; the pricing ladder stands."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "LoopTitan finds parameter revisit alone adds almost nothing, while Mixture-of-Loops Transformer reports gains over OLMo3 and Any-Rate reports half-bit steps across 2 to 4 bits, so serving and architecture claims now face stricter controls."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "Solve Vision with Code shows coding agents outscoring video models on visual reasoning tasks, and the REE results show agents improving expert solutions over long runs, adding capability evidence on the success side."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "Detection research keeps splitting: Probing Visual Idiosyncrasies reports a ResNet-50 identifying the source among four image generators with 100.00% accuracy on held-out prompts, while Know the Design, Pick the Attack argues watermarks must survive an attacker who reads the published design."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "The Riemann claim tests an institutional check: Clay has moved the problem to \"active\" but does not count it as solved, and no person has yet read the proof in full."
+    },
+    {
+      "name": "Weight-space programming",
+      "update": "The FWSP paper argues that for core structured editing regimes an LLM optimizer is unnecessary, reframing the idea as a deterministic forward-only algebra and marking its own capability boundaries."
+    },
+    {
+      "name": "Decision models",
+      "update": "DecisionReplay adds shared infrastructure for studying ensembling, finding a single well-chosen model hard to beat, and the fused-moderation fairness audit extends the audit line to language-group asymmetry."
+    },
+    {
+      "name": "AI capital and systemic risk",
+      "update": "Nothing new on Anthropic's financing or the broader capital picture."
+    },
+    {
+      "name": "Nvidia leadership shake-up",
+      "update": "Nothing new; Kress remains interim CEO after Huang's resignation."
+    },
+    {
+      "name": "AI-driven science results",
+      "update": "The Riemann hypothesis claim is the largest item yet: machine-checked in Lean per AI Weekly's account, not yet read by a person or accepted by Clay, while REE and Crucible Bench measure agents on research work, with the best Crucible agent at 0.545."
+    }
+  ]
+}
