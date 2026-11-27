@@ -1,0 +1,153 @@
+{
+  "date": "2026-11-27",
+  "dek": "A thin day: a Two Minute Papers video frames DeepMind's Gemini 4 Neon as a shift in the race, and Hugging Face puts video generation on Trainium3.",
+  "brief": [
+    "Two Minute Papers argues in a new video that DeepMind's latest release has changed the AI race. The video's description points to a DeepMind security report on Gemini 4 Neon. The video comes from a single commentator, and no benchmark figures were in front of us, so the framing is a claim to watch rather than a ranking change.",
+    "Hugging Face published a post on generating videos with LTX-2.5 on Trainium3, an item for the hardware-diversity and efficiency storylines. Matthew Berman also posted a short on how Tesla generates its third-person view of the road."
+  ],
+  "top_stories": [
+    {
+      "lead": true,
+      "threads": [
+        "Lab supremacy race",
+        "Agent misalignment goes public"
+      ],
+      "layer": "Models & Research",
+      "title": "Two Minute Papers says DeepMind's new model changed the AI race, and points to a Gemini 4 Neon safety report",
+      "summary": "Two Minute Papers titles its new video \"DeepMind's New AI Just Changed The AI Race.\" The description cites a DeepMind security report on Gemini 4 Neon and lists a long set of social posts as sources.",
+      "why": "The claim comes from a commentator rather than a measured result, but a DeepMind safety document for a new model is the kind of lab disclosure the misalignment thread tracks, and it deserves a direct read.",
+      "links": [
+        {
+          "label": "Two Minute Papers",
+          "url": "https://www.youtube.com/watch?v=u6UYsl-KEoc"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [
+        "Efficiency race"
+      ],
+      "layer": "Compute & Infrastructure",
+      "title": "Hugging Face takes LTX-2.5 video generation to Trainium3",
+      "summary": "Hugging Face's post, titled \"Taking Trainium3 to the Track: Generating Videos with LTX-2.5,\" covers generating video with the LTX-2.5 model on Trainium3 hardware. The post text was not available to us beyond its title.",
+      "why": "Running a video model on non-Nvidia accelerators is a data point for how much of the serving stack can move off the default hardware, though without the post's numbers there is nothing to compare yet.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/video-trainium3"
+        }
+      ]
+    },
+    {
+      "lead": false,
+      "threads": [],
+      "layer": "Applications & Policy",
+      "title": "Matthew Berman explains how Tesla generates its third-person reality view",
+      "summary": "Matthew Berman's short, \"How Tesla Generates Its Third-Person Reality View,\" looks at how Tesla produces its third-person rendering of the world around the car. The description holds only promotional links, so we have no detail on his explanation.",
+      "why": "It is a reminder that deployed perception systems, not just chat models, are a large part of where applied AI is visible to ordinary users.",
+      "links": [
+        {
+          "label": "Matthew Berman",
+          "url": "https://www.youtube.com/shorts/ZGX2NLLLYkY"
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "body": "<strong>Hugging Face</strong> — “Taking Trainium3 to the Track: Generating Videos with LTX-2.5”: the post's title says it covers running LTX-2.5 video generation on Trainium3 hardware.",
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/blog/video-trainium3"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "channel": "Two Minute Papers",
+      "title": "DeepMind’s New AI Just Changed The AI Race",
+      "when": "2026-11-27",
+      "url": "https://www.youtube.com/watch?v=u6UYsl-KEoc",
+      "summary": "The video argues that a new DeepMind AI has shifted the competitive picture. Its description cites a DeepMind security report on Gemini 4 Neon and a list of social posts as sources.",
+      "links": []
+    },
+    {
+      "channel": "Matthew Berman",
+      "title": "How Tesla Generates Its Third-Person Reality View",
+      "when": "2026-11-27",
+      "url": "https://www.youtube.com/shorts/ZGX2NLLLYkY",
+      "summary": "A short explainer on how Tesla produces its third-person view of the world around the car.",
+      "links": []
+    }
+  ],
+  "papers": [],
+  "threads": [
+    {
+      "name": "Coordinated frontier pacing",
+      "update": "Nothing coordinated; the Two Minute Papers video on DeepMind and Hugging Face's Trainium3 post arrive on their own schedules."
+    },
+    {
+      "name": "Vertical platform plays (labs)",
+      "update": "No new lab product aimed at a vertical; the Gemini 4 Neon discussion is about the general model race."
+    },
+    {
+      "name": "Lab supremacy race",
+      "update": "Two Minute Papers says DeepMind's new model changed the race, but it is a commentator's framing with no benchmark figures in hand, so no clear ranking moved."
+    },
+    {
+      "name": "Agent misalignment goes public",
+      "update": "The Gemini 4 Neon security report cited in the Two Minute Papers description is a possible new lab disclosure; its contents were not available to us, so the picture is unchanged until it is read."
+    },
+    {
+      "name": "AI misuse: autonomous attack chains",
+      "update": "No new attacker incident; the picture stands."
+    },
+    {
+      "name": "Distillation warfare",
+      "update": "Nothing new from labs or Moonshot; still no Moonshot response."
+    },
+    {
+      "name": "OpenAI monetization",
+      "update": "Nothing on pricing; the pricing ladder stands."
+    },
+    {
+      "name": "Efficiency race",
+      "update": "Hugging Face's Trainium3 post on LTX-2.5 video generation adds a hardware angle, but without its figures it does not move the training, harness or serving claims."
+    },
+    {
+      "name": "Agentic reliability",
+      "update": "Nothing new; the success and failure evidence from earlier this week stands."
+    },
+    {
+      "name": "Provenance & synthetic media",
+      "update": "The Trainium3 video-generation post adds to the supply of synthetic video but says nothing new on detection or watermarking."
+    },
+    {
+      "name": "Institutional defenses against AI slop",
+      "update": "Nothing new; the Riemann claim is still waiting on a full human read and Clay's acceptance."
+    },
+    {
+      "name": "Weight-space programming",
+      "update": "Nothing new; the matched-by-gradients evidence stands."
+    },
+    {
+      "name": "Decision models",
+      "update": "Nothing new; the audit line stands."
+    },
+    {
+      "name": "AI capital and systemic risk",
+      "update": "Nothing new on Anthropic's financing or the broader capital picture."
+    },
+    {
+      "name": "Nvidia leadership shake-up",
+      "update": "Nothing new; Kress remains interim CEO after Huang's resignation."
+    },
+    {
+      "name": "AI-driven science results",
+      "update": "Nothing new; the Riemann hypothesis claim remains unverified by a person or by Clay."
+    }
+  ]
+}

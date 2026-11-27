@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-27",
+  "model": "claude-sonnet-5-5",
+  "gaps": [
+    "Import AI: HTTPError: HTTP Error 403: Forbidden",
+    "The Batch: HTTPError: HTTP Error 403: Forbidden"
+  ],
+  "attempts": [
+    []
+  ],
+  "usage": [
+    {
+      "request_id": "req_011ChUFzBpmLk3BSA71DDmwk",
+      "input_tokens": 7544,
+      "output_tokens": 3443,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0
+    }
+  ],
+  "item_counts": {
+    "blog": 1,
+    "video": 2,
+    "paper": 0
+  },
+  "outcome": "published"
+}
